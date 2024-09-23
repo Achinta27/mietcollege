@@ -1,0 +1,64 @@
+import React, { useEffect, useState } from "react";
+import Slider from "react-slick";
+import HeadingTemplate from "../template/HeadingTemplate";
+
+const CompanySlider = () => {
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 725) {
+        setSlidesToShow(2);
+      } else if (window.innerWidth <= 1024) {
+        setSlidesToShow(4);
+      } else if (window.innerWidth <= 1780) {
+        setSlidesToShow(6);
+      } else {
+        setSlidesToShow(7);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  const settings = {
+    infinite: true,
+    centerMode: true,
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    autoplay: true,
+    cssEase: "linear",
+    speed: 6000,
+    autoplaySpeed: 500,
+    arrows: false,
+  };
+  const companys = [
+    { imgsrc: "/images/partner1.jpg" },
+    { imgsrc: "/images/partner2.jpg" },
+    { imgsrc: "/images/partner3.jpg" },
+    { imgsrc: "/images/partner4.jpg" },
+    { imgsrc: "/images/partner5.jpg" },
+    { imgsrc: "/images/partner6.jpg" },
+  ];
+  return (
+    <div className="flex flex-col gap-8 sm:p-4 md:p-8 xl:p-16 w-full justify-center items-center">
+      <HeadingTemplate heading={"Our Partners and Recruiters"} />
+      <div className="w-full ">
+        <Slider {...settings}>
+          {companys.map((company, index) => (
+            <span key={index} className="slider-container p-4 ">
+              <img src={company.imgsrc} alt="" />
+            </span>
+          ))}
+        </Slider>
+      </div>
+    </div>
+  );
+};
+
+export default CompanySlider;
