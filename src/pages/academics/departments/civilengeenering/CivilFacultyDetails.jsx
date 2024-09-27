@@ -34,7 +34,7 @@ const CivilFacultyDetails = () => {
           { heading: "Phone Number", description: "98006 54378" },
           { heading: "Email", description: "director@mietcollege.com" },
         ],
-        facultyimg: "/images/f1.png",
+        facultyimg: "/images/chairman.jpeg",
       },
     ],
   };

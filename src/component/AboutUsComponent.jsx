@@ -67,7 +67,7 @@ const AboutUsComponent = () => {
         )}
         <div className="flex flex-col gap-6 lg:w-[50%] sm:w-full">
           <div
-            className="flex flex-col gap-2 xl:text-xl lg:text-base  sm:text-sm"
+            className="flex flex-col gap-2 xl:text-xl lg:text-base sm:text-sm"
             data-aos="fade-left"
           >
             <h2 className="">
@@ -91,6 +91,56 @@ const AboutUsComponent = () => {
               future. Over the years, our students have made their mark in the
               world by going on to achieve incredible success in various fields.
             </h2>
+            <div className="grid grid-cols-2 place-items-stretch mt-[1.15vmax] justify-between gap-6">
+              <div className="flex items-center gap-4">
+                <img
+                  src="/images/square-check.svg"
+                  alt="square check"
+                  width={33}
+                  height={33}
+                  className="size-[2vmax]"
+                />
+                <p className="font-semibold font-sans">
+                  10 Years of Excellence
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <img
+                  src="/images/square-check.svg"
+                  alt="square check"
+                  width={33}
+                  height={33}
+                  className="size-[2vmax]"
+                />
+                <p className="font-semibold font-sans">
+                  Best College In Kolkata
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <img
+                  src="/images/square-check.svg"
+                  alt="square check"
+                  width={33}
+                  height={33}
+                  className="size-[2vmax]"
+                />
+                <p className="font-semibold font-sans">
+                  10 Years of Excellence
+                </p>
+              </div>
+              <div className="flex items-center gap-4">
+                <img
+                  src="/images/square-check.svg"
+                  alt="square check"
+                  width={33}
+                  height={33}
+                  className="size-[2vmax]"
+                />
+                <p className="font-semibold font-sans">
+                  10 Years of Excellence
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
