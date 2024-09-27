@@ -39,6 +39,7 @@ const DeptSideHeader = ({ sideheaderdept }) => {
               className={`w-full flex relative justify-start p-4 bg-[#DC143C] text-white items-center text-lg font-semibold rounded-md`}
               key={index}
               onClick={toggleSidebar}
+              target={side.link.endsWith(".pdf") ? "_blank" : "_self"}
             >
               <div>{side.name}</div>
               {location.pathname === side.link && (

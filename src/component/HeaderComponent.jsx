@@ -49,8 +49,8 @@ const HeaderComponent = () => {
         { name: "About Us", link: "/about-miet/about-us" },
         { name: "Vision & Mission", link: "/about-miet/mission-vission" },
         { name: "Governing Body", link: "/about-miet/governing-body" },
-        { name: "Chairman’s Message", link: "" },
-        { name: "Principal’s Message", link: "/about-miet/principal-message" },
+        { name: "Chairman's Message", link: "/about-miet/chairman-message" },
+        { name: "Principal's Message", link: "/about-miet/principal-message" },
         {
           name: "Affiliation & Approval",
           nesteddropdownItems: [
@@ -64,7 +64,11 @@ const HeaderComponent = () => {
           ],
         },
         { name: "Prospects 2024 - 25", link: "" },
-        { name: "Mandataory Disclosure", link: "" },
+        {
+          name: "Mandataory Disclosure",
+          link: "/pdf/Mandatory-disclosure.pdf",
+          target: "_blank",
+        },
         { name: "Career", link: "/about-miet/online-enquiry" },
       ],
     },
@@ -75,7 +79,7 @@ const HeaderComponent = () => {
           name: "Courses Offered",
           nesteddropdownItems: [
             { name: "B.Tech", link: "/admission/offer-course/btech" },
-            { name: "Diploma", link: "" },
+            { name: "Diploma", link: "/admission/offer-course/diploma" },
           ],
         },
         { name: "Fees Structure", link: "/admission/fees-structure" },
@@ -90,15 +94,62 @@ const HeaderComponent = () => {
         {
           name: "Departments",
           nesteddropdownItems: [
-            { name: "Computer Science Engineering", link: "" },
+            {
+              name: "Basic Science & Humanities Department",
+              link: "/department/bsc/overview",
+            },
+            {
+              name: "Computer Science & Engineering",
+              link: "/department/csc/overview",
+            },
             { name: "Civil Engineering", link: "/department/civil/overview" },
+            {
+              name: "Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
+              link: "/department/cscai/overview",
+            },
+            {
+              name: "Computer Science and Engineering (Cyber Security)",
+              link: "/department/csccs/overview",
+            },
+            {
+              name: "Electrical Engineering",
+              link: "/department/ee/overview",
+            },
+            {
+              name: "Electronics and Communication Engineering",
+              link: "/department/ece/overview",
+            },
+            {
+              name: "Mechanical Engineering",
+              link: "/department/me/overview",
+            },
           ],
         },
-        { name: "Academic Calendar", link: "" },
+        {
+          name: "Academic Calendar",
+          link: "/pdf/Academic Calender 2024.pdf",
+          target: "_blank",
+        },
         { name: "Curriculum Feedback", link: "" },
       ],
     },
-    { name: "Library", link: "" },
+    {
+      name: "Library",
+      dropdownItems: [
+        { name: "Library Overview", link: "/mietcampus/facilities/library" },
+        {
+          name: "Vision & Mission",
+          link: "/mietcampus/facilities/library-vision",
+        },
+        { name: "Staff Details", link: "" },
+        { name: "Statistics", link: "" },
+        { name: "E-Resources", link: "/pdf/LIBRARY.pdf", target: "_blank" },
+        {
+          name: "Rules & Regulations",
+          link: "/mietcampus/facilities/library-rules",
+        },
+      ],
+    },
     {
       name: "Committee",
       dropdownItems: [
@@ -137,7 +188,10 @@ const HeaderComponent = () => {
               name: "Hostel, Transport",
               link: "/mietcampus/facilities/hostel-facilities",
             },
-            { name: "Conference Hall", link: "" },
+            {
+              name: "Conference Hall",
+              link: "/mietcampus/facilities/conference-room",
+            },
             { name: "Common Room", link: "" },
             { name: "Playground, Student Counseling", link: "" },
           ],

@@ -78,7 +78,7 @@ const OfferdCourseDesign = ({ content }) => {
               <div>
                 <img src={course.imgsrc} alt="" />
               </div>
-              <div className="h-[3.5rem] w-full flex justify-center items-center bg-[#DC143C] text-white font-semibold text-lg">
+              <div className="h-[3.5rem] w-full flex justify-center text-center items-center bg-[#DC143C] text-white font-semibold text-lg">
                 {course.name}
               </div>
               <div className="p-4 h-[8rem] flex flex-col gap-2">

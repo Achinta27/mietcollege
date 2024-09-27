@@ -38,12 +38,21 @@ const CompanySlider = () => {
     arrows: false,
   };
   const companys = [
-    { imgsrc: "/images/partner1.jpg" },
-    { imgsrc: "/images/partner2.jpg" },
-    { imgsrc: "/images/partner3.jpg" },
-    { imgsrc: "/images/partner4.jpg" },
-    { imgsrc: "/images/partner5.jpg" },
-    { imgsrc: "/images/partner6.jpg" },
+    { imgsrc: "/company/image2.png" },
+    { imgsrc: "/company/image3.png" },
+    { imgsrc: "/company/image4.png" },
+    { imgsrc: "/company/image5.png" },
+    { imgsrc: "/company/image6.png" },
+    { imgsrc: "/company/image7.png" },
+    { imgsrc: "/company/image8.png" },
+    { imgsrc: "/company/image9.png" },
+    { imgsrc: "/company/image10.png" },
+    { imgsrc: "/company/image11.jpg" },
+    { imgsrc: "/company/image12.jpg" },
+    { imgsrc: "/company/image13.jpg" },
+    { imgsrc: "/company/image14.jpg" },
+    { imgsrc: "/company/image15.jpg" },
+    { imgsrc: "/company/image16.png" },
   ];
   return (
     <div className="flex flex-col gap-8 sm:p-4 md:p-8 xl:p-16 w-full justify-center items-center">
@@ -51,7 +60,10 @@ const CompanySlider = () => {
       <div className="w-full ">
         <Slider {...settings}>
           {companys.map((company, index) => (
-            <span key={index} className="slider-container p-4 ">
+            <span
+              key={index}
+              className="slider-container p-4 flex items-center justify-center"
+            >
               <img src={company.imgsrc} alt="" />
             </span>
           ))}

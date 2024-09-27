@@ -16,7 +16,9 @@ const DeptVissionMission = ({ content }) => {
         <div className="w-[70%] flex flex-col gap-4">
           {vissionmission.map((vission, index) => (
             <div key={index} className="flex flex-col gap-2">
-              <div>{vission.heading}</div>
+              <div className="text-center font-bold xlg:text-5xl lg:text-2xl sm:text-lg text-red-600">
+                {vission.heading}
+              </div>
               <div className="">
                 <img src={vission.deptimg} alt="" className="w-full" />
               </div>

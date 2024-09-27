@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const TopHeader = () => {
@@ -16,8 +17,14 @@ const TopHeader = () => {
     arrows: false,
   };
   const notifications = [
-    "Admission open in B.Tech 2024-2025 Season",
-    "Admission open in diploma 2024-2025 Season",
+    {
+      text: "Admission open in B.Tech 2024-2025 Season",
+      link: "/admission/offer-course/btech",
+    },
+    {
+      text: "Admission open in diploma 2024-2025 Season",
+      link: "/admission/offer-course/diploma",
+    },
   ];
 
   return (
@@ -35,14 +42,14 @@ const TopHeader = () => {
                   key={index}
                   className=" text-[#bb3232] w-full flex flex-row sm:text-[12px] lg:text-sm xl:text-lg font-bold "
                 >
-                  <span className="flex ">
-                    {notification}{" "}
+                  <Link to={notification.link} className="flex ">
+                    {notification.text}{" "}
                     <img
                       src="/images/new.gif"
                       alt=""
                       className="lg:h-4 sm:h-3"
                     />
-                  </span>
+                  </Link>
                 </div>
               ))}
             </Slider>
@@ -50,15 +57,24 @@ const TopHeader = () => {
         </div>
         <div className="lg:w-[50%] sm:hidden sm:w-full lg:flex items-center ">
           <span className="flex lg:text-xs xl:text-sm font-semibold gap-4">
-            <span className=" border-l-2 pl-2 border-[#bb3232]">
+            <Link
+              to="/admission/offer-course/btech"
+              className=" border-l-2 pl-2 border-[#bb3232]"
+            >
               B.Tech Course
-            </span>
-            <span className=" border-l-2 pl-2 border-[#bb3232]">
+            </Link>
+            <Link
+              to="/admission/offer-course/diploma"
+              className=" border-l-2 pl-2 border-[#bb3232]"
+            >
               Diploma Course
-            </span>
-            <span className="border-l-2 pl-2 border-[#bb3232]">
+            </Link>
+            <Link
+              to="/mietcampus/facilities/hostel-facilities"
+              className="border-l-2 pl-2 border-[#bb3232]"
+            >
               Hostel Facility
-            </span>
+            </Link>
 
             <span className=" border-l-2 pl-2 border-[#bb3232]">
               Scholarship Facility

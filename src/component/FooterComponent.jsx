@@ -3,7 +3,6 @@ import {
   FaDownload,
   FaInstagram,
   FaLinkedinIn,
-  FaMinus,
   FaPhoneAlt,
   FaWhatsapp,
   FaYoutube,
@@ -15,9 +14,9 @@ import { Link } from "react-router-dom";
 
 const FooterComponent = () => {
   const quickLinks = [
-    { name: "Home", link: "" },
-    { name: "About Us", link: "" },
-    { name: "Principle Massage", link: "" },
+    { name: "Home", link: "/" },
+    { name: "About Us", link: "/about-miet/about-us" },
+    { name: "Principle Massage", link: "/about-miet/principal-message" },
     { name: "News", link: "" },
     { name: "Activitis", link: "" },
     { name: "E-leraning", link: "" },
@@ -26,18 +25,29 @@ const FooterComponent = () => {
     { name: "Govt. Schemes", link: "" },
   ];
   const departments = [
-    { name: "Machanical Engineering", link: "" },
-    { name: "Electrical Engineering", link: "" },
-    { name: "Civil Engineering", link: "" },
-    { name: "Computer Science Engineering", link: "" },
-    { name: "Electronics & Communication Engineering", link: "" },
+    { name: "Machanical Engineering", link: "/department/me/overview" },
+    { name: "Electrical Engineering", link: "/department/ee/overview" },
+    { name: "Civil Engineering", link: "/department/civil/overview" },
+    { name: "Computer Science Engineering", link: "/department/csc/overview" },
+    {
+      name: "Computer Science Engineering (Artificial Intelligence & Machine Learning)",
+      link: "/department/cscai/overview",
+    },
+    {
+      name: "Electronics & Communication Engineering",
+      link: "/department/ece/overview",
+    },
+    {
+      name: "Basic Science & Humanities  Department",
+      link: "/department/bsc/overview",
+    },
   ];
   const mites = [
     { name: "Events", link: "" },
-    { name: "Gallery", link: "" },
+    { name: "Gallery", link: "/gallery/photo-gallery" },
     { name: "Campus Life", link: "" },
     { name: "Campus Tour", link: "" },
-    { name: "Google Map", link: "" },
+    { name: "Google Map", link: "https://maps.app.goo.gl/zEysCWMxF3ddyy3y9" },
     { name: "College Notices", link: "" },
     { name: "Placement Report", link: "" },
     { name: "Internships", link: "" },
@@ -93,6 +103,7 @@ const FooterComponent = () => {
                 {mites.map((miet, index) => (
                   <Link
                     to={miet.link}
+                    target={miet.link.startsWith("https") ? "_blank" : "_self"}
                     className="flex flex-row gap-2 items-center"
                     key={index}
                   >
@@ -194,14 +205,14 @@ const FooterComponent = () => {
           </div>
         </div>
       </div>
-      <div className="flex md:flex-row md:h-fit sm:h-[9rem] sm:flex-col sm:text-xs md:text-lg lg:text-xl sm:justify-start items-center md:justify-between bg-[#bb3232] border-t border-yellow-400  sm:p-2 md:p-6 ">
-        <div className="  text-white    flex  text-center ">
+      <div className="flex md:flex-row md:h-fit sm:h-[9rem] sm:flex-col sm:text-xs md:text-lg lg:text-xl sm:justify-start items-center md:justify-between bg-[#bb3232] border-t border-yellow-400 sm:p-2 md:p-6 ">
+        <div className="text-white flex text-center">
           © 2024 MODERN INSTITUTE OF ENGINEERING & TECHNOLOGY | ALL RIGHTS
           RESERVED
         </div>
-        <div className="  text-white      flex gap-2  ">
+        <div className="  text-white flex gap-2">
           <span>Developed By:</span>
-          <Link to="https://rebootmarketing.in/">
+          <Link to="https://rebootmarketing.in/" target="_blank">
             Reboot Marketing Pvt. Ltd.
           </Link>
         </div>

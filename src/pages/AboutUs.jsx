@@ -19,43 +19,31 @@ const AboutUs = () => {
             </span>
             <div className="flex flex-col gap-2 sm:text-xs lg:text-sm xl:text-lg">
               <span>
-                Lorem ipsum dolor sit amet consectetur. Interdum quam est libero
-                pharetra eleifend sed. Euismod ipsum bibendum mauris aenean
-                placerat libero. Malesuada convallis sed integer nec vel id nisl
-                odio. Hendrerit a tortor id ipsum tempus pellentesque volutpat
-                massa ut. Natoque urna tellus ultrices mauris risus nunc auctor.
-                Donec mattis arcu odio eget. Velit lacus pretium pharetra enim.
-                At pellentesque at tellus tortor diam placerat nulla integer
-                habitasse. Bibendum lacus eleifend ut felis viverra.
-              </span>
-              <span>
-                Quam in arcu quisque non risus. Lacus gravida ultricies molestie
-                laoreet sed odio augue. Enim et amet imperdiet sit ornare.
-                Iaculis viverra porta volutpat suscipit. Malesuada mi blandit
-                scelerisque pellentesque nunc porttitor aliquet.
-              </span>
-              <span>
-                Donec tortor arcu in hendrerit lorem a facilisi. Orci arcu
-                magnis mattis integer rhoncus platea nunc ut convallis. Dolor
-                sed turpis pellentesque euismod donec dui. Amet proin elementum
-                senectus commodo tortor velit habitant enim. Quisque non hac sed
-                neque condimentum donec vulputate viverra. Accumsan ac amet
-                lobortis id vel accumsan massa. Risus iaculis feugiat duis
-                consectetur viverra turpis.
-              </span>
-              <span>
-                A eget nibh libero vulputate nec neque nisi ipsum enim. Faucibus
-                enim iaculis enim porta lorem dis enim at. Porta nunc imperdiet
-                nunc tellus leo netus viverra. Sit eget pulvinar eu varius
-                massa. Suspendisse pretium lectus venenatis montes cursus
-                pulvinar arcu. Viverra vel elit sit tincidunt nisl et. Odio
-                aenean venenatis aenean tincidunt bibendum ipsum. Tortor cursus
-                accumsan orci tortor donec est tincidunt. Aenean tincidunt
-                phasellus erat nisl massa massa lobortis. Mi vitae elit
-                hendrerit amet volutpat vel. Odio ridiculus tellus eu feugiat.
-                Vulputate malesuada nibh egestas sed. Eget quam donec tincidunt
-                at duis morbi. Dignissim velit suspendisse penatibus condimentum
-                posuere. Massa sodales
+                Education is a silent and peaceful weapon that can bring success
+                without harm. Education is more than what you can learn from a
+                book, it empowers the students&apos; minds, nurtures critical
+                thinking and fosters a well-rounded perspective. The purpose of
+                education is not limited to gaining knowledge and skills only,
+                it equips the students with essential skills for personal and
+                societal development. Modern Institute of Engineering &
+                Technology was formed to act as a catalyst. The college was
+                established under the Badal Deb Memorial Educational Foundation
+                Trust in the year 2010. Since then, students from various
+                backgrounds have been given a safe, nurturing environment where
+                they can gain the skills and knowledge. By becoming
+                knowledgeable and developing skills, the students can deal with
+                real-world situations. They require to be progressive leaders in
+                today&apos;s fast paced society. Modern Institute of Engineering
+                & Technology empowers the students by providing specialized
+                knowledge, relevant skills and critical thinking abilities. The
+                team of dedicated, highly qualified and passionate engineering
+                professors have helped students to do their best. Modern
+                Institute of Engineering & Technology is approved by AICTE
+                &#40;All India Council for Technical Education&#41;, Govt. of
+                India and affiliated to MAKAUT &#40;Maulana Abul Kalam Azad
+                University of Technology&#41; and WBSCT & VE & SD &#40;West
+                Bengal State Council of Technical and Vocational Education and
+                Skill Development&#41;.
               </span>
             </div>
           </div>
@@ -74,42 +62,65 @@ const AboutUs = () => {
         </div>
         <div className="flex flex-col gap-4 ">
           <span>
-            Lorem ipsum dolor sit amet consectetur. Interdum quam est libero
-            pharetra eleifend sed. Euismod ipsum bibendum mauris aenean placerat
-            libero. Malesuada convallis sed integer nec vel id nisl odio.
-            Hendrerit a tortor id ipsum tempus pellentesque volutpat massa ut.
-            Natoque urna tellus ultrices mauris risus nunc auctor. Donec mattis
-            arcu odio eget. Velit lacus pretium pharetra enim. At pellentesque
-            at tellus tortor diam placerat nulla integer habitasse. Bibendum
-            lacus eleifend ut felis viverra.
+            Over the past 14 years, MIET has developed and paved the way to
+            overcome all the problems to achieve sustainable development goals
+            and education is the only way that can help the students to achieve
+            sustainable development goals. We are involved in all parts of the
+            students&apos; academic lives and make sure they dedicated for
+            excellence as soon as they step on campus. We build across the
+            institute a culture of excellence in teaching and learning with
+            needed performance and accountability from all support activities.
+            When theory is put into practise, real learning that sticks around
+            happens. We work with our students on projects and practical
+            applications to help them learn and remember more about engineering
+            and management. We inculcate spirit of professionalism, team-work,
+            innovation and entrepreneurship among the students. We promote
+            co-curricular and extra-curricular activities for overall
+            personality development of the students. Individual interests and
+            skills are supported by clubs and cultural forums that are full of
+            life.
           </span>
           <span>
-            Quam in arcu quisque non risus. Lacus gravida ultricies molestie
-            laoreet sed odio augue. Enim et amet imperdiet sit ornare. Iaculis
-            viverra porta volutpat suscipit. Malesuada mi blandit scelerisque
-            pellentesque nunc porttitor aliquet.
+            When theory is put into practise, real learning that sticks around
+            happens. We work with our students on projects and practical
+            applications to help them learn and remember more about engineering
+            and management. We inculcate spirit of professionalism, team-work,
+            innovation and entrepreneurship among the students. We promote
+            co-curricular and extra-curricular activities for overall
+            personality development of the students. Individual interests and
+            skills are supported by clubs and cultural forums that are full of
+            life.
           </span>
           <span>
-            Donec tortor arcu in hendrerit lorem a facilisi. Orci arcu magnis
-            mattis integer rhoncus platea nunc ut convallis. Dolor sed turpis
-            pellentesque euismod donec dui. Amet proin elementum senectus
-            commodo tortor velit habitant enim. Quisque non hac sed neque
-            condimentum donec vulputate viverra. Accumsan ac amet lobortis id
-            vel accumsan massa. Risus iaculis feugiat duis consectetur viverra
-            turpis.
+            <b>Goals:</b>
+            <br />
+            1. To establish minimum three state-of-the-art research laboratories
+            in the contemporary areas, such as: <br /> i&#41; Natural Language
+            Processing, <br /> ii&#41; Multimedia and Communication, <br />
+            iii&#41; Data Warehousing, <br /> iv&#41; High Performance Computing
+            <br /> v&#41; Bioinformatics. <br /> 2. To enable all the students
+            to pursue their chosen career paths, such as, higher education,
+            entrepreneurship and placement in reputed organizations. <br /> 3.
+            To have 80% faculty members with Ph.D. qualification by 2027. <br />{" "}
+            4. At least 5 publications in reputed International
+            Journals/Conference every year. <br /> 5. To execute Industry/R & D
+            projects with 10% growth rate. <br /> 6. To introduce a new
+            postgraduate programme in a contemporary area by 2027.
           </span>
           <span>
-            A eget nibh libero vulputate nec neque nisi ipsum enim. Faucibus
-            enim iaculis enim porta lorem dis enim at. Porta nunc imperdiet nunc
-            tellus leo netus viverra. Sit eget pulvinar eu varius massa.
-            Suspendisse pretium lectus venenatis montes cursus pulvinar arcu.
-            Viverra vel elit sit tincidunt nisl et. Odio aenean venenatis aenean
-            tincidunt bibendum ipsum. Tortor cursus accumsan orci tortor donec
-            est tincidunt. Aenean tincidunt phasellus erat nisl massa massa
-            lobortis. Mi vitae elit hendrerit amet volutpat vel. Odio ridiculus
-            tellus eu feugiat. Vulputate malesuada nibh egestas sed. Eget quam
-            donec tincidunt at duis morbi. Dignissim velit suspendisse penatibus
-            condimentum posuere. Massa sodales
+            With unmatched facility and state-of-the-art infrastructure, modern
+            laboratories, well facilitated canteen with variety of palatable
+            dishes, in campus Boys&apos; Hostel and well protected Girls&apos; Hostel and
+            Library keeping pace with modern cutting-edge technology, students
+            need to be properly groomed and ultimately made employable and
+            subsequently shaped, honed into the groove of the requirement of
+            corporate sector, behavioural patterns and expectations. In order to
+            fructify this aim and target sustained efforts on behalf of the
+            institute have been put in operation in the form of imparting such
+            inclusive knowledge through regular hands-on training sessions on
+            human skills, corporate environments, interview techniques, mock
+            drills and relevant technical software sessions that are woven into
+            the regular class fabric.
           </span>
         </div>
       </div>

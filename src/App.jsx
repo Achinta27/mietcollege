@@ -22,6 +22,12 @@ import Scholarships from "./pages/Scholarships";
 import CollegeEvents from "./pages/CollegeEvents";
 import CollegeNews from "./pages/CollegeNews";
 import PhotoGallery from "./pages/PhotoGallery";
+import ConferenceHall from "./pages/facilities/ConferenceHall";
+import TransportFacility from "./pages/facilities/TransportFacility";
+import ChairmanMessage from "./pages/ChairManMessage";
+import LibraryOverview from "./pages/library/LibraryOverview";
+import LibraryVisionMission from "./pages/library/LibraryVisionMission";
+import LibraryRules from "./pages/library/LibraryRules";
 
 const App = () => {
   return (
@@ -39,25 +45,29 @@ const App = () => {
           path="/about-miet/principal-message"
           element={<PrincipalMessage />}
         />
-        <Route path="/admission/offer-course/btech" element={<BTech />} />
+        <Route
+          path="/about-miet/chairman-message"
+          element={<ChairmanMessage />}
+        />
+        <Route path="/admission/offer-course/:course" element={<BTech />} />
         <Route path="/admission/fees-structure" element={<FeesStructure />} />
         <Route path="/admission/scholarship" element={<Scholarships />} />
 
         {/* civil dept */}
         <Route
-          path="/department/civil/overview"
+          path="/department/:dept/overview"
           element={<CivilDeptOverview />}
         />
         <Route
-          path="/department/civil/vission-and-mission"
+          path="/department/:dept/vission-and-mission"
           element={<CivilVissionMission />}
         />
         <Route
-          path="/department/civil/program-outcome"
+          path="/department/:dept/program-outcome"
           element={<CivilProgramOutcome />}
         />
         <Route
-          path="/department/civil/faculty-details"
+          path="/department/:dept/faculty-details"
           element={<CivilFacultyDetails />}
         />
 
@@ -67,6 +77,26 @@ const App = () => {
         <Route
           path="/mietcampus/facilities/hostel-facilities"
           element={<HostelFacilities />}
+        />
+        <Route
+          path="/mietcampus/facilities/conference-room"
+          element={<ConferenceHall />}
+        />
+        <Route
+          path="/mietcampus/facilities/transport"
+          element={<TransportFacility />}
+        />
+        <Route
+          path="/mietcampus/facilities/library"
+          element={<LibraryOverview />}
+        />
+        <Route
+          path="/mietcampus/facilities/library-vision"
+          element={<LibraryVisionMission />}
+        />
+        <Route
+          path="/mietcampus/facilities/library-rules"
+          element={<LibraryRules />}
         />
 
         {/* comittee */}
