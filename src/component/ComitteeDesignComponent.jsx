@@ -51,7 +51,7 @@ const ComitteeDesignComponent = ({ content }) => {
             </div>
           </div>
         </div>
-        <div className="w-full flex sm:flex-col md:flex-row gap-4">
+        <div className="w-full flex justify-between sm:flex-col md:flex-row gap-4">
           <div className="md:w-[30%] sm:w-full">
             <EnquiryBoxComponent />
           </div>

@@ -1,223 +1,180 @@
 import React from "react";
-import {
-  FaDownload,
-  FaInstagram,
-  FaLinkedinIn,
-  FaPhoneAlt,
-  FaWhatsapp,
-  FaYoutube,
-} from "react-icons/fa";
-import { FaLocationDot, FaXTwitter } from "react-icons/fa6";
-import { IoMdArrowForward } from "react-icons/io";
-import { MdOutgoingMail } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const FooterComponent = () => {
-  const quickLinks = [
-    { name: "Home", link: "/" },
-    { name: "About Us", link: "/about-miet/about-us" },
-    { name: "Principle Massage", link: "/about-miet/principal-message" },
-    { name: "News", link: "" },
-    { name: "Activitis", link: "" },
-    { name: "E-leraning", link: "" },
-    { name: "Soft skill Development", link: "" },
-    { name: " E - Tender", link: "" },
-    { name: "Govt. Schemes", link: "" },
-  ];
-  const departments = [
-    { name: "Machanical Engineering", link: "/department/me/overview" },
-    { name: "Electrical Engineering", link: "/department/ee/overview" },
-    { name: "Civil Engineering", link: "/department/civil/overview" },
-    { name: "Computer Science Engineering", link: "/department/csc/overview" },
+  const footerLinks1st = [
     {
-      name: "Computer Science Engineering (Artificial Intelligence & Machine Learning)",
-      link: "/department/cscai/overview",
+      textTittle: "Quick Links",
+      links: [
+        {
+          text: "MIET Home",
+          path: "/",
+        },
+        {
+          text: "B-Tech Courses",
+          path: "/admission/offer-course/btech",
+        },
+        {
+          text: "Diploma",
+          path: "/admission/offer-course/diploma",
+        },
+        {
+          text: "Fees Structure",
+          path: "/admission/fees-structure",
+        },
+        {
+          text: "Contact Us",
+          path: "/contact-us",
+        },
+      ],
     },
     {
-      name: "Electronics & Communication Engineering",
-      link: "/department/ece/overview",
+      textTittle: "The MIET College",
+      links: [
+        {
+          text: "About Us",
+          path: "/about-miet/about-us",
+        },
+        {
+          text: "Governing Body",
+          path: "/about-miet/governing-body",
+        },
+        {
+          text: "Principal's Message",
+          path: "/about-miet/principal-message",
+        },
+        {
+          text: "Vision & Mission",
+          path: "/about-miet/mission-vission",
+        },
+        {
+          text: "Chairman's Message",
+          path: "/about-miet/chairman-message",
+        },
+      ],
     },
     {
-      name: "Basic Science & Humanities  Department",
-      link: "/department/bsc/overview",
+      textTittle: "The MIET Campus",
+      links: [
+        {
+          text: "Hostel ",
+          path: "/mietcampus/facilities/hostel-facilities",
+        },
+        {
+          text: "Conference Room",
+          path: "/mietcampus/facilities/conference-room",
+        },
+        {
+          text: "Library",
+          path: "/mietcampus/facilities/library",
+        },
+        {
+          text: "Transport",
+          path: "/mietcampus/facilities/transport",
+        },
+        {
+          text: "Photo Gallery",
+          path: "/gallery/photo-gallery",
+        },
+        {
+          text: "Anti Ragging Committee",
+          path: "/comittee/anti-ragging",
+        },
+      ],
     },
-  ];
-  const mites = [
-    { name: "Events", link: "" },
-    { name: "Gallery", link: "/gallery/photo-gallery" },
-    { name: "Campus Life", link: "" },
-    { name: "Campus Tour", link: "" },
-    { name: "Google Map", link: "https://maps.app.goo.gl/zEysCWMxF3ddyy3y9" },
-    { name: "College Notices", link: "" },
-    { name: "Placement Report", link: "" },
-    { name: "Internships", link: "" },
-    { name: "Our Recuiters", link: "" },
+    {
+      textTittle: "Placements",
+      links: [
+        {
+          text: "Training & Placement",
+          path: "/training-internship/overview",
+        },
+        {
+          text: "Our Recruiters",
+          path: "/training-internship/our-recruiters",
+        },
+        {
+          text: "Library",
+          path: "/mietcampus/facilities/library",
+        },
+        {
+          text: "Enquiry",
+          path: "/about-miet/online-enquiry",
+        },
+      ],
+    },
   ];
   return (
-    <div>
-      <div className=" w-full bg-red-900 sm:p-4 md:p-8 xl:p-16 text-white ">
-        <div className="flex flex-col border-b  border-white pb-6">
-          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xlg:grid-cols-4  sm:gap-y-8 lg:gap-4 ">
-            <div className="flex flex-col ">
-              <div className="w-full  h-fit md:text-lg sm:text-base flex flex-col gap-6">
-                <div>
-                  <img
-                    src="/images/footerlogo.png"
-                    alt=""
-                    className="w-[14rem] h-auto"
-                  />
-                </div>
-                <div className=" ">
-                  <span>
-                    Modern Institute of Engineering & Technology (MIET) -
-                    www.mietcollege.org - was established in 2010 at Bandel,
-                    approximately an hour’s drive from Kolkata. Over the years,
-                    a number of renowned companies have recruited our pass out
-                    students / former students,
-                  </span>
-                </div>
-              </div>
+    <footer className="bg-[url('/images/footer-bg.png')] mix-blend-hard-light bg-cover bg-no-repeat bg-[lightgray]/50">
+      <div className="bg-[#4E0010] sm:p-4 md:p-8 xl:p-16 flex flex-col gap-[1.8vmax]">
+        <div className="flex flex-col gap-[1.73vmax]">
+          <div className="flex gap-[2.8vmax] justify-between">
+            <div className="flex flex-col gap-[1.73vmax]">
+              <img
+                src="/images/footerlogo.png"
+                alt="logo"
+                width={374}
+                className="w-[26vmax]"
+              />
+              <Link
+                to="/pdf/Academic Calender 2024.pdf"
+                target="_blank"
+                className="font-bold text-[2.2vmax] text-[#4E0010] bg-[#FC0] text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+              >
+                Admission 2024-25
+              </Link>
+              <Link
+                to="/pdf/RPGIprospectors.pdf"
+                target="_blank"
+                className="font-bold text-[2.2vmax] border border-[#FFCC00] text-[#FFCC00] text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+              >
+                Prospectus 2024-25
+              </Link>
+              <Link
+                to="/pdf/RPGIprospectors.pdf"
+                target="_blank"
+                className="font-bold text-[2.2vmax] border border-white text-white text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+              >
+                Payment Online
+              </Link>
             </div>
-            <div className="flex flex-col sm:gap-2 lg:gap-4">
-              <span className="text-2xl font-bold">Quick Links</span>
-
-              <div className="flex   flex-col sm:gap-1 lg:gap-4 sm:text-base md:text-lg">
-                {quickLinks.map((quicklink, index) => (
-                  <Link
-                    to={quicklink.link}
-                    className="flex flex-row gap-2 items-center"
-                    key={index}
-                  >
-                    <span>
-                      <IoMdArrowForward />
-                    </span>
-                    <span>{quicklink.name}</span>
-                  </Link>
-                ))}
+            {footerLinks1st.map((item, index) => (
+              <div className="flex flex-col gap-[1.11vmax]" key={index}>
+                <h3 className="text-white font-bold text-[1.38vmax]">
+                  {item.textTittle}
+                </h3>
+                <ul className="flex flex-col gap-[1.38vmax]">
+                  {item.links.map((link, index) => (
+                    <li>
+                      <Link
+                        to={link.path}
+                        className="text-white font-semibold text-[1.11vmax]"
+                      >
+                        &#9658; {link.text}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
-            </div>
-            <div className="flex flex-col sm:gap-2 lg:gap-4">
-              <span className="text-2xl font-bold">MIET</span>
-
-              <div className="flex   flex-col sm:gap-1 lg:gap-4 sm:text-base md:text-lg">
-                {mites.map((miet, index) => (
-                  <Link
-                    to={miet.link}
-                    target={miet.link.startsWith("https") ? "_blank" : "_self"}
-                    className="flex flex-row gap-2 items-center"
-                    key={index}
-                  >
-                    <span>
-                      <IoMdArrowForward />
-                    </span>
-                    <span>{miet.name}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>{" "}
-            <div className="flex flex-col sm:gap-2 lg:gap-4">
-              <span className="text-2xl font-bold">Departments</span>
-
-              <div className="flex flex-col sm:gap-1 lg:gap-4 sm:text-base md:text-lg">
-                {departments.map((department, index) => (
-                  <Link
-                    to={department.link}
-                    className="flex flex-row gap-2 items-center"
-                    key={index}
-                  >
-                    <span>
-                      <IoMdArrowForward />
-                    </span>
-                    <span>{department.name}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
+          <div className="w-full h-0.5 bg-white/50"></div>
         </div>
-        <div className="w-full lg:pt-8 sm:pt-2 md:pt-4 h-full ">
-          <div className="flex lg:flex-row sm:gap-6 lg:gap-0 sm:flex-col justify-evenly items-start text-xl">
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-2  items-start">
-                <span>
-                  <FaLocationDot />
-                </span>
-                <span>Rajhat, Bandel, Hooghly,West Bengal.</span>
-              </div>
-              <div className="flex gap-2 items-center ">
-                <span>
-                  <MdOutgoingMail />
-                </span>
-                <Link to="mailto:info@mietcollege.org">
-                  info@mietcollege.org
-                </Link>
-              </div>
-              <div className=" flex gap-2 items-center ">
-                <span>
-                  <FaPhoneAlt />
-                </span>
-
-                <Link to="tel:8336070583">+91 8336070583</Link>
-              </div>
-            </div>
-
-            <div className="flex flex-col justify-center gap-2 items-center">
-              <span className="">We Are Available</span>
-              <div className="flex gap-4 text-xl text-black">
-                <Link
-                  to=""
-                  className="h-10 w-10 flex items-center justify-center rounded-br-lg rounded-tl-lg bg-white"
-                >
-                  <FaWhatsapp />
-                </Link>
-                <Link
-                  to=""
-                  className="h-10 w-10 flex items-center justify-center rounded-br-lg rounded-tl-lg bg-white "
-                >
-                  <FaYoutube />
-                </Link>
-                <Link
-                  to={""}
-                  className="h-10 w-10 flex items-center justify-center rounded-br-lg rounded-tl-lg  bg-white "
-                >
-                  <FaInstagram />
-                </Link>
-                <Link
-                  to={""}
-                  className="h-10 w-10 flex items-center justify-center rounded-br-lg rounded-tl-lg  bg-white"
-                >
-                  <FaLinkedinIn />
-                </Link>
-                <Link
-                  to={""}
-                  className="h-10 w-10 flex items-center justify-center rounded-br-lg rounded-tl-lg bg-white"
-                >
-                  <FaXTwitter />
-                </Link>
-              </div>
-            </div>
-            <div className="w-[25%] h-[4rem] gap-4 rounded-lg bg-yellow-500 text-white flex justify-center  items-center">
-              <span>
-                <FaDownload />
-              </span>
-              <span>Download Our App</span>
-            </div>
-          </div>
+        <div className="w-full h-0.5 bg-white/50"></div>
+        <div className="flex items-center justify-between text-white">
+          <h1 className="font-bold text-[1.38vmax]">
+            Modern Institute of Engineering &amp; Technology | All Rights
+            Reserved
+          </h1>
+          <h1 className="text-[1.38vmax]">
+            Design &amp; Developed By:{" "}
+            <Link to="" target="_blank" className="font-bold">
+              Reboot AI Pvt. Ltd.
+            </Link>
+          </h1>
         </div>
       </div>
-      <div className="flex md:flex-row md:h-fit sm:h-[9rem] sm:flex-col sm:text-xs md:text-lg lg:text-xl sm:justify-start items-center md:justify-between bg-[#bb3232] border-t border-yellow-400 sm:p-2 md:p-6 ">
-        <div className="text-white flex text-center">
-          © 2024 MODERN INSTITUTE OF ENGINEERING & TECHNOLOGY | ALL RIGHTS
-          RESERVED
-        </div>
-        <div className="  text-white flex gap-2">
-          <span>Developed By:</span>
-          <Link to="https://rebootmarketing.in/" target="_blank">
-            Reboot Marketing Pvt. Ltd.
-          </Link>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 };
 

@@ -1,58 +1,73 @@
 import React from "react";
 import HeadingTemplate from "../template/HeadingTemplate";
 import { FaPlus } from "react-icons/fa";
+import { Grid, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/navigation";
 
 const OutstandingPlacement = () => {
   const placements = [
     {
-      imgsrc: "/images/placement.jpg",
-      name: "Susmita Mondol",
-      company: "Infosys",
-      jobrole: "Assosiate Manager",
+      imgsrc:
+        "/placement/Animesh Ghosh  Me 4 th yr  2024  Jaya Hind Industries pvt ltd.jpeg",
+      name: "Animesh Ghosh",
+      company: "Jaya Hind Industries pvt ltd",
+      jobrole: "ME 4th year 2024",
     },
     {
-      imgsrc: "/images/placement.jpg",
-      name: "Susmita Mondol",
-      company: "Infosys",
-      jobrole: "Assosiate Manager",
+      imgsrc:
+        "/placement/Bikram Das Department - Electrical Engineering  Passout year -2024 Company -Kodnest.jpeg",
+      name: "Bikram Das",
+      company: "Kodnest",
+      jobrole: "EE Passout year -2024",
     },
     {
-      imgsrc: "/images/placement.jpg",
-      name: "Susmita Mondol",
-      company: "Infosys",
-      jobrole: "Assosiate Manager",
+      imgsrc:
+        "/placement/Maoumaa Dutta  Company - Sutherland Global Pvt Ltd  Year of Passout - 2024 Department - Computer Science and Engineering.jpeg",
+      name: "Maoumaa Dutta",
+      company: "Sutherland Global Private Limited",
+      jobrole: "Computer Science and Engineering",
     },
     {
-      imgsrc: "/images/placement.jpg",
-      name: "Susmita Mondol",
-      company: "Infosys",
-      jobrole: "Assosiate Manager",
+      imgsrc:
+        "/placement/SALINI SARKAR  Company Name - Sutherland Global Private Limited  Passout Year -2024 Department - Computer Science & Engineering.jpeg",
+      name: "SALINI SARKAR",
+      company: "Sutherland Global Private Limited",
+      jobrole: "Computer Science & Engineering",
     },
     {
-      imgsrc: "/images/placement1.jpg",
-      name: "Jyotirmoy Nandi",
-      company: "Infosys",
-      jobrole: "System Engineer",
+      imgsrc:
+        "/placement/Riki Banik 2024 Mechanical engineering Department  Jaya Hind Industries pvt ltd,Muvro Technology Ltd.jpeg",
+      name: "Riki Banik",
+      company: "Jaya Hind Industries pvt ltd",
+      jobrole: "Mechanical Engineering",
     },
     {
-      imgsrc: "/images/placement1.jpg",
-      name: "Jyotirmoy Nandi",
-      company: "Infosys",
-      jobrole: "System Engineer",
+      imgsrc:
+        "/placement/Sasti pal  Me 4 th yr 2024 Muvro Technology,jJaya Hind Industries pvt Limited.jpeg",
+      name: "Sasti pal",
+      company: "Muvro Technology",
+      jobrole: "Mechanical Engineering",
     },
     {
-      imgsrc: "/images/placement1.jpg",
-      name: "Jyotirmoy Nandi",
-      company: "Infosys",
-      jobrole: "System Engineer",
+      imgsrc:
+        "/placement/Sreejasree Roy Passout year- 2024 Dept- CSE Company Name- Sutherland Global Service.jpeg",
+      name: "Sreejasree Roy",
+      company: "Sutherland Global Service",
+      jobrole: "Computer Science Department",
     },
     {
-      imgsrc: "/images/placement1.jpg",
-      name: "Jyotirmoy Nandi",
-      company: "Infosys",
-      jobrole: "System Engineer",
+      imgsrc:
+        "/placement/Suman Koley Me 4 th year  2024 JAYA Hind Industries pvt ltd.jpeg",
+      name: "Suman Koley",
+      company: "JAYA Hind Industries pvt ltd",
+      jobrole: "Mechanical Engineering",
     },
   ];
+
   const totalplacements = [
     {
       package: "4-5",
@@ -87,46 +102,58 @@ const OutstandingPlacement = () => {
       totalnumber: "Recruiters hired MIET students",
     },
   ];
-  const placementsSet1 = placements.slice(0, 4);
-  const placementsSet2 = placements.slice(4, 8);
+
   const totalplacementsset1 = totalplacements.slice(0, 4);
   const totalplacementsset2 = totalplacements.slice(4, 8);
   return (
     <div className="flex flex-col gap-8 sm:p-4 md:p-8 xl:p-16 w-full justify-center items-center">
       <span className="flex flex-col gap-2 w-full justify-center items-center">
-        <HeadingTemplate heading={"OUTSTANDING PLACEMENTS"} />
-        <span className="lg:text-4xl sm:text-2xl   font-dancingscript font-semibold">
+        <span className="lg:text-4xl sm:text-2xl font-dancingscript font-semibold text-[#0053CE]">
           “Connecting you to your dream career”
         </span>
+        <HeadingTemplate heading={"OUTSTANDING PLACEMENTS"} />
       </span>
       <div className="flex w-full gap-6 lg:flex-row sm:flex-col">
-        <div className="lg:w-[50%] sm:w-full flex flex-col gap-2">
-          <div className="grid grid-cols-2 gap-4">
-            {placementsSet1.map((placement, index) => (
-              <div
+        <div className="flex flex-col gap-2">
+          <Swiper
+            slidesPerView={4}
+            grid={{
+              rows: 1,
+            }}
+            spaceBetween={30}
+            loop={true}
+            modules={[Grid, Navigation]}
+          >
+            {placements.map((placement, index) => (
+              <SwiperSlide
                 key={index}
-                className="flex lg:flex-row sm:flex-col gap-2 p-2 rounded-sm border border-gray-200"
+                virtualIndex={index}
+                className="flex items-center flex-col gap-2 p-2 rounded-sm border border-gray-200 max-w-[21vmax]"
               >
-                <span className="lg:w-[30%] sm:w-full flex items-center justify-center">
-                  <img src={placement.imgsrc} alt="" className="rounded-full" />
+                <span className="flex items-center justify-center border border-[#bb3232] rounded-full p-2">
+                  <img
+                    src={placement.imgsrc}
+                    alt=""
+                    className="rounded-full size-[8.2vmax] object-cover object-top"
+                  />
                 </span>
-                <span className="lg:w-[65%] sm:w-full flex flex-col sm:items-center lg:items-start  justify-center">
+                <span className="flex flex-col items-center justify-center">
                   <span className="text-[#bb3232] sm:text-lg xl:text-xl font-semibold">
                     {placement.name}
                   </span>
-                  <span className="w-fit h-fit p-1 rounded-sm text-white font-semibold sm:text-xs xl:text-sm bg-[#bb3232]">
-                    {placement.company}
+                  <span className="h-fit py-1 font-semibold sm:text-xs xl:text-sm text-[#888]">
+                    Company: {placement.company}
                   </span>
-                  <span className="xl:text-base sm:text-sm">
+                  <span className="xl:text-base sm:text-sm text-[#888]">
                     {" "}
                     {placement.jobrole}
                   </span>
                 </span>
-              </div>
+              </SwiperSlide>
             ))}
-          </div>
-          <div className="w-full h-fit p-4 bg-[#bb3232] rounded-sm">
-            <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 sm:h-fit lg:h-[5rem]">
+          </Swiper>
+          <div className="flex gap-[1.2vmax]">
+            <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 p-4 bg-[#bb3232] rounded-sm">
               {totalplacementsset1.map((totalplacement, index) => (
                 <div
                   key={index}
@@ -142,34 +169,7 @@ const OutstandingPlacement = () => {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-        <div className="lg:w-[50%] sm:w-full flex flex-col gap-2">
-          <div className="grid grid-cols-2 gap-4 ">
-            {placementsSet2.map((placement, index) => (
-              <div
-                key={index}
-                className="flex lg:flex-row sm:flex-col gap-2 p-2 rounded-sm border border-gray-200"
-              >
-                <span className="lg:w-[30%] sm:w-full flex items-center justify-center">
-                  <img src={placement.imgsrc} alt="" className="rounded-full" />
-                </span>
-                <span className="lg:w-[65%] sm:w-full flex flex-col sm:items-center lg:items-start  justify-center">
-                  <span className="text-[#bb3232] sm:text-lg xl:text-xl font-semibold">
-                    {placement.name}
-                  </span>
-                  <span className="w-fit h-fit p-1 rounded-sm text-white font-semibold sm:text-xs xl:text-sm bg-[#bb3232]">
-                    {placement.company}
-                  </span>
-                  <span className="xl:text-base sm:text-sm">
-                    {placement.jobrole}
-                  </span>
-                </span>
-              </div>
-            ))}
-          </div>
-          <div className="w-full h-fit p-4 bg-[#bb3232] rounded-sm">
-            <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 sm:h-fit lg:h-[5rem]">
+            <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 p-4 bg-[#bb3232] rounded-sm">
               {totalplacementsset2.map((totalplacement, index) => (
                 <div
                   key={index}

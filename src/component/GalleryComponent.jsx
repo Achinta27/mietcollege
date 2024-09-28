@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import HeadingTemplate from "../template/HeadingTemplate";
 import Slider from "react-slick";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import EnquiryBoxComponent from "./EnquiryBoxComponent";
+import { Link } from "react-router-dom";
 
 const GalleryComponent = () => {
   const mainSlider = useRef(null);
@@ -108,7 +110,7 @@ const GalleryComponent = () => {
 
   return (
     <div className="flex sm:flex-col lg:flex-row w-full sm:p-4 md:p-8 xl:p-16">
-      <div className="lg:w-[70%] sm:w-full bg-white p-2 shadow-lg flex flex-col gap-4">
+      <div className="lg:w-[60%] sm:w-full bg-white p-2 shadow-lg flex flex-col gap-4">
         <HeadingTemplate heading={"PHOTO GALLERY"} />
         <div
           className="w-full relative"
@@ -145,8 +147,15 @@ const GalleryComponent = () => {
             </Slider>
           </div>
         </div>
+        <Link
+          to="/pdf/6 years placement data 2023-24.pdf"
+          target="_blank"
+          className="text-[#DC143C] border-2 border-[#DC143C] rounded text-[2.2vmax] text-center font-bold py-[1.8vmax]"
+        >
+          Download Placement Report
+        </Link>
       </div>
-      <div className="lg:w-[30%] sm:w-full flex flex-col  items-center gap-4 bg-white p-2 shadow-lg">
+      {/* <div className="lg:w-[30%] sm:w-full flex flex-col  items-center gap-4 bg-white p-2 shadow-lg">
         <HeadingTemplate heading={"FOLLOW US"} />
         <span className="md:block sm:hidden">
           <iframe
@@ -162,7 +171,8 @@ const GalleryComponent = () => {
             height="500"
           ></iframe>
         </span>
-      </div>
+      </div> */}
+      <EnquiryBoxComponent />
     </div>
   );
 };

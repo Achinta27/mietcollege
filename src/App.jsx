@@ -28,6 +28,8 @@ import ChairmanMessage from "./pages/ChairManMessage";
 import LibraryOverview from "./pages/library/LibraryOverview";
 import LibraryVisionMission from "./pages/library/LibraryVisionMission";
 import LibraryRules from "./pages/library/LibraryRules";
+import TrainningOverview from "./pages/trainning/TrainningOverview";
+import OurRecruiters from "./pages/trainning/OurRecruiters";
 
 const App = () => {
   return (
@@ -106,6 +108,16 @@ const App = () => {
 
         {/* gallery */}
         <Route path="/gallery/photo-gallery" element={<PhotoGallery />} />
+
+        {/* Trainnig & Internship */}
+        <Route
+          path="/training-internship/overview"
+          element={<TrainningOverview />}
+        />
+        <Route
+          path="/training-internship/our-recruiters"
+          element={<OurRecruiters />}
+        />
       </Routes>
     </BrowserRouter>
   );

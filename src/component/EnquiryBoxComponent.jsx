@@ -46,24 +46,24 @@ const EnquiryBoxComponent = () => {
     });
   };
   return (
-    <div className=" h-fit p-4 bg-[#DC143C]   rounded-md">
-      <div className="flex flex-col  gap-5 ">
+    <div className="p-4 bg-[#DC143C] rounded-md flex-1">
+      <div className="flex flex-col justify-between gap-5 ">
         <span className="flex justify-center items-center">
           <img src="/images/klip.svg" alt="" className="h-[4rem]" />
         </span>
         <span
-          className="flex justify-center sm:text-lg  lg:text-2xl xl:text-3xl text-center font-semibold text-white items-center
+          className="flex justify-center sm:text-lg lg:text-2xl xl:text-3xl text-center font-semibold text-white items-center
             "
         >
           Quick Enquiry For Admission
         </span>
-        <div className="flex text-white text-xl flex-col md:gap-2 sm:gap-2 lg:gap-4">
+        <div className="flex text-white text-xl flex-col md:gap-2 sm:gap-2 lg:gap-4 flex-1">
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col font-semibold p-2 gap-4"
+            className="flex flex-col font-semibold p-2 gap-4 justify-between flex-1"
           >
-            <span className="flex flex-col gap-2">
-              <span>Name</span>
+            <div className="flex flex-col gap-2">
+              <label>Name</label>
               <input
                 type="text"
                 name="name"
@@ -71,9 +71,9 @@ const EnquiryBoxComponent = () => {
                 onChange={handleChange}
                 className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
               />
-            </span>
-            <span className="flex flex-col gap-2">
-              <span>Mobile Number</span>
+            </div>
+            <div className="flex flex-col gap-2">
+              <label>Mobile Number</label>
               <input
                 type="phone"
                 name="phone"
@@ -81,9 +81,9 @@ const EnquiryBoxComponent = () => {
                 onChange={handleChange}
                 className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
               />
-            </span>
+            </div>
 
-            <span className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <span>Interest Course</span>
               <select
                 name="enquiry"
@@ -97,10 +97,10 @@ const EnquiryBoxComponent = () => {
                 <option value="B.tech">B.Tech</option>
                 <option value="Diploma">Diploma</option>
               </select>
-            </span>
+            </div>
 
-            <span className=" flex flex-col gap-2">
-              <span>Massage (optional)</span>
+            <div className=" flex flex-col gap-2">
+              <span>Message (optional)</span>
               <input
                 type="text"
                 name="massage"
@@ -108,10 +108,11 @@ const EnquiryBoxComponent = () => {
                 onChange={handleChange}
                 className="w-full h-[4rem] p-4 bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
               />
-            </span>
-            <span className="w-full h-[4rem] rounded-sm flex justify-center items-center bg-white text-[#DC143C] text-lg font-bold">
+            </div>
+
+            <div className="w-full h-[4rem] mt-4 rounded-sm flex justify-center items-center bg-white text-[#DC143C] text-lg font-bold">
               <button type="submit">Submit</button>
-            </span>
+            </div>
           </form>
         </div>
       </div>

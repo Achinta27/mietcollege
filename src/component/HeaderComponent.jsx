@@ -54,11 +54,19 @@ const HeaderComponent = () => {
         {
           name: "Affiliation & Approval",
           nesteddropdownItems: [
-            { name: "AICTE", link: "" },
-            { name: "MAKAUT", link: "" },
+            {
+              name: "AICTE",
+              link: "/pdf/AICTE Approval.pdf",
+              target: "_blank",
+            },
+            {
+              name: "MAKAUT",
+              link: "/pdf/MAKAUT Affiliation.pdf",
+              target: "_blank",
+            },
             {
               name: "WBSCT & VE & SD",
-              link: "/pdf/RPGIprospectors.pdf",
+              link: "/pdf/Diploma Affiliation Letter 2023-24.pdf",
               target: "_blank",
             },
           ],
@@ -197,7 +205,11 @@ const HeaderComponent = () => {
           ],
         },
         { name: "Infrastructure, Events", link: "/mietcampus/events" },
-        { name: "Virtual Tour, Google Map", link: "" },
+        {
+          name: "Virtual Tour, Google Map",
+          link: "https://maps.app.goo.gl/zEysCWMxF3ddyy3y9",
+          target: "_blank",
+        },
       ],
     },
     {
@@ -205,15 +217,19 @@ const HeaderComponent = () => {
       dropdownItems: [
         {
           name: "Overview",
-          link: "",
+          link: "/training-internship/overview",
         },
         {
           name: "Placement Statistics",
-          link: "/pdf/RPGIprospectors.pdf",
+          link: "/pdf/PLACEMENTSTATICS.pdf",
           target: "_blank",
         },
-        { name: "Placement Record", link: "" },
-        { name: "Training & Internship", link: "" },
+        {
+          name: "Placement Record",
+          link: "/pdf/6 years placement data 2023-24.pdf",
+          target: "_blank",
+        },
+        { name: "Our Recruiters", link: "/training-internship/our-recruiters" },
         {
           name: "Photo Gallery for T&P",
           link: "/pdf/RPGIprospectors.pdf",
