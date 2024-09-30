@@ -21,7 +21,6 @@ import AntiRagging from "./pages/committee/AntiRagging";
 import Scholarships from "./pages/Scholarships";
 import CollegeEvents from "./pages/CollegeEvents";
 import CollegeNews from "./pages/CollegeNews";
-import PhotoGallery from "./pages/PhotoGallery";
 import ConferenceHall from "./pages/facilities/ConferenceHall";
 import TransportFacility from "./pages/facilities/TransportFacility";
 import ChairmanMessage from "./pages/ChairManMessage";
@@ -30,6 +29,9 @@ import LibraryVisionMission from "./pages/library/LibraryVisionMission";
 import LibraryRules from "./pages/library/LibraryRules";
 import TrainningOverview from "./pages/trainning/TrainningOverview";
 import OurRecruiters from "./pages/trainning/OurRecruiters";
+import ContactUs from "./pages/ContactUs";
+import PhotoGallery from "./pages/gallery/PhotoGallery";
+import VideoGallery from "./pages/gallery/VideoGallery";
 
 const App = () => {
   return (
@@ -37,6 +39,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-miet/about-us" element={<AboutUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/about-miet/online-enquiry" element={<OnlineEnquiry />} />
         <Route
           path="/about-miet/mission-vission"
@@ -108,6 +111,7 @@ const App = () => {
 
         {/* gallery */}
         <Route path="/gallery/photo-gallery" element={<PhotoGallery />} />
+        <Route path="/gallery/video-gallery" element={<VideoGallery />} />
 
         {/* Trainnig & Internship */}
         <Route

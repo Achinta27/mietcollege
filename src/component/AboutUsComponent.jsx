@@ -1,34 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { FaTimes } from "react-icons/fa";
-import ReactPlayer from "react-player";
+// import { FaTimes } from "react-icons/fa";
+// import ReactPlayer from "react-player";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import HeadingTemplate from "../template/HeadingTemplate";
 
 const AboutUsComponent = () => {
-  const [showModal, setShowModal] = useState(false);
+  // const [showModal, setShowModal] = useState(false);
 
-  const openModal = () => {
-    setShowModal(true);
-  };
+  // const openModal = () => {
+  //   setShowModal(true);
+  // };
 
-  const closeModal = () => {
-    setShowModal(false);
-  };
+  // const closeModal = () => {
+  //   setShowModal(false);
+  // };
   useEffect(() => {
     AOS.init({ duration: 1000 });
   });
   return (
     <div className="xl:p-16 sm:p-4 md:p-8 flex flex-col gap-8">
       <HeadingTemplate heading={"ABOUT US"} />
-      <div className="flex lg:flex-row sm:flex-col after: gap-4  ">
-        <div
+      <div className="flex lg:flex-row sm:flex-col gap-4">
+        {/* <div
           className="lg:w-[50%] sm:w-full flex items-center justify-center relative "
           data-aos="fade-right"
         >
           <div
             onClick={() => openModal()}
-            className="bg-gray-800 w-[90%] h-fit rounded-lg cursor-pointer"
+            className="bg-gray-800 rounded-lg cursor-pointer"
           >
             <img
               src="images/Building8.jpg"
@@ -44,9 +44,9 @@ const AboutUsComponent = () => {
               className="w-[6rem] h-[6rem] cursor-pointer "
             />
           </span>
-        </div>
+        </div> */}
 
-        {showModal && (
+        {/* {showModal && (
           <div className="fixed top-0 left-0 w-full h-full z-[100] flex justify-center items-center bg-black bg-opacity-80">
             <div className="relative w-[75%] sm:h-[20rem] md:h-[30rem] lg:h-[40rem] flex justify-center items-center">
               <ReactPlayer
@@ -64,82 +64,98 @@ const AboutUsComponent = () => {
               />
             </div>
           </div>
-        )}
-        <div className="flex flex-col gap-6 lg:w-[50%] sm:w-full">
-          <div
-            className="flex flex-col gap-2 xl:text-xl lg:text-base sm:text-sm"
-            data-aos="fade-left"
-          >
-            <h2 className="">
-              Welcome to the Modern Institute of Engineering & Technology
-              (MIET), West Bengal’s premier institute for B.Tech & Diploma in
-              the field of Engineering. Although we are proudly rooted in Bandel
-              (just an hour’s drive from Kolkata), our community and impact are
-              global.
-            </h2>
-            <h2 className="">
-              Established in 2010, the institute is located amidst verdant
-              abundance in a natural setting, away from the hustle and bustle of
-              a city. From the very beginning, the core tenet of our educational
-              philosophy has been the amalgamation of nature and knowledge.
-            </h2>
-            <h2 className="">
-              We stridently believe that an institute is not just there for a
-              mere degree. It is a journey that leads to the complete
-              progression of the human mind, enabling it to strive towards
-              sustained excellence and address the global challenges of the
-              future. Over the years, our students have made their mark in the
-              world by going on to achieve incredible success in various fields.
-            </h2>
-            <div className="grid grid-cols-2 place-items-stretch mt-[1.15vmax] justify-between gap-6">
-              <div className="flex items-center gap-4">
-                <img
-                  src="/images/square-check.svg"
-                  alt="square check"
-                  width={33}
-                  height={33}
-                  className="size-[2vmax]"
-                />
-                <p className="font-semibold font-sans">
-                  10 Years of Excellence
-                </p>
-              </div>
-              <div className="flex items-center gap-4">
-                <img
-                  src="/images/square-check.svg"
-                  alt="square check"
-                  width={33}
-                  height={33}
-                  className="size-[2vmax]"
-                />
-                <p className="font-semibold font-sans">
-                  Best College In Kolkata
-                </p>
-              </div>
-              <div className="flex items-center gap-4">
-                <img
-                  src="/images/square-check.svg"
-                  alt="square check"
-                  width={33}
-                  height={33}
-                  className="size-[2vmax]"
-                />
-                <p className="font-semibold font-sans">
-                  10 Years of Excellence
-                </p>
-              </div>
-              <div className="flex items-center gap-4">
-                <img
-                  src="/images/square-check.svg"
-                  alt="square check"
-                  width={33}
-                  height={33}
-                  className="size-[2vmax]"
-                />
-                <p className="font-semibold font-sans">
-                  10 Years of Excellence
-                </p>
-              </div>
+        )} */}
+        <div
+          className="lg:w-[50%] sm:w-full flex items-center justify-center relative "
+          data-aos="fade-right"
+        >
+          <div className="flex flex-wrap gap-[1.66vmax]">
+            <img
+              src="/images/about1.png"
+              alt="about"
+              className="min-[585px]:size-[21.25vmax] object-cover rounded"
+            />
+            <img
+              src="/images/Building5.jpg"
+              alt="building"
+              className="min-[585px]:size-[21.25vmax] object-cover rounded"
+            />
+            <img
+              src="/Campus 2 New/WhatsApp Image 2024-08-02 at 11.00.05.jpeg"
+              alt="building"
+              className="min-[585px]:size-[21.25vmax] object-cover rounded"
+            />
+            <img
+              src="/images/principal-about.png"
+              alt="principal"
+              className="min-[585px]:size-[21.25vmax] object-cover rounded"
+            />
+          </div>
+        </div>
+        <div
+          className="lg:w-[50%] sm:w-full flex-1 flex flex-col justify-between gap-2 xl:text-xl lg:text-base sm:text-sm"
+          data-aos="fade-left"
+        >
+          <h2 className="">
+            Welcome to the Modern Institute of Engineering & Technology (MIET),
+            West Bengal’s premier institute for B.Tech & Diploma in the field of
+            Engineering. Although we are proudly rooted in Bandel (just an
+            hour’s drive from Kolkata), our community and impact are global.
+          </h2>
+          <h2 className="">
+            Established in 2010, the institute is located amidst verdant
+            abundance in a natural setting, away from the hustle and bustle of a
+            city. From the very beginning, the core tenet of our educational
+            philosophy has been the amalgamation of nature and knowledge.
+          </h2>
+          <h2 className="">
+            We stridently believe that an institute is not just there for a mere
+            degree. It is a journey that leads to the complete progression of
+            the human mind, enabling it to strive towards sustained excellence
+            and address the global challenges of the future. Over the years, our
+            students have made their mark in the world by going on to achieve
+            incredible success in various fields.
+          </h2>
+          <div className="grid grid-cols-2 place-items-stretch mt-[1.15vmax] justify-between gap-6">
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/square-check.svg"
+                alt="square check"
+                width={33}
+                height={33}
+                className="size-[2vmax]"
+              />
+              <p className="font-semibold font-sans">10 Years of Excellence</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/square-check.svg"
+                alt="square check"
+                width={33}
+                height={33}
+                className="size-[2vmax]"
+              />
+              <p className="font-semibold font-sans">Best College In Kolkata</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/square-check.svg"
+                alt="square check"
+                width={33}
+                height={33}
+                className="size-[2vmax]"
+              />
+              <p className="font-semibold font-sans">10 Years of Excellence</p>
+            </div>
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/square-check.svg"
+                alt="square check"
+                width={33}
+                height={33}
+                className="size-[2vmax]"
+              />
+              <p className="font-semibold font-sans">10 Years of Excellence</p>
             </div>
           </div>
         </div>

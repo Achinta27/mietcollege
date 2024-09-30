@@ -12,27 +12,6 @@ const CivilVissionMission = () => {
       content = {
         bannerimg: "/images/admissionsubbanner.jpg",
         heading: "Vision, Mission & Program Educational Objective",
-        sideheaderdept: [
-          { name: "Overview", link: "/department/civil/overview" },
-          {
-            name: "Vision, Mission & Program Educational Objective",
-            link: "/department/civil/vission-and-mission",
-          },
-          {
-            name: "Programme Outcome (POs) & Programme Specific Outcome (PSO)",
-            link: "/department/civil/program-outcome",
-          },
-          { name: "Curriculam", link: "" },
-          { name: "Lesson Plan", link: "" },
-          {
-            name: "Faculty Details",
-            link: "/department/civil/faculty-details",
-          },
-          { name: "Laboratories", link: "" },
-          { name: "Events", link: "" },
-          { name: "Placement", link: "" },
-          { name: "E-Magazine", link: "" },
-        ],
         vissionmission: [
           {
             heading: "Vision & Mission",
@@ -57,27 +36,6 @@ const CivilVissionMission = () => {
       content = {
         bannerimg: "/images/admissionsubbanner.jpg",
         heading: "Vision, Mission & Program Educational Objective",
-        sideheaderdept: [
-          { name: "Overview", link: "/department/civil/overview" },
-          {
-            name: "Vision, Mission & Program Educational Objective",
-            link: "/department/civil/vission-and-mission",
-          },
-          {
-            name: "Programme Outcome (POs) & Programme Specific Outcome (PSO)",
-            link: "/department/civil/program-outcome",
-          },
-          { name: "Curriculam", link: "" },
-          { name: "Lesson Plan", link: "" },
-          {
-            name: "Faculty Details",
-            link: "/department/civil/faculty-details",
-          },
-          { name: "Laboratories", link: "" },
-          { name: "Events", link: "" },
-          { name: "Placement", link: "" },
-          { name: "E-Magazine", link: "" },
-        ],
         vissionmission: [
           {
             heading: "Vision & Mission",
@@ -101,27 +59,29 @@ const CivilVissionMission = () => {
       content = {
         bannerimg: "/images/admissionsubbanner.jpg",
         heading: "Vision, Mission & Program Educational Objective",
-        sideheaderdept: [
-          { name: "Overview", link: "/department/civil/overview" },
+        vissionmission: [
           {
-            name: "Vision, Mission & Program Educational Objective",
-            link: "/department/civil/vission-and-mission",
+            heading: "Vision & Mission",
+            deptimg: "/images/d1.png",
+            description: [
+              "To be a Centre of Excellence in the field of Mechanical Engineering and interdisciplinary research to confront real world societal problems through best practices of teaching, training and research.",
+            ],
           },
           {
-            name: "Programme Outcome (POs) & Programme Specific Outcome (PSO)",
-            link: "/department/civil/program-outcome",
+            heading: "Objectives",
+            deptimg: "/images/d1.png",
+            description: [
+              "M1: To provide state-of-the-art infrastructure & cutting-edge technologies as necessitated from academics, to promote futuristic research in the areas of design, materials, thermal, manufacturing engineering, managerial skills and related interdisciplinary areas. M2: Encourage application-oriented teaching-learning process for efficient product design and manufacturing through Industry-Institute collaborative training, Research and Development. M3: Enable to seek professional employment, pursue higher studies and promote entrepreneurship.\nM4: To mold young minds and build a comprehensive personality by nurturing strong professionals with human ethics through interaction with the alumni, experts from academia / industry, research organizations, higher study institutions and area experts.",
+            ],
           },
-          { name: "Curriculam", link: "" },
-          { name: "Lesson Plan", link: "" },
-          {
-            name: "Faculty Details",
-            link: "/department/civil/faculty-details",
-          },
-          { name: "Laboratories", link: "" },
-          { name: "Events", link: "" },
-          { name: "Placement", link: "" },
-          { name: "E-Magazine", link: "" },
         ],
+      };
+      break;
+
+    case "csc":
+      content = {
+        bannerimg: "/images/admissionsubbanner.jpg",
+        heading: "Vision, Mission & Program Educational Objective",
         vissionmission: [
           {
             heading: "Vision & Mission",
@@ -141,31 +101,79 @@ const CivilVissionMission = () => {
       };
       break;
 
-    case "csc":
+    case "cscai":
       content = {
         bannerimg: "/images/admissionsubbanner.jpg",
         heading: "Vision, Mission & Program Educational Objective",
-        sideheaderdept: [
-          { name: "Overview", link: "/department/civil/overview" },
+        vissionmission: [
           {
-            name: "Vision, Mission & Program Educational Objective",
-            link: "/department/civil/vission-and-mission",
+            heading: "Vision & Mission",
+            deptimg: "/images/d1.png",
+            description: [
+              "To provide engineering and technical education in the field of Computer Science with cutting edge technologies and to produce self-motivated, market ready individuals to the job market.",
+            ],
           },
           {
-            name: "Programme Outcome (POs) & Programme Specific Outcome (PSO)",
-            link: "/department/civil/program-outcome",
+            heading: "Objectives",
+            deptimg: "/images/d1.png",
+            description: [
+              "Be a pioneer department in Computer Science and Engineering and to mould young aspiring minds for overall developments of the students.",
+            ],
           },
-          { name: "Curriculam", link: "" },
-          { name: "Lesson Plan", link: "" },
-          {
-            name: "Faculty Details",
-            link: "/department/civil/faculty-details",
-          },
-          { name: "Laboratories", link: "" },
-          { name: "Events", link: "" },
-          { name: "Placement", link: "" },
-          { name: "E-Magazine", link: "" },
         ],
+      };
+      break;
+
+    case "csccs":
+      content = {
+        bannerimg: "/images/admissionsubbanner.jpg",
+        heading: "Vision, Mission & Program Educational Objective",
+        vissionmission: [
+          {
+            heading: "Vision & Mission",
+            deptimg: "/images/d1.png",
+            description: [
+              "To provide engineering and technical education in the field of Computer Science with cutting edge technologies and to produce self-motivated, market ready individuals to the job market.",
+            ],
+          },
+          {
+            heading: "Objectives",
+            deptimg: "/images/d1.png",
+            description: [
+              "Be a pioneer department in Computer Science and Engineering and to mould young aspiring minds for overall developments of the students.",
+            ],
+          },
+        ],
+      };
+      break;
+
+    case "ece":
+      content = {
+        bannerimg: "/images/admissionsubbanner.jpg",
+        heading: "Vision, Mission & Program Educational Objective",
+        vissionmission: [
+          {
+            heading: "Vision & Mission",
+            deptimg: "/images/d1.png",
+            description: [
+              "The basis for engineering studies is provided by the department of Basic Sciences. The department offers courses in Mathematics, Physics, Chemistry, English, and Foundational Engineering. Modern lab facilities are available for students to utilize, giving them a deeper comprehension of the basic sciences. What the Basic Sciences and Humanities Department is expected to offer is: Excellent, fair foundation courses in English, Physics, Chemistry, Mathematics, and the Fundamentals of Engineering. Mathematical and scientific foundations that support the integration of technical knowledge across engineering specialties. Insights into the decision-making processes of people, groups, and governmental entities. Fundamental communication abilities are a useful tool when speaking with any organization's stakeholders. The goal of the Department of Basic Sciences and Humanities is to establish itself as an exceptional department that enhances",
+            ],
+          },
+          {
+            heading: "Objectives",
+            deptimg: "/images/d1.png",
+            description: [
+              "To impart opportunity in various value of education and facilitate them to gain their skill in the areas of humanities and social science. To assist students to gather their knowledge in practical based applications through proper practice.Guide to enhance confidence and build a greater sense of self consciousness and appreciation for others. Promote them to go ahead in their life and achieve overall improvement.",
+            ],
+          },
+        ],
+      };
+      break;
+
+    case "ee":
+      content = {
+        bannerimg: "/images/admissionsubbanner.jpg",
+        heading: "Vision, Mission & Program Educational Objective",
         vissionmission: [
           {
             heading: "Vision & Mission",
@@ -189,27 +197,6 @@ const CivilVissionMission = () => {
       content = {
         bannerimg: "/images/admissionsubbanner.jpg",
         heading: "Vision, Mission & Program Educational Objective",
-        sideheaderdept: [
-          { name: "Overview", link: "/department/civil/overview" },
-          {
-            name: "Vision, Mission & Program Educational Objective",
-            link: "/department/civil/vission-and-mission",
-          },
-          {
-            name: "Programme Outcome (POs) & Programme Specific Outcome (PSO)",
-            link: "/department/civil/program-outcome",
-          },
-          { name: "Curriculam", link: "" },
-          { name: "Lesson Plan", link: "" },
-          {
-            name: "Faculty Details",
-            link: "/department/civil/faculty-details",
-          },
-          { name: "Laboratories", link: "" },
-          { name: "Events", link: "" },
-          { name: "Placement", link: "" },
-          { name: "E-Magazine", link: "" },
-        ],
         vissionmission: [
           {
             heading: "Vision & Mission",

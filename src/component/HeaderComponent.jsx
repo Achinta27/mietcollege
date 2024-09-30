@@ -92,7 +92,11 @@ const HeaderComponent = () => {
         },
         { name: "Fees Structure", link: "/admission/fees-structure" },
         { name: "Scholarship", link: "/admission/scholarship" },
-        { name: "Previous Year Placement Record", link: "" },
+        {
+          name: "Previous Year Placement Record",
+          link: "/pdf/6 years placement data 2023-24.pdf",
+          target: "_blank",
+        },
         { name: "Online Enquiry", link: "/about-miet/online-enquiry" },
       ],
     },
@@ -163,15 +167,24 @@ const HeaderComponent = () => {
       dropdownItems: [
         {
           name: "IQAC",
-          link: "",
+          link: "/pdf/IQACAQAR_Guideline_Universities-12-03-2020.pdf",
+          target: "_blank",
         },
         { name: "IIC", link: "" },
         { name: "Anti Ragging Committee", link: "/comittee/anti-ragging" },
         {
           name: "Grievance Redressal Committee",
           nesteddropdownItems: [
-            { name: "Student Grievance Redressal", link: "" },
-            { name: "Faculty Grievance Redressal", link: "" },
+            {
+              name: "Student Grievance Redressal",
+              link: "/pdf/Grivance-Redressal-Committee.pdf",
+              target: "_blank",
+            },
+            {
+              name: "Faculty Grievance Redressal",
+              link: "/pdf/Grivance-Redressal-Committee.pdf",
+              target: "_blank",
+            },
           ],
         },
         { name: "Internal Complain Committee", link: "" },
@@ -179,10 +192,23 @@ const HeaderComponent = () => {
         { name: "Disciplinary Committee", link: "" },
         { name: "Cultural Committee", link: "" },
         { name: "Board of Examination Committee", link: "" },
-        { name: "Library Committee", link: "" },
-        { name: "Hostel & Camping Committee", link: "" },
-        { name: "Women Cell", link: "" },
-        { name: "Training & Placement Committee", link: "" },
+        {
+          name: "Library Committee",
+          link: "/mietcampus/facilities/library",
+        },
+        {
+          name: "Hostel & Camping Committee",
+          link: "/mietcampus/facilities/hostel-facilities",
+        },
+        {
+          name: "Women Cell",
+          link: "https://www.wbcw.co.in/",
+          target: "_blank",
+        },
+        {
+          name: "Training & Placement Committee",
+          link: "/training-internship/overview",
+        },
         { name: "Research & Development Committee", link: "" },
       ],
     },
@@ -244,10 +270,10 @@ const HeaderComponent = () => {
           name: "Photo Gallery",
           link: "/gallery/photo-gallery",
         },
-        { name: "Video Gallery", link: "" },
+        { name: "Video Gallery", link: "/gallery/video-gallery" },
       ],
     },
-    { name: "Contact Us", link: "" },
+    { name: "Contact Us", link: "/contact-us" },
   ];
 
   const getGridColumnsClass = (items) => {

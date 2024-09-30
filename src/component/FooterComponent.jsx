@@ -1,6 +1,4 @@
 import React from "react";
-import { CiYoutube } from "react-icons/ci";
-import { LiaYoutube } from "react-icons/lia";
 import { Link } from "react-router-dom";
 
 const FooterComponent = () => {
@@ -53,6 +51,10 @@ const FooterComponent = () => {
           text: "Chairman's Message",
           path: "/about-miet/chairman-message",
         },
+        {
+          text: "Anti Ragging Committee",
+          path: "/comittee/anti-ragging",
+        },
       ],
     },
     {
@@ -79,8 +81,8 @@ const FooterComponent = () => {
           path: "/gallery/photo-gallery",
         },
         {
-          text: "Anti Ragging Committee",
-          path: "/comittee/anti-ragging",
+          text: "Video Gallery",
+          path: "/gallery/video-gallery",
         },
       ],
     },
@@ -124,11 +126,11 @@ const FooterComponent = () => {
           path: "/department/civil/overview",
         },
         {
-          text: "Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
+          text: "Computer Science & Engineering (AI & ML)",
           path: "/department/cscai/overview",
         },
         {
-          text: "Computer Science and Engineering (Cyber Security)",
+          text: "Computer Science & Engineering (CS)",
           path: "/department/csccs/overview",
         },
         {
@@ -136,7 +138,7 @@ const FooterComponent = () => {
           path: "/department/ee/overview",
         },
         {
-          text: "Electronics and Communication Engineering",
+          text: "Electronics & Communication Engineering",
           path: "/department/ece/overview",
         },
         {
@@ -165,7 +167,7 @@ const FooterComponent = () => {
           path: "/department/ee/overview",
         },
         {
-          text: "Electronics and Communication Engineering",
+          text: "Electronics & Communication Engineering",
           path: "/department/ece/overview",
         },
         {
@@ -238,7 +240,7 @@ const FooterComponent = () => {
                 </h3>
                 <ul className="flex flex-col gap-[1.38vmax]">
                   {item.links.map((link, index) => (
-                    <li>
+                    <li key={index}>
                       <Link
                         to={link.path}
                         className="text-white font-semibold text-[1.11vmax]"
@@ -260,7 +262,7 @@ const FooterComponent = () => {
                 </h3>
                 <ul className="flex flex-col gap-[1.38vmax]">
                   {item.links.map((link, index) => (
-                    <li>
+                    <li key={index}>
                       <Link
                         to={link.path}
                         target={
@@ -285,7 +287,12 @@ const FooterComponent = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
               <div className="flex justify-between items-center">
-                <Link to="" className="flex items-center justify-center">
+                <Link
+                  to="https://youtube.com/@moderninstituteofengineeri6318?si=yYYFY_G6CTWtU44t"
+                  target="_blank"
+                  referrerPolicy="no-referrer"
+                  className="flex items-center justify-center"
+                >
                   <img
                     src="/images/youtube.svg"
                     alt="youtube"
@@ -306,7 +313,12 @@ const FooterComponent = () => {
                     className="size-[2.25vmax]"
                   />
                 </Link>
-                <Link to="" className="flex items-center justify-center">
+                <Link
+                  to="https://www.facebook.com/profile.php?id=100089144376421"
+                  target="_blank"
+                  referrerPolicy="no-referrer"
+                  className="flex items-center justify-center"
+                >
                   <img
                     src="/images/facebook.svg"
                     alt="instagram"
@@ -325,7 +337,11 @@ const FooterComponent = () => {
           </h1>
           <h1 className="text-[1.38vmax]">
             Design &amp; Developed By:{" "}
-            <Link to="" target="_blank" className="font-bold">
+            <Link
+              to="https://rebootmarketing.in/"
+              target="_blank"
+              className="font-bold"
+            >
               Reboot AI Pvt. Ltd.
             </Link>
           </h1>
