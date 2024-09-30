@@ -113,81 +113,79 @@ const OutstandingPlacement = () => {
         </span>
         <HeadingTemplate heading={"OUTSTANDING PLACEMENTS"} />
       </span>
-      <div className="flex w-full gap-6 lg:flex-row sm:flex-col">
-        <div className="flex flex-col gap-2">
-          <Swiper
-            slidesPerView={4}
-            grid={{
-              rows: 1,
-            }}
-            spaceBetween={30}
-            loop={true}
-            modules={[Grid, Navigation]}
-          >
-            {placements.map((placement, index) => (
-              <SwiperSlide
+      <div className="flex flex-col w-full gap-6">
+        <Swiper
+          slidesPerView={4}
+          grid={{
+            rows: 1,
+          }}
+          spaceBetween={30}
+          loop={true}
+          modules={[Grid, Navigation]}
+        >
+          {placements.map((placement, index) => (
+            <SwiperSlide
+              key={index}
+              virtualIndex={index}
+              className="flex items-center justify-between flex-col gap-2 p-2 rounded-sm border border-gray-200 max-w-[21vmax]"
+            >
+              <span className="flex items-center justify-center border border-[#bb3232] rounded-full p-2">
+                <img
+                  src={placement.imgsrc}
+                  alt=""
+                  className="rounded-full size-[8.2vmax] object-cover object-top"
+                />
+              </span>
+              <span className="flex flex-col items-center justify-center">
+                <span className="text-[#bb3232] sm:text-lg xl:text-xl font-semibold text-center">
+                  {placement.name}
+                </span>
+                <span className="h-fit py-1 font-semibold sm:text-xs xl:text-sm text-[#888] text-center">
+                  Company: {placement.company}
+                </span>
+                <span className="xl:text-base sm:text-sm text-[#888] text-center">
+                  {" "}
+                  {placement.jobrole}
+                </span>
+              </span>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <div className="flex gap-[1.2vmax] justify-between">
+          <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 p-4 bg-[#bb3232] rounded-sm flex-1">
+            {totalplacementsset1.map((totalplacement, index) => (
+              <div
                 key={index}
-                virtualIndex={index}
-                className="flex items-center flex-col gap-2 p-2 rounded-sm border border-gray-200 max-w-[21vmax]"
+                className="flex flex-col gap-1 justify-center items-center text-white"
               >
-                <span className="flex items-center justify-center border border-[#bb3232] rounded-full p-2">
-                  <img
-                    src={placement.imgsrc}
-                    alt=""
-                    className="rounded-full size-[8.2vmax] object-cover object-top"
-                  />
+                <span className="xl:text-xl sm:text-base font-semibold">
+                  {totalplacement.package} LPA
                 </span>
-                <span className="flex flex-col items-center justify-center">
-                  <span className="text-[#bb3232] sm:text-lg xl:text-xl font-semibold">
-                    {placement.name}
-                  </span>
-                  <span className="h-fit py-1 font-semibold sm:text-xs xl:text-sm text-[#888]">
-                    Company: {placement.company}
-                  </span>
-                  <span className="xl:text-base sm:text-sm text-[#888]">
-                    {" "}
-                    {placement.jobrole}
-                  </span>
+                <span className="w-[3.4rem] h-[2px] bg-yellow-400"></span>
+                <span className="xl:text-sm sm:text-xs text-center">
+                  {totalplacement.totalnumber}
                 </span>
-              </SwiperSlide>
+              </div>
             ))}
-          </Swiper>
-          <div className="flex gap-[1.2vmax]">
-            <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 p-4 bg-[#bb3232] rounded-sm">
-              {totalplacementsset1.map((totalplacement, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col gap-1 justify-center items-center text-white"
-                >
-                  <span className="xl:text-xl sm:text-base font-semibold">
-                    {totalplacement.package} LPA
+          </div>
+          <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 p-4 bg-[#bb3232] rounded-sm flex-1">
+            {totalplacementsset2.map((totalplacement, index) => (
+              <div
+                key={index}
+                className="flex flex-col gap-1 justify-center items-center text-white"
+              >
+                <span className="xl:text-xl sm:text-base font-semibold flex gap-1 items-center text-center">
+                  <span>{totalplacement.package}</span>
+                  <span>
+                    <FaPlus className="xl:text-sm sm:text-xs" />
                   </span>
-                  <span className="w-[3.4rem] h-[2px] bg-yellow-400"></span>
-                  <span className="xl:text-sm sm:text-xs text-center">
-                    {totalplacement.totalnumber}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 p-4 bg-[#bb3232] rounded-sm">
-              {totalplacementsset2.map((totalplacement, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col gap-1 justify-center items-center text-white"
-                >
-                  <span className="xl:text-xl sm:text-base font-semibold flex gap-1 items-center text-center">
-                    <span>{totalplacement.package}</span>
-                    <span>
-                      <FaPlus className="xl:text-sm sm:text-xs" />
-                    </span>
-                  </span>
-                  <span className="w-[4rem] h-[2px] bg-yellow-400"></span>
-                  <span className="xl:text-sm sm:text-xs text-center">
-                    {totalplacement.totalnumber}
-                  </span>
-                </div>
-              ))}
-            </div>
+                </span>
+                <span className="w-[4rem] h-[2px] bg-yellow-400"></span>
+                <span className="xl:text-sm sm:text-xs text-center">
+                  {totalplacement.totalnumber}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>

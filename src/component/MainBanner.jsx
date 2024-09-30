@@ -17,7 +17,7 @@ const MainBanner = () => {
         autoPlay
         playsInline
         type="video/mp4"
-        className="w-full"
+        className="w-full max-h-[35.7vmax] object-cover"
         muted
       />
     </div>

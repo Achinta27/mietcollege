@@ -23,10 +23,10 @@ const SeniorFaculty = () => {
       <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 gap-5">
         {facultys.map((faculty, index) => (
           <div
-            className="flex items-center justify-center p-2 rounded-lg h-[13rem] flex-row gap-2 box-shadow border border-gray-100"
+            className="flex items-center justify-center p-2 rounded-lg shadow-[0px_0px_10px_1px_rgba(0, 0, 0, 0.15)] flex-row gap-2 border border-gray-100 bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)]"
             key={index}
           >
-            <div className="w-[30%] border-[#DC143C] border rounded-full p-2">
+            <div className="size-[5vmax] border-[#DC143C] border rounded-full p-2">
               <img
                 src="/images/chairman.jpg"
                 alt=""

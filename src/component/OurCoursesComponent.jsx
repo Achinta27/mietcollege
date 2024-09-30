@@ -28,7 +28,7 @@ const OurCoursesComponent = () => {
               these sessions being woven into the regular class fabric
             </span>
           </span>
-          <div className="flex gap-[1.66vmax] flex-col md:flex-row">
+          <div className="flex gap-[1.66vmax] flex-col lg:flex-row">
             <div className="flex flex-col gap-4">
               <span className="flex flex-col gap-4">
                 <div className="xl:text-2xl sm:text-2xl lg:text-xl font-bold text-[#DC143C]">
@@ -109,7 +109,7 @@ const OurCoursesComponent = () => {
                 </div>
               </span>
             </div>
-            <div className="bg-[url('/images/g2.jpg')] bg-[lightgray]/50 bg-cover bg-no-repeat mix-blend-multiply rounded-xl flex   ">
+            <div className="bg-[url('/images/g2.jpg')] bg-[lightgray]/50 bg-cover bg-no-repeat mix-blend-multiply rounded-xl flex">
               <div className="bg-[#9F0020]/75 rounded-xl flex flex-col py-[3.26vmax] px-[2.5vmax] gap-[1.45vmax] flex-1">
                 <h1 className="text-white xlg:text-3xl lg:text-xl sm:text-lg capitalize font-bold text-center">
                   MIET Recruiter &amp; Partner

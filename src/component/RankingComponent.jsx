@@ -6,7 +6,7 @@ const RankingComponent = () => {
     { imgsrc: "images/aicte.png" },
     { imgsrc: "images/makaut_logo.png" },
     { imgsrc: "images/wbst.png" },
-    { imgsrc: "images/makaut_logo.png" },
+    { imgsrc: "images/naac.png" },
   ];
   return (
     <div className="flex flex-col gap-8 sm:p-4 md:p-8 xl:p-16 w-full justify-center items-center">

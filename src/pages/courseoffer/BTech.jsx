@@ -77,7 +77,7 @@ const BTech = () => {
             },
             {
               imgsrc: "/courses/Electronics and Communication Engineering.jpg",
-              name: "/courses/Electronics and Communication Engineering.jpg",
+              name: "Electronics and Communication Engineering",
               couesedetails: [
                 { heads: "Seats", value: "60" },
                 { heads: "Eligibility", value: "12 Passed" },
@@ -94,7 +94,8 @@ const BTech = () => {
               ],
             },
             {
-              imgsrc: "/courses/Computer Science and Engineering.jpg",
+              imgsrc:
+                "/courses/Computer Science and Engineering (Artificial Intelligence and Machine Learning.jpg",
               name: "Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
               couesedetails: [
                 { heads: "Seats", value: "30" },
@@ -103,8 +104,7 @@ const BTech = () => {
               ],
             },
             {
-              imgsrc:
-                "/courses/Computer Science and Engineering (Artificial Intelligence and Machine Learning.jpg",
+              imgsrc: "/courses/Computer Science and Engineering.jpg",
               name: "Computer Science and Engineering",
               couesedetails: [
                 { heads: "Seats", value: "60" },
@@ -164,7 +164,7 @@ const BTech = () => {
             },
             {
               imgsrc: "/courses/Electrical Engineering diploma.jpg",
-              name: "/courses/Electrical Engineering diploma.jpg",
+              name: "Electrical Engineering diploma",
               couesedetails: [
                 { heads: "Seats", value: "60" },
                 { heads: "Eligibility", value: "10 Passed" },
