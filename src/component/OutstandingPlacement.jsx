@@ -70,35 +70,35 @@ const OutstandingPlacement = () => {
 
   const totalplacements = [
     {
-      package: "4-5 LPA",
+      package: "4-5",
       totalnumber: "Placement offers",
     },
     {
-      package: "3-5 LPA",
+      package: "3-5",
       totalnumber: "Placement offers",
     },
     {
-      package: "6-7 LPA",
+      package: "6-7",
       totalnumber: "Placement offers",
     },
     {
-      package: "4-5 LPA",
+      package: "4-5",
       totalnumber: "Placement offers",
     },
     {
-      package: "30 +",
+      package: "30",
       totalnumber: "Recruiters hired MIET students",
     },
     {
-      package: "100 +",
+      package: "100",
       totalnumber: "Recruiters hired MIET students",
     },
     {
-      package: "30 +",
+      package: "30",
       totalnumber: "Recruiters hired MIET students",
     },
     {
-      package: "100 +",
+      package: "100",
       totalnumber: "Recruiters hired MIET students",
     },
   ];
@@ -133,7 +133,7 @@ const OutstandingPlacement = () => {
               <SwiperSlide
                 key={index}
                 virtualIndex={index}
-                className="flex items-center justify-between flex-col gap-2 px-2 py-4 rounded-sm max-w-[21vmax] bg-[inear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)] shadow-[0_0_10px_1px_rgba(0,_0,_0,_0.15)] my-2"
+                className="flex items-center justify-between flex-col gap-2 px-2 py-4 rounded-sm max-w-[21vmax] bg-[inear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)] shadow-[0_0_10px_1px_rgba(0,_0,_0,_0.15)] my-2 min-w-fit md:min-w-80"
               >
                 <span className="flex items-center justify-center border border-[#bb3232] rounded-full p-2">
                   <img

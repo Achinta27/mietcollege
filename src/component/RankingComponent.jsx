@@ -70,7 +70,7 @@ const RankingComponent = () => {
                 <img
                   src="/images/banner-bg.png"
                   alt=""
-                  className="xl:w-[20rem] xlg:w-[16rem] lg:w-[14rem] sm:w-[16rem]"
+                  className="xl:w-[20rem] xlg:w-[16rem] lg:w-[14rem] sm:w-[12rem]"
                 />
                 <img
                   src={ranking.imgsrc}

@@ -59,7 +59,7 @@ const ImportentNotice = () => {
           {noticed.map((notice, index) => (
             <div
               key={index}
-              className="flex rounded-md p-2 md:p-[1.38vmax] gap-[1.59vmax] border border-[#e7e7e7] shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
+              className="flex flex-col md:flex-row rounded-md p-2 md:p-[1.38vmax] gap-[1.59vmax] border border-[#e7e7e7] shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
             >
               <span className="flex flex-col gap-2 max-w-[35ch]">
                 <span className="flex font-semibold ">
@@ -71,7 +71,7 @@ const ImportentNotice = () => {
                   Date: {notice.date}
                 </span>
               </span>
-              <div className="md:py-[0.55vmax] md:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] text-white self-end cursor-pointer">
+              <div className="md:py-[0.55vmax] py-0.5 px-2 md:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] text-white self-start md:self-end cursor-pointer">
                 Know More <PiArrowSquareOutLight className="ps-1 size-5" />
               </div>
             </div>
