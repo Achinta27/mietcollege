@@ -51,7 +51,7 @@ const ImportentNotice = () => {
             <img
               src="/images/notice.jpg"
               alt=""
-              className="rounded-md max-w-[44vmax] w-full"
+              className="rounded-md md:max-w-[44vmax] w-full"
             />
           </span>
         </div>

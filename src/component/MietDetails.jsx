@@ -40,7 +40,7 @@ const MietDetails = () => {
               key={index}
               className="p-2 pt-6 flex flex-col items-center gap-[2.5vmax] border border-gray-300 rounded-lg bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)] shadow-[0_0_10px_1px_rgba(0,_0,_0,_0.15)] md:max-w-[28.8vmax] sm:px-2 xl:px-4"
             >
-              <img src={mietdetail.imgsrc} alt="" className="max-w-[24vmax]" />
+              <img src={mietdetail.imgsrc} alt="" className="max-w-[24vmax] mt-4 md:mt-0" />
               <div className="flex flex-col gap-6 ">
                 <div className="flex flex-col gap-2">
                   <span className="md:text-xl sm:text-xl lg:text-2xl text-black font-bold text-center">
@@ -52,7 +52,7 @@ const MietDetails = () => {
                     <span className="h-[2px] w-[4rem] bg-red-700"></span>
                   </span>
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3 mx-4">
                   <span className="xl:text-base md:text-base text-sm">
                     {mietdetail.text}
                   </span>

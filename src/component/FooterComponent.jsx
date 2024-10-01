@@ -200,12 +200,16 @@ const FooterComponent = () => {
           path: "mailTo:hr@mietcollege.org",
         },
         {
-          text: "College Number: +91 8336070583",
+          text: "Addmission Helpline: +91 8336070583",
           path: "tel:918336070583",
         },
         {
-          text: "Student Helpline: +91 8336070583",
-          path: "tel:918336070583",
+          text: "Addmission Helpline: +91 8336070584",
+          path: "tel:918336070584",
+        },
+        {
+          text: "Student Helpline: +91 8276066444",
+          path: "tel:918276066444",
         },
       ],
     },
@@ -292,7 +296,7 @@ const FooterComponent = () => {
                 </ul>
               </div>
             ))}
-            <div className="flex flex-col gap-[1.25vmax]">
+            <div className="flex flex-col gap-4 md:gap-[1.25vmax]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.8127581381236!2d88.3519976759105!3d22.948470019088482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89250a79aa925%3A0xc6e131b8eb71dfdd!2sModern%20Institute%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1727630789319!5m2!1sen!2sin"
                 width="330"
@@ -311,21 +315,21 @@ const FooterComponent = () => {
                   <img
                     src="/images/youtube.svg"
                     alt="youtube"
-                    className="size-[2.25vmax]"
+                    className="size-8 md:size-[2.25vmax]"
                   />
                 </Link>
                 <Link to="" className="flex items-center justify-center">
                   <img
                     src="/images/linkedin.svg"
                     alt="linkedin"
-                    className="size-[2.25vmax]"
+                    className="size-8 md:size-[2.25vmax]"
                   />
                 </Link>
                 <Link to="" className="flex items-center justify-center">
                   <img
                     src="/images/instagram.svg"
                     alt="instagram"
-                    className="size-[2.25vmax]"
+                    className="size-8 md:size-[2.25vmax]"
                   />
                 </Link>
                 <Link
@@ -337,7 +341,7 @@ const FooterComponent = () => {
                   <img
                     src="/images/facebook.svg"
                     alt="instagram"
-                    className="size-[2.25vmax]"
+                    className="size-8 md:size-[2.25vmax]"
                   />
                 </Link>
               </div>

@@ -109,79 +109,64 @@ const GalleryComponent = () => {
   ];
 
   return (
-    <div className="flex sm:flex-col lg:flex-row w-full sm:p-4 md:p-8 xl:p-16">
-      <div className="lg:w-[60%] sm:w-full bg-white p-2 shadow-lg flex flex-col gap-4">
-        <HeadingTemplate heading={"PHOTO GALLERY"} />
-        <div
-          className="w-full relative"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <Slider {...mainSettings}>
-            {galleryPhotos.map((photo, index) => (
-              <div key={index} className="border border-gray-400">
-                <img
-                  src={photo.imgsrc}
-                  alt=""
-                  className="border border-gray-400 sm:h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem] w-full"
-                />
-              </div>
-            ))}
-          </Slider>
-          <div className="w-full mt-1">
-            <Slider {...navSettings}>
+    <div className="flex flex-col">
+      <HeadingTemplate heading={"PHOTO GALLERY"} />
+      <div className="flex sm:flex-col lg:flex-row w-full sm:p-4 md:p-8 xl:p-16 md:gap-8">
+        <div className="lg:w-[60%] sm:w-full bg-white p-2 shadow-lg flex flex-col gap-4">
+          <div
+            className="w-full relative"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Slider {...mainSettings}>
               {galleryPhotos.map((photo, index) => (
-                <div
-                  key={index}
-                  className={`gap-2 p-1 ${
-                    index === currentSlide ? "opacity-100" : "opacity-55"
-                  }`}
-                >
+                <div key={index} className="border border-gray-400">
                   <img
                     src={photo.imgsrc}
                     alt=""
-                    className="border border-gray-400 h-[5rem] w-full"
+                    className="border border-gray-400 sm:h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem] w-full"
                   />
                 </div>
               ))}
             </Slider>
+            <div className="w-full mt-1">
+              <Slider {...navSettings}>
+                {galleryPhotos.map((photo, index) => (
+                  <div
+                    key={index}
+                    className={`gap-2 p-1 ${
+                      index === currentSlide ? "opacity-100" : "opacity-55"
+                    }`}
+                  >
+                    <img
+                      src={photo.imgsrc}
+                      alt=""
+                      className="border border-gray-400 h-[5rem] w-full"
+                    />
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row gap-4 md:gap-8 md:justify-between">
+            <Link
+              to="/pdf/6 years placement data 2023-24.pdf"
+              target="_blank"
+              className="text-[#DC143C] border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
+            >
+              Download Placement Report
+            </Link>
+            <Link
+              to="/pdf/6 years placement data 2023-24.pdf"
+              target="_blank"
+              className="text-[#DC143C] border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
+            >
+              Download Prospectus 2024-25
+            </Link>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row md:gap-[1.4vmax] md:justify-between">
-          <Link
-            to="/pdf/6 years placement data 2023-24.pdf"
-            target="_blank"
-            className="text-[#DC143C] border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
-          >
-            Download Placement Report
-          </Link>
-          <Link
-            to="/pdf/6 years placement data 2023-24.pdf"
-            target="_blank"
-            className="text-[#DC143C] border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
-          >
-            Download Prospectus 2024-25
-          </Link>
-        </div>
+        <EnquiryBoxComponent />
       </div>
-      {/* <div className="lg:w-[30%] sm:w-full flex flex-col  items-center gap-4 bg-white p-2 shadow-lg">
-        <HeadingTemplate heading={"FOLLOW US"} />
-        <span className="md:block sm:hidden">
-          <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100089144376421%26mibextid%3DZbWKwL&tabs=timeline&width=400&height=550&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-            width="400"
-            height="550"
-          ></iframe>
-        </span>
-        <span className="sm:block md:hidden">
-          <iframe
-            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100089144376421%26mibextid%3DZbWKwL&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-            width="300"
-            height="500"
-          ></iframe>
-        </span>
-      </div> */}
-      <EnquiryBoxComponent />
     </div>
   );
 };

@@ -4,6 +4,41 @@ import SubBanner from "./SubBanner";
 import FooterComponent from "./FooterComponent";
 
 const StudentEnquiryPage = () => {
+  function submitMail(e) {
+    e.preventDefault();
+
+    const formData = new FormData(e.target);
+    const object = Object.fromEntries(formData);
+
+    const json = JSON.stringify(object);
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    })
+      .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+          console.log(json);
+
+          return json;
+        } else {
+          console.log(response);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .then(function () {
+        e.target.reset();
+        setTimeout(() => {}, 3000);
+      });
+  }
+
   return (
     <MainPageTemplate>
       <SubBanner
@@ -11,76 +46,86 @@ const StudentEnquiryPage = () => {
         heading={"Admission 2024"}
       />
       <div className="xl:p-16 sm:p-4 lg:p-8">
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <span>
             <img
               src="/images/admisionenquiryimg.jpg"
               alt=""
-              className="w-[80%]"
+              className="md:w-[40rem] md:h-[45.5rem] object-cover hidden md:inline-block"
             />
           </span>
-          <span className="flex flex-col gap-4">
-            <span className="flex text-4xl font-semibold text-[#DC143C]">
-              Quick Enquiry For Admission
-            </span>
-            <form className="flex flex-col gap-10">
-              <div className="flex flex-col gap-2 relative">
-                <label className="text-base font-semibold bg-white px-1 absolute top-1 left-3">
-                  Name*
-                </label>
-                <input
-                  type="text"
-                  className="border-2 rounded-md h-[5rem] w-full p-2 mt-4"
-                />
-              </div>
-              <div className="flex flex-col gap-2 relative">
-                <label className="text-base font-semibold bg-white px-1 absolute top-1 left-3">
-                  Mobile Number*
-                </label>
-                <input
-                  type="text"
-                  className="border-2 rounded-md h-[5rem] w-full p-2 mt-4"
-                />
-              </div>
-              <div className="flex flex-col gap-2 relative">
-                <label className="text-base font-semibold bg-white px-1 absolute top-1 left-3">
-                  Select Interested Course*
-                </label>
-                <select
-                  name="package"
-                  className="border-2 rounded-md h-[5rem] w-full p-2 mt-4"
-                >
-                  <option value=""></option>
-                  <option value="B.Tech">B.Tech</option>
-                  <option value="Diploma">Diploma</option>
-                </select>
-              </div>
-              <div className="flex flex-col gap-2 relative">
-                <label className="text-base font-semibold bg-white px-1 absolute top-1 left-3">
-                  Location*
-                </label>
-                <input
-                  type="text"
-                  className="border-2 rounded-md h-[5rem] w-full p-2 mt-4"
-                />
-              </div>
-              <div className="flex flex-col gap-2 relative">
-                <label className="text-base font-semibold bg-white px-1 absolute top-1 left-3">
-                  Massage*
-                </label>
-                <input
-                  type="text"
-                  className="border-2 rounded-md h-[5rem] w-full p-2 mt-4"
-                />
-              </div>
-              <button
-                type="submit"
-                className="bg-[#DC143C] h-[5rem] w-full text-xl text-white font-semibold"
+          <div className="p-4 bg-[#DC143C] rounded-md flex-1">
+            <div className="flex flex-col justify-between gap-5 ">
+              <span className="flex justify-center items-center">
+                <img src="/images/klip.svg" alt="" className="h-[4rem]" />
+              </span>
+              <span
+                className="flex justify-center sm:text-lg lg:text-2xl xl:text-3xl text-center font-semibold text-white items-center
+            "
               >
-                Submit
-              </button>
-            </form>
-          </span>
+                Quick Enquiry For Admission
+              </span>
+              <div className="flex text-white text-xl flex-col md:gap-2 sm:gap-2 lg:gap-4 flex-1">
+                <form
+                  onSubmit={submitMail}
+                  className="flex flex-col font-semibold p-2 gap-4 justify-between flex-1"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value={import.meta.env.VITE_PUBLIC_WEB3ACCESSKEY}
+                  />
+                  <div className="flex flex-col gap-2">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <label>Mobile Number</label>
+                    <input
+                      type="phone"
+                      name="phone"
+                      className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
+                    />
+                  </div>
+
+                  <div className="flex flex-col gap-2">
+                    <span>Interest Course</span>
+                    <select
+                      name="enquiry"
+                      className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
+                    >
+                      <option value="" disabled selected>
+                        Select Interested Course
+                      </option>
+                      <option value="B.tech">B.Tech</option>
+                      <option value="Diploma">Diploma</option>
+                    </select>
+                  </div>
+
+                  <div className=" flex flex-col gap-2">
+                    <span>Message (optional)</span>
+                    <input
+                      type="text"
+                      name="massage"
+                      className="w-full h-[4rem] p-4 bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
+                    />
+                  </div>
+                  <input
+                    type="hidden"
+                    name="redirect"
+                    value="https://web3forms.com/success"
+                  />
+                  <div className="w-full h-[4rem] mt-4 rounded-sm flex justify-center items-center bg-white text-[#DC143C] text-lg font-bold">
+                    <button type="submit">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <FooterComponent />

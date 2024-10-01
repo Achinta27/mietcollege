@@ -76,7 +76,7 @@ const GoverningBody = () => {
         bannerimg={"/images/admissionsubbanner.jpg"}
         heading={"Governing Body"}
       />
-      <div className="flex flex-col lg:py-8 sm:py-4 xl:py-16">
+      <div className="flex flex-col lg:py-8 sm:py-4 xl:py-16 md:mx-8">
         <div className="flex sm:p-2 md:p-3 items-start bg-[#DC143C] sm:text-xs md:text-base gap-2 lg:text-lg font-semibold text-white ">
           <div className="w-[15%]">SL No.</div>
           <div className="w-[40%]">Governing Body Member Name</div>

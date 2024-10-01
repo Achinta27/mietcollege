@@ -56,7 +56,7 @@ const MissionAndVission = () => {
                     <span className="h-[2px] w-[4rem] bg-red-700"></span>
                   </span>
                 </div>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3 mx-4">
                   <span className="xl:text-base md:text-base text-sm">
                     {mietdetail.text}
                   </span>

@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 const EnquiryBoxComponent = () => {
   const [formData, setFormData] = useState({
     name: "",
-
     phone: "",
     massage: "",
     enquiry: "",
@@ -45,6 +44,7 @@ const EnquiryBoxComponent = () => {
       massage: "",
     });
   };
+  
   return (
     <div className="p-4 bg-[#DC143C] rounded-md flex-1">
       <div className="flex flex-col justify-between gap-5 ">

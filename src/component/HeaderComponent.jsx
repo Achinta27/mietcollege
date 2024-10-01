@@ -441,10 +441,10 @@ const HeaderComponent = () => {
                 Other Quaries
               </span>
               <Link
-                to="tel:8336070583"
+                to="tel:8336070584"
                 className="sm:text-[10px] md:text-sm lg:text-lg xl:text-xl"
               >
-                918336070583
+                918336070584
               </Link>
             </div>
 
