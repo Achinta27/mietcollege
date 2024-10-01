@@ -141,7 +141,9 @@ const AboutUs = () => {
           </span>
         </div>
       </div>
+
       <WorldClassFacilityImgComponent />
+
       <FooterComponent />
     </MainPageTemplate>
   );

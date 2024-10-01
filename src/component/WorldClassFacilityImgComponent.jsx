@@ -2,7 +2,7 @@ import React from "react";
 
 const WorldClassFacilityImgComponent = () => {
   return (
-    <div className="flex flex-col gap-4 justify-center items-center lg:h-screen">
+    <div className="md:flex sm:hidden flex-col gap-4 justify-center items-center lg:h-screen">
       <div className="lg:text-4xl sm:text-2xl font-semibold text-center text-[#DC143C] mb-[6.45vmax]">
         When we say world-class facilities, we mean it!
       </div>

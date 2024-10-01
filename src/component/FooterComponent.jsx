@@ -216,38 +216,41 @@ const FooterComponent = () => {
       <div className="bg-[#4E0010] sm:p-4 md:p-8 xl:p-16 flex flex-col gap-[1.8vmax]">
         <div className="flex flex-col gap-[1.73vmax]">
           <div className="flex flex-col md:flex-row gap-[2.8vmax] justify-between">
-            <div className="flex flex-col gap-[1.73vmax]">
+            <div className="flex flex-col gap-[1rem]">
               <img
                 src="/images/footerlogo.png"
                 alt="logo"
                 width={374}
-                className="w-[26vmax]"
+                className="md:w-[20vmax] md:h-fit sm:h-[6rem] w-fit"
               />
               <Link
                 to="/pdf/Academic Calender 2024.pdf"
                 target="_blank"
-                className="font-bold text-lg md:text-2xl text-[#4E0010] bg-[#FC0] text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+                className="font-bold text-lg md:text-xl text-[#4E0010] bg-[#FC0] text-center rounded inline-flex items-center justify-center py-[1vmax] font-sans"
               >
                 Admission 2024-25
               </Link>
               <Link
                 to="/pdf/RPGIprospectors.pdf"
                 target="_blank"
-                className="font-bold text-lg md:text-2xl border border-[#FFCC00] text-[#FFCC00] text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+                className="font-bold text-lg md:text-xl border border-[#FFCC00] text-[#FFCC00] text-center rounded inline-flex items-center justify-center py-[1vmax] font-sans"
               >
                 Prospectus 2024-25
               </Link>
               <Link
                 to="/pdf/RPGIprospectors.pdf"
                 target="_blank"
-                className="font-bold text-lg md:text-2xl border border-white text-white text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+                className="font-bold text-lg md:text-xl border border-white text-white text-center rounded inline-flex items-center justify-center py-[1vmax] font-sans"
               >
                 Payment Online
               </Link>
             </div>
             {footerLinks1st.map((item, index) => (
-              <div className="flex flex-col gap-[1.11vmax]" key={index}>
-                <h3 className="text-white font-bold text-[1.38vmax]">
+              <div
+                className="flex flex-col sm:gap-6 md:gap-[1.11vmax]"
+                key={index}
+              >
+                <h3 className="text-white font-bold sm:text-xl md:text-[1.38vmax]">
                   {item.textTittle}
                 </h3>
                 <ul className="flex flex-col gap-[1.38vmax]">
@@ -255,7 +258,7 @@ const FooterComponent = () => {
                     <li key={index}>
                       <Link
                         to={link.path}
-                        className="text-white font-semibold text-[1.11vmax]"
+                        className="text-white font-semibold sm:text-base md:text-[1.11vmax]"
                       >
                         &#9658; {link.text}
                       </Link>
@@ -266,10 +269,10 @@ const FooterComponent = () => {
             ))}
           </div>
           <div className="w-full h-0.5 bg-white/50"></div>
-          <div className="flex flex-col md:flex-row gap-[2.8vmax] justify-between">
+          <div className="flex flex-col md:flex-row sm:gap-6 md:gap-[2.8vmax] justify-between">
             {footerLinks2nd.map((item, index) => (
               <div className="flex flex-col gap-[1.11vmax]" key={index}>
-                <h3 className="text-white font-bold text-[1.38vmax]">
+                <h3 className="text-white font-bold sm:text-xl md:text-[1.38vmax]">
                   {item.textTittle}
                 </h3>
                 <ul className="flex flex-col gap-[1.38vmax]">
@@ -280,7 +283,7 @@ const FooterComponent = () => {
                         target={
                           link.path.startsWith("http") ? "_blank" : "_self"
                         }
-                        className="text-white font-semibold text-[1.11vmax]"
+                        className="text-white font-semibold sm:text-base md:text-[1.11vmax]"
                       >
                         &#9658; {link.text}
                       </Link>
@@ -298,7 +301,7 @@ const FooterComponent = () => {
                 className="border-0 w-full md:w-[23vmax] rounded-lg flex-1"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-              <div className="flex justify-between items-center">
+              <div className="flex gap-6 items-center">
                 <Link
                   to="https://youtube.com/@moderninstituteofengineeri6318?si=yYYFY_G6CTWtU44t"
                   target="_blank"
@@ -342,8 +345,8 @@ const FooterComponent = () => {
           </div>
         </div>
         <div className="w-full h-0.5 bg-white/50"></div>
-        <div className="flex flex-col md:flex-row gap-6 items-center justify-between text-white">
-          <h1 className="font-bold text-[1.38vmax]">
+        <div className="flex flex-col md:flex-row gap-6 items-center justify-between sm:pb-24 md:pb-0 text-white">
+          <h1 className="font-bold text-[1.38vmax] text-center">
             Modern Institute of Engineering &amp; Technology | All Rights
             Reserved
           </h1>

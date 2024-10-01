@@ -28,16 +28,16 @@ const SeniorFaculty = () => {
             className="flex flex-col justify-center py-[2.3vmax] px-[4.5vmax] rounded-lg shadow-[0px_0px_10px_1px_rgba(0,_0,_0,_0.15)] gap-[1.33vmax] bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)]"
             key={index}
           >
-            <div className="flex gap-[1.25vmax]">
-              <div className="size-[5vmax] border-[#DC143C] border rounded-full p-2">
+            <div className="flex md:flex-row sm:flex-col gap-[1.25vmax]">
+              <div className="md:size-[5vmax] sm:size-[6rem] border-[#DC143C] self-center  border rounded-full p-2">
                 <img
                   src={faculty.img}
                   alt="faculty"
                   className="rounded-full size-full object-cover"
                 />
               </div>
-              <div className="w-0.5 h-full bg-[#555]"></div>
-              <div className="flex flex-col justify-evenly">
+              <div className="w-0.5 md:block sm:hidden h-full bg-[#555]"></div>
+              <div className="flex flex-col justify-evenly self-center">
                 <span className="text-lg md:text-2xl text-[#bb3232] font-semibold">
                   {faculty.name}
                 </span>

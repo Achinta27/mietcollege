@@ -84,8 +84,8 @@ const AboutUsComponent = () => {
             />
           </div>
         </div>
-        <div className="lg:w-[50%] sm:w-full flex flex-col justify-between gap-2 xl:text-xl lg:text-base sm:text-sm">
-          <span className="text-lg lg:text-3xl font-bold text-[#DC143C]">
+        <div className="lg:w-[50%] sm:w-full flex flex-col justify-between gap-2 xl:text-base xxl:text-xl lg:text-base xlg:text-sm sm:text-sm">
+          <span className="text-lg xlg:text-2xl xl:text-3xl sm:text-2xl font-bold text-[#DC143C]">
             About Modern Engineering &amp; Technology College
           </span>
           <h2 className="">
