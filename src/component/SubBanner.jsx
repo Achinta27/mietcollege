@@ -5,7 +5,7 @@ const SubBanner = ({ heading, bannerimg }) => {
     <div className="relative">
       <img
         className="  w-full h-auto object-cover"
-        src={bannerimg}
+        src={"/images/subheaderBg.jpg"}
         alt="Background"
       />
 

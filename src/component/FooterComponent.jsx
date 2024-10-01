@@ -196,8 +196,8 @@ const FooterComponent = () => {
           path: "https://maps.app.goo.gl/Xo1ZyZAejSh5P1qp9",
         },
         {
-          text: "Email: info@mietcollege.org",
-          path: "mailTo:info@mietcollege.org",
+          text: "Email: hr@mietcollege.org",
+          path: "mailTo:hr@mietcollege.org",
         },
         {
           text: "College Number: +91 8336070583",

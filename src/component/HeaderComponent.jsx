@@ -428,18 +428,24 @@ const HeaderComponent = () => {
                 <span className="text-black sm:text-[8px] md:text-xs lg:text-xs xl:text-xs">
                   Admissions Only
                 </span>
-                <span className="sm:text-[10px] md:text-sm lg:text-lg xl:text-xl">
+                <Link
+                  to="tel:8336070583"
+                  className="sm:text-[10px] md:text-sm lg:text-lg xl:text-xl"
+                >
                   918336070583
-                </span>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col z-20 text-[#bb3232] font-bold">
               <span className="text-black sm:text-[8px] md:text-xs lg:text-xs xl:text-xs">
                 Other Quaries
               </span>
-              <span className="sm:text-[10px] md:text-sm lg:text-lg xl:text-xl">
+              <Link
+                to="tel:8336070583"
+                className="sm:text-[10px] md:text-sm lg:text-lg xl:text-xl"
+              >
                 918336070583
-              </span>
+              </Link>
             </div>
 
             <div className="w-[11rem] h-[5rem] p-3 sm:hidden text-[1.3rem] font-semibold animate-blink lg:flex items-center justify-center">

@@ -115,10 +115,10 @@ const ContactUs = () => {
                 Email:
               </h1>
               <Link
-                to="mailTo:info@mietcollege.org"
+                to="mailTo:hr@mietcollege.org"
                 className="xl:text-base font-medium sm:text-sm lg:text-xs"
               >
-                info@mietcollege.org
+                hr@mietcollege.org
               </Link>
             </div>
             <div className="flex items-center gap-4">
