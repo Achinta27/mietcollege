@@ -1,5 +1,7 @@
 import React from "react";
 import HeadingTemplate from "../template/HeadingTemplate";
+import { LuCalendarClock } from "react-icons/lu";
+import { PiArrowSquareOutLight } from "react-icons/pi";
 
 const ImportentNotice = () => {
   const noticed = [
@@ -43,27 +45,34 @@ const ImportentNotice = () => {
   return (
     <div className="flex flex-col gap-8 sm:p-4 md:p-8 xl:p-16 w-full justify-center items-center">
       <HeadingTemplate heading={"CAMPUS NEWS & UPDATES"} />
-      <div className="flex sm:flex-col lg:flex-row w-full sm:gap-5 lg:gap-0 xl:gap-5">
-        <div className="lg:w-[50%] sm:w-full  sm:h-fit">
+      <div className="flex sm:flex-col md:flex-row w-full sm:gap-5 lg:gap-0 xl:gap-5">
+        <div className=" sm:w-full sm:h-fit">
           <span>
-            <img src="/images/notice.jpg" alt="" className="rounded-md " />
+            <img
+              src="/images/notice.jpg"
+              alt=""
+              className="rounded-md max-w-[44vmax] w-full"
+            />
           </span>
         </div>
-        <div className="lg:w-[50%] sm:w-full sm:h-[50vh] lg:h-[55vh] xl:h-[65vh] overflow-y-scroll flex  items-center flex-col gap-6">
+        <div className="sm:h-[50vh] sm:max-w-full md:max-w-[44vmax] lg:h-[55vh] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6">
           {noticed.map((notice, index) => (
             <div
               key={index}
-              className="flex flex-row rounded-md p-2 sm:w-full md:w-[80%] xl:w-[70%]  gap-4 items-center justify-center  border border-gray-200 shadow-lg"
+              className="flex rounded-md p-2 md:p-[1.38vmax] gap-[1.59vmax] border border-[#e7e7e7] shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
             >
-              <span className="flex flex-col w-[60%] gap-2">
+              <span className="flex flex-col gap-2 max-w-[35ch]">
                 <span className="flex font-semibold ">
                   <span></span>
                   <span className="">{notice.heading}</span>
                 </span>
-                <span className="text-sm">Date: {notice.date}</span>
+                <span className="text-sm flex items-center text-[#666]">
+                  <LuCalendarClock className="size-4 pe-1 text-[#DC143C]" />{" "}
+                  Date: {notice.date}
+                </span>
               </span>
-              <div className="w-[6rem] h-[2rem]  rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#bb3232] text-white">
-                Read More
+              <div className="md:py-[0.55vmax] md:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] text-white self-end cursor-pointer">
+                Know More <PiArrowSquareOutLight className="ps-1 size-5" />
               </div>
             </div>
           ))}

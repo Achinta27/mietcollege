@@ -17,50 +17,67 @@ const AboutUs = () => {
             <span className="xl:text-4xl sm:text-2xl lg:text-2xl md:text-xl font-semibold text-[#DC143C]">
               About Modern Institute Of Engineering Of Technology
             </span>
-            <div className="flex flex-col gap-2 sm:text-xs lg:text-sm xl:text-lg">
+            <div className="flex flex-col gap-2 sm:text-xs lg:text-sm xl:text-lg justify-between flex-1">
               <span>
                 Education is a silent and peaceful weapon that can bring success
                 without harm. Education is more than what you can learn from a
                 book, it empowers the students&apos; minds, nurtures critical
-                thinking and fosters a well-rounded perspective. The purpose of
-                education is not limited to gaining knowledge and skills only,
-                it equips the students with essential skills for personal and
-                societal development. Modern Institute of Engineering &
-                Technology was formed to act as a catalyst. The college was
-                established under the Badal Deb Memorial Educational Foundation
-                Trust in the year 2010. Since then, students from various
-                backgrounds have been given a safe, nurturing environment where
-                they can gain the skills and knowledge. By becoming
-                knowledgeable and developing skills, the students can deal with
-                real-world situations. They require to be progressive leaders in
-                today&apos;s fast paced society. Modern Institute of Engineering
-                & Technology empowers the students by providing specialized
-                knowledge, relevant skills and critical thinking abilities. The
-                team of dedicated, highly qualified and passionate engineering
-                professors have helped students to do their best. Modern
-                Institute of Engineering & Technology is approved by AICTE
-                &#40;All India Council for Technical Education&#41;, Govt. of
-                India and affiliated to MAKAUT &#40;Maulana Abul Kalam Azad
-                University of Technology&#41; and WBSCT & VE & SD &#40;West
-                Bengal State Council of Technical and Vocational Education and
-                Skill Development&#41;.
+                thinking and fosters a well-rounded perspective. <br /> <br />{" "}
+                The purpose of education is not limited to gaining knowledge and
+                skills only, it equips the students with essential skills for
+                personal and societal development. Modern Institute of
+                Engineering & Technology was formed to act as a catalyst. <br />{" "}
+                <br /> The college was established under the Badal Deb Memorial
+                Educational Foundation Trust in the year 2010. Since then,
+                students from various backgrounds have been given a safe,
+                nurturing environment where they can gain the skills and
+                knowledge. By becoming knowledgeable and developing skills, the
+                students can deal with real-world situations. They require to be
+                progressive leaders in today&apos;s fast paced society. <br />{" "}
+                <br /> Modern Institute of Engineering & Technology empowers the
+                students by providing specialized knowledge, relevant skills and
+                critical thinking abilities. The team of dedicated, highly
+                qualified and passionate engineering professors have helped
+                students to do their best.
+                <br /> <br /> Modern Institute of Engineering & Technology is
+                approved by AICTE &#40;All India Council for Technical
+                Education&#41;, Govt. of India and affiliated to MAKAUT
+                &#40;Maulana Abul Kalam Azad University of Technology&#41; and
+                WBSCT & VE & SD &#40;West Bengal State Council of Technical and
+                Vocational Education and Skill Development&#41;.
               </span>
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="grid grid-cols-2 gap-4">
-              <img src="/images/about1.png" alt="" />
-              <img src="/images/about1.png" alt="" />
-            </div>
-            <div>
-              <img src="/images/about3.png" alt="" className="w-full" />
-            </div>
-            <div className="w-full h-[5rem] flex justify-center items-center bg-[#DC143C] text-white text-xl font-semibold rounded-md">
-              Life At MIET
+          <div className="relative">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.66vmax]">
+              <img
+                src="/images/about1.png"
+                alt="about"
+                width={306}
+                className="min-[585px]:size-[21.25vmax] object-cover rounded"
+              />
+              <img
+                src="/images/Building5.jpg"
+                alt="building"
+                width={306}
+                className="min-[585px]:size-[21.25vmax] object-cover rounded"
+              />
+              <img
+                src="/Campus 2 New/WhatsApp Image 2024-08-02 at 11.00.05.jpeg"
+                alt="building"
+                width={306}
+                className="min-[585px]:size-[21.25vmax] object-cover rounded"
+              />
+              <img
+                src="/images/principal-about.png"
+                alt="principal"
+                width={306}
+                className="min-[585px]:size-[21.25vmax] object-cover rounded"
+              />
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-4 ">
+        <div className="flex flex-col gap-4 text-sm md:text-xl">
           <span>
             Over the past 14 years, MIET has developed and paved the way to
             overcome all the problems to achieve sustainable development goals
@@ -110,10 +127,10 @@ const AboutUs = () => {
           <span>
             With unmatched facility and state-of-the-art infrastructure, modern
             laboratories, well facilitated canteen with variety of palatable
-            dishes, in campus Boys&apos; Hostel and well protected Girls&apos; Hostel and
-            Library keeping pace with modern cutting-edge technology, students
-            need to be properly groomed and ultimately made employable and
-            subsequently shaped, honed into the groove of the requirement of
+            dishes, in campus Boys&apos; Hostel and well protected Girls&apos;
+            Hostel and Library keeping pace with modern cutting-edge technology,
+            students need to be properly groomed and ultimately made employable
+            and subsequently shaped, honed into the groove of the requirement of
             corporate sector, behavioural patterns and expectations. In order to
             fructify this aim and target sustained efforts on behalf of the
             institute have been put in operation in the form of imparting such

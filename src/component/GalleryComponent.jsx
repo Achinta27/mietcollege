@@ -147,13 +147,22 @@ const GalleryComponent = () => {
             </Slider>
           </div>
         </div>
-        <Link
-          to="/pdf/6 years placement data 2023-24.pdf"
-          target="_blank"
-          className="text-[#DC143C] border-2 border-[#DC143C] rounded text-[2.2vmax] text-center font-bold py-[1.8vmax]"
-        >
-          Download Placement Report
-        </Link>
+        <div className="flex flex-col md:flex-row md:gap-[1.4vmax] md:justify-between">
+          <Link
+            to="/pdf/6 years placement data 2023-24.pdf"
+            target="_blank"
+            className="text-[#DC143C] border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
+          >
+            Download Placement Report
+          </Link>
+          <Link
+            to="/pdf/6 years placement data 2023-24.pdf"
+            target="_blank"
+            className="text-[#DC143C] border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
+          >
+            Download Prospectus 2024-25
+          </Link>
+        </div>
       </div>
       {/* <div className="lg:w-[30%] sm:w-full flex flex-col  items-center gap-4 bg-white p-2 shadow-lg">
         <HeadingTemplate heading={"FOLLOW US"} />

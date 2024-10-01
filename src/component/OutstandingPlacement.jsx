@@ -1,7 +1,7 @@
 import React from "react";
 import HeadingTemplate from "../template/HeadingTemplate";
 import { FaPlus } from "react-icons/fa";
-import { Grid, Navigation } from "swiper/modules";
+import { Autoplay, Grid, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -28,14 +28,14 @@ const OutstandingPlacement = () => {
       imgsrc:
         "/placement/Maoumaa Dutta  Company - Sutherland Global Pvt Ltd  Year of Passout - 2024 Department - Computer Science and Engineering.jpeg",
       name: "Maoumaa Dutta",
-      company: "Sutherland Global Private Limited",
+      company: "Sutherland Global Pvt Ltd",
       jobrole: "Computer Science and Engineering",
     },
     {
       imgsrc:
         "/placement/SALINI SARKAR  Company Name - Sutherland Global Private Limited  Passout Year -2024 Department - Computer Science & Engineering.jpeg",
       name: "SALINI SARKAR",
-      company: "Sutherland Global Private Limited",
+      company: "Sutherland Global Pvt Ltd",
       jobrole: "Computer Science & Engineering",
     },
     {
@@ -70,35 +70,35 @@ const OutstandingPlacement = () => {
 
   const totalplacements = [
     {
-      package: "4-5",
-      totalnumber: "1800 Placement offers",
+      package: "4-5 LPA",
+      totalnumber: "Placement offers",
     },
     {
-      package: "4-5",
-      totalnumber: "1800 Placement offers",
+      package: "3-5 LPA",
+      totalnumber: "Placement offers",
     },
     {
-      package: "4-5",
-      totalnumber: "1800 Placement offers",
+      package: "6-7 LPA",
+      totalnumber: "Placement offers",
     },
     {
-      package: "4-5",
-      totalnumber: "1800 Placement offers",
+      package: "4-5 LPA",
+      totalnumber: "Placement offers",
     },
     {
-      package: "2000",
+      package: "30 +",
       totalnumber: "Recruiters hired MIET students",
     },
     {
-      package: "2000",
+      package: "100 +",
       totalnumber: "Recruiters hired MIET students",
     },
     {
-      package: "2000",
+      package: "30 +",
       totalnumber: "Recruiters hired MIET students",
     },
     {
-      package: "2000",
+      package: "100 +",
       totalnumber: "Recruiters hired MIET students",
     },
   ];
@@ -114,43 +114,55 @@ const OutstandingPlacement = () => {
         <HeadingTemplate heading={"OUTSTANDING PLACEMENTS"} />
       </span>
       <div className="flex flex-col w-full gap-6">
-        <Swiper
-          slidesPerView={4}
-          grid={{
-            rows: 1,
-          }}
-          spaceBetween={30}
-          loop={true}
-          modules={[Grid, Navigation]}
-        >
-          {placements.map((placement, index) => (
-            <SwiperSlide
-              key={index}
-              virtualIndex={index}
-              className="flex items-center justify-between flex-col gap-2 p-2 rounded-sm border border-gray-200 max-w-[21vmax]"
-            >
-              <span className="flex items-center justify-center border border-[#bb3232] rounded-full p-2">
-                <img
-                  src={placement.imgsrc}
-                  alt=""
-                  className="rounded-full size-[8.2vmax] object-cover object-top"
-                />
-              </span>
-              <span className="flex flex-col items-center justify-center">
-                <span className="text-[#bb3232] sm:text-lg xl:text-xl font-semibold text-center">
-                  {placement.name}
+        <div className="overflow-hidden">
+          <Swiper
+            slidesPerView={4}
+            centeredSlides={true}
+            grid={{
+              rows: 1,
+            }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            spaceBetween={30}
+            loop={true}
+            modules={[Grid, Navigation, Autoplay]}
+          >
+            {placements.map((placement, index) => (
+              <SwiperSlide
+                key={index}
+                virtualIndex={index}
+                className="flex items-center justify-between flex-col gap-2 px-2 py-4 rounded-sm max-w-[21vmax] bg-[inear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)] shadow-[0_0_10px_1px_rgba(0,_0,_0,_0.15)] my-2"
+              >
+                <span className="flex items-center justify-center border border-[#bb3232] rounded-full p-2">
+                  <img
+                    src={placement.imgsrc}
+                    alt=""
+                    className="rounded-full size-[8.2vmax] object-cover object-top"
+                  />
                 </span>
-                <span className="h-fit py-1 font-semibold sm:text-xs xl:text-sm text-[#888] text-center">
-                  Company: {placement.company}
+                <span className="flex flex-col items-center justify-center">
+                  <span className="text-[#bb3232] sm:text-lg xl:text-xl font-semibold text-center">
+                    {placement.name}
+                  </span>
+                  <span className="h-fit py-1 font-semibold sm:text-xs xl:text-sm text-[#888] text-center">
+                    Company: {placement.company}
+                  </span>
+                  <span className="xl:text-base sm:text-sm text-[#888] text-center">
+                    {" "}
+                    {placement.jobrole}
+                  </span>
                 </span>
-                <span className="xl:text-base sm:text-sm text-[#888] text-center">
-                  {" "}
-                  {placement.jobrole}
+                <span className="flex items-center">
+                  <span className="h-[2px] w-[1rem] bg-red-700"></span>
+                  <span className="h-[4px] w-[2rem] bg-red-700"></span>
+                  <span className="h-[2px] w-[1rem] bg-red-700"></span>
                 </span>
-              </span>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
         <div className="flex gap-[1.2vmax] justify-between">
           <div className="grid lg:grid-cols-4 grid-cols-2 gap-4 p-4 bg-[#bb3232] rounded-sm flex-1">
             {totalplacementsset1.map((totalplacement, index) => (

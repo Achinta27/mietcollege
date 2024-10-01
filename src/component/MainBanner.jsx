@@ -9,13 +9,16 @@ const MainBanner = () => {
   }, []);
 
   return (
-    <div className="w-full ">
+    <div className="w-full relative">
       <video
         ref={videoRef}
         src={videobanner}
         loop
         autoPlay
         playsInline
+        width={1920}
+        height={1080}
+        preload="auto"
         type="video/mp4"
         className="w-full max-h-[35.7vmax] object-cover"
         muted

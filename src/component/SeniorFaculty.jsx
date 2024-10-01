@@ -5,13 +5,15 @@ const SeniorFaculty = () => {
   const facultys = [
     {
       name: "Mr. Rana Deb",
-      role: "Chairman ",
-      text: "institutions. While students, curriculum, and faculty comprise the three strongest pillars of our system; enthusiasm, passion and a driving compulsion to excel form the soul of our movement.",
+      role: "Chairman | MIET College",
+      img: "/images/chairman.jpg",
+      text: "Institutions. While students, curriculum, and faculty comprise the three strongest pillars of our system; enthusiasm, passion and a driving compulsion to excel form the soul of our movement. Institutions. While students, curriculum, and faculty comprise the three strongest pillars of our system; enthusiasm, passion and a driving compulsion to excel form the soul of our movement.",
     },
     {
-      name: "Mr. Rana Deb",
-      role: "Chairman ",
-      text: "institutions. While students, curriculum, and faculty comprise the three strongest pillars of our system; enthusiasm, passion and a driving compulsion to excel form the soul of our movement.",
+      name: "Mr. Arijit Chowdhury",
+      role: "Principal | MIET College",
+      img: "/images/principalimg.png",
+      text: "Institutions. While students, curriculum, and faculty comprise the three strongest pillars of our system; enthusiasm, passion and a driving compulsion to excel form the soul of our movement. Institutions. While students, curriculum, and faculty comprise the three strongest pillars of our system; enthusiasm, passion and a driving compulsion to excel form the soul of our movement.",
     },
   ];
 
@@ -23,40 +25,30 @@ const SeniorFaculty = () => {
       <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 gap-5">
         {facultys.map((faculty, index) => (
           <div
-            className="flex items-center justify-center p-2 rounded-lg shadow-[0px_0px_10px_1px_rgba(0, 0, 0, 0.15)] flex-row gap-2 border border-gray-100 bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)]"
+            className="flex flex-col justify-center py-[2.3vmax] px-[4.5vmax] rounded-lg shadow-[0px_0px_10px_1px_rgba(0,_0,_0,_0.15)] gap-[1.33vmax] bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)]"
             key={index}
           >
-            <div className="size-[5vmax] border-[#DC143C] border rounded-full p-2">
-              <img
-                src="/images/chairman.jpg"
-                alt=""
-                className="rounded-full w-fit h-fit"
-              />
-            </div>
-            <span className="flex w-[70%] flex-col gap-1">
-              <span className="text-lg text-[#bb3232] font-semibold">
-                {faculty.name}
-              </span>
-              <span className="text-sm text-gray-500">{faculty.role}</span>
-              <div
-                className="text-sm overflow-hidden"
-                style={{
-                  display: "-webkit-box",
-                  WebkitLineClamp: 5,
-                  WebkitBoxOrient: "vertical",
-                }}
-              >
-                {faculty.text}
+            <div className="flex gap-[1.25vmax]">
+              <div className="size-[5vmax] border-[#DC143C] border rounded-full p-2">
+                <img
+                  src={faculty.img}
+                  alt="faculty"
+                  className="rounded-full size-full object-cover"
+                />
               </div>
-              {faculty.text.split("\n").length > 5 && (
-                <span className="text-sm font-semibold text-[#bb3232]">
-                  ...
+              <div className="w-0.5 h-full bg-[#555]"></div>
+              <div className="flex flex-col justify-evenly">
+                <span className="text-lg md:text-2xl text-[#bb3232] font-semibold">
+                  {faculty.name}
                 </span>
-              )}
-              <span className="text-sm font-semibold text-[#bb3232]">
-                Read More .....
-              </span>
-            </span>
+                <span className="text-sm md:text-xl text-gray-500">
+                  {faculty.role}
+                </span>
+              </div>
+            </div>
+            <div className="text-sm overflow-hidden text-[#888]">
+              {faculty.text}
+            </div>
           </div>
         ))}
       </div>

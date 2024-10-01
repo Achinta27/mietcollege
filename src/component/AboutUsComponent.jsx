@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import { FaTimes } from "react-icons/fa";
 // import ReactPlayer from "react-player";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import HeadingTemplate from "../template/HeadingTemplate";
 
 const AboutUsComponent = () => {
@@ -15,9 +13,6 @@ const AboutUsComponent = () => {
   // const closeModal = () => {
   //   setShowModal(false);
   // };
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  });
   return (
     <div className="xl:p-16 sm:p-4 md:p-8 flex flex-col gap-8">
       <HeadingTemplate heading={"ABOUT US"} />
@@ -65,10 +60,7 @@ const AboutUsComponent = () => {
             </div>
           </div>
         )} */}
-        <div
-          className="lg:w-[50%] sm:w-full flex items-center justify-center relative "
-          data-aos="fade-right"
-        >
+        <div className="lg:w-[50%] sm:w-full relative">
           <div className="flex flex-wrap gap-[1.66vmax]">
             <img
               src="/images/about1.png"
@@ -92,21 +84,37 @@ const AboutUsComponent = () => {
             />
           </div>
         </div>
-        <div
-          className="lg:w-[50%] sm:w-full flex-1 flex flex-col justify-between gap-2 xl:text-xl lg:text-base sm:text-sm"
-          data-aos="fade-left"
-        >
+        <div className="lg:w-[50%] sm:w-full flex flex-col justify-between gap-2 xl:text-xl lg:text-base sm:text-sm">
+          <span className="text-lg lg:text-3xl font-bold text-[#DC143C]">
+            About Modern Engineering &amp; Technology College
+          </span>
           <h2 className="">
-            Welcome to the Modern Institute of Engineering & Technology (MIET),
-            West Bengal’s premier institute for B.Tech & Diploma in the field of
-            Engineering. Although we are proudly rooted in Bandel (just an
-            hour’s drive from Kolkata), our community and impact are global.
+            Welcome to the Modern Institute of Engineering & Technology
+            &#40;MIET&#41;, West Bengal&apos;s premier institute for B.Tech &
+            Diploma in the field of Engineering. Although we are proudly rooted
+            in Bandel &#40;just an hour&apos;s drive from Kolkata&#41;, our
+            community and impact are global.
           </h2>
           <h2 className="">
             Established in 2010, the institute is located amidst verdant
             abundance in a natural setting, away from the hustle and bustle of a
             city. From the very beginning, the core tenet of our educational
             philosophy has been the amalgamation of nature and knowledge.
+          </h2>
+          <h2 className="">
+            With unmatched facility and state-of-the-art infrastructure, modern
+            laboratories, well facilitated canteen with variety of palatable
+            dishes, in campus Boys&apos; Hostel and well protected Girls&apos;
+            Hostel and Library keeping pace with modern cutting-edge technology,
+            students need to be properly groomed and ultimately made employable
+            and subsequently shaped, honed into the groove of the requirement of
+            corporate sector, behavioural patterns and expectations. In order to
+            fructify this aim and target sustained efforts on behalf of the
+            institute have been put in operation in the form of imparting such
+            inclusive knowledge through regular hands-on training sessions on
+            human skills, corporate environments, interview techniques, mock
+            drills and relevant technical software sessions that are woven into
+            the regular class fabric.
           </h2>
           <h2 className="">
             We stridently believe that an institute is not just there for a mere
@@ -135,7 +143,9 @@ const AboutUsComponent = () => {
                 height={33}
                 className="size-[2vmax]"
               />
-              <p className="font-semibold font-sans">Best College In Kolkata</p>
+              <p className="font-semibold font-sans">
+                Hostel, Loan, Scholarships
+              </p>
             </div>
             <div className="flex items-center gap-4">
               <img
@@ -145,7 +155,7 @@ const AboutUsComponent = () => {
                 height={33}
                 className="size-[2vmax]"
               />
-              <p className="font-semibold font-sans">10 Years of Excellence</p>
+              <p className="font-semibold font-sans">Digital Classroom</p>
             </div>
             <div className="flex items-center gap-4">
               <img
@@ -155,7 +165,9 @@ const AboutUsComponent = () => {
                 height={33}
                 className="size-[2vmax]"
               />
-              <p className="font-semibold font-sans">10 Years of Excellence</p>
+              <p className="font-semibold font-sans">
+                EMI System Semester Fees
+              </p>
             </div>
           </div>
         </div>

@@ -23,6 +23,10 @@ const FooterComponent = () => {
           path: "/admission/fees-structure",
         },
         {
+          text: "Events",
+          path: "/mietcampus/events",
+        },
+        {
           text: "Contact Us",
           path: "/contact-us",
         },
@@ -100,6 +104,14 @@ const FooterComponent = () => {
         {
           text: "Library",
           path: "/mietcampus/facilities/library",
+        },
+        {
+          text: "Library Rules & Regulation",
+          path: "/mietcampus/facilities/library-rules",
+        },
+        {
+          text: "Library Vision & Mission",
+          path: "/mietcampus/facilities/library-rules",
         },
         {
           text: "Enquiry",
@@ -214,21 +226,21 @@ const FooterComponent = () => {
               <Link
                 to="/pdf/Academic Calender 2024.pdf"
                 target="_blank"
-                className="font-bold text-[2.2vmax] text-[#4E0010] bg-[#FC0] text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+                className="font-bold text-lg md:text-2xl text-[#4E0010] bg-[#FC0] text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
               >
                 Admission 2024-25
               </Link>
               <Link
                 to="/pdf/RPGIprospectors.pdf"
                 target="_blank"
-                className="font-bold text-[2.2vmax] border border-[#FFCC00] text-[#FFCC00] text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+                className="font-bold text-lg md:text-2xl border border-[#FFCC00] text-[#FFCC00] text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
               >
                 Prospectus 2024-25
               </Link>
               <Link
                 to="/pdf/RPGIprospectors.pdf"
                 target="_blank"
-                className="font-bold text-[2.2vmax] border border-white text-white text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
+                className="font-bold text-lg md:text-2xl border border-white text-white text-center rounded inline-flex items-center justify-center py-[1.04vmax] font-sans"
               >
                 Payment Online
               </Link>
