@@ -85,7 +85,7 @@ const ImportentNotice = () => {
         </div>
         <div
           ref={noticeContainerRef} // Reference to the scrollable container
-          className="sm:h-[50vh] md:h-[30vh] sm:max-w-full md:w-[40rem] lg:w-[44rem] xl:max-w-[44vmax] lg:h-[55vh] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6"
+          className="sm:h-[50vh] md:h-[30vh] sm:max-w-full md:max-w-[44vmax] lg:h-[55vh] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6"
         >
           {noticed.map((notice, index) => (
             <div
