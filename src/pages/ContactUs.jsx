@@ -114,7 +114,15 @@ const ContactUs = () => {
               key={index}
             >
               <h1
-                className={`font-bold text-center text-2xl lg:text-3xl text-[${items.headerTextColor}] bg-[${items.headerBg}] rounded-t-lg py-8 lg:py-10`}
+                className={`font-bold text-center text-2xl lg:text-3xl text-[${
+                  items.headerTextColor
+                }] bg-[${items.headerBg}] ${
+                  items.headerBg === "#dc143c" ? "bg-[#dc143c]" : "bg-[#FFCC00]"
+                } ${
+                  items.headerTextColor === "#333"
+                    ? "text-[#333]"
+                    : "text-[#fff]"
+                } rounded-t-lg py-8 lg:py-10`}
               >
                 {items.headerText}
               </h1>
@@ -133,7 +141,7 @@ const ContactUs = () => {
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-9 place-items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-9 place-items-stretch justify-between">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7348.095690191451!2d88.354573!3d22.948465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89250a79aa925%3A0xc6e131b8eb71dfdd!2sModern%20Institute%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1727865678216!5m2!1sen!2sin"
             width="630"
@@ -151,7 +159,7 @@ const ContactUs = () => {
             allowfullscreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            // allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
           ></iframe>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
@@ -162,15 +170,14 @@ const ContactUs = () => {
               className="md:w-[40rem] md:h-[45.5rem] object-cover hidden md:inline-block"
             />
           </span>
-          <div className="px-12 py-8 bg-[#DC143C] rounded-md flex-1">
+          <div className="px-8 md:px-10 lg:px-12 py-4 md:py-6 lg:py-8 bg-[#DC143C] rounded-md flex-1 flex">
             <div className="flex flex-col justify-between gap-5 flex-1">
               <span className="flex justify-center text-center font-semibold text-white text-4xl">
                 Quick Enquiry For Admission
               </span>
-              <div className="flex text-white text-xl flex-col gap-4">
                 <form
                   onSubmit={submitMail}
-                  className="flex flex-col font-semibold p-2 gap-9 justify-between"
+                  className="flex flex-col font-semibold p-2 gap-9 justify-between flex-1"
                 >
                   <input
                     type="hidden"
@@ -234,7 +241,6 @@ const ContactUs = () => {
                     </button>
                   </div>
                 </form>
-              </div>
             </div>
           </div>
         </div>
