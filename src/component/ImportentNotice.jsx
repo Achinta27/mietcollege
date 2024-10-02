@@ -79,13 +79,13 @@ const ImportentNotice = () => {
             <img
               src="/images/notice.jpg"
               alt=""
-              className="rounded-md md:max-w-[30rem] lg:max-w-[29rem] xlg:max-w-[40rem] xl:max-w-[44vmax] w-full"
+              className="rounded-md md:max-w-[30rem] lg:max-w-[29rem] min-[1120px]:max-w-[33rem] xlg:max-w-[38rem] xl:max-w-[44vmax] w-full"
             />
           </span>
         </div>
         <div
           ref={noticeContainerRef} // Reference to the scrollable container
-          className="sm:h-[50vh] md:h-[30vh] sm:max-w-full md:max-w-[44vmax] lg:h-[55vh] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6"
+          className="sm:h-[50vh] md:h-[30vh] sm:max-w-full md:max-w-[44vmax] lg:h-[25rem] xlg:h-[28rem] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6"
         >
           {noticed.map((notice, index) => (
             <div
