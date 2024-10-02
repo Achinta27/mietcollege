@@ -5,7 +5,6 @@ import RankingComponent from "../component/RankingComponent";
 import OutstandingPlacement from "../component/OutstandingPlacement";
 import CompanySlider from "../component/CompanySlider";
 import MietDetails from "../component/MietDetails";
-import TopHighlights from "../component/TopHighlights";
 import ImportentNotice from "../component/ImportentNotice";
 import SeniorFaculty from "../component/SeniorFaculty";
 import GalleryComponent from "../component/GalleryComponent";
@@ -22,7 +21,6 @@ const Home = () => {
       <OutstandingPlacement />
       <CompanySlider />
       <MietDetails />
-
       <OurCoursesComponent />
       <SeniorFaculty />
       <ImportentNotice />

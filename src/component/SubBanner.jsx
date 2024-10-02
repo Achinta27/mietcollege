@@ -9,7 +9,7 @@ const SubBanner = ({ heading, bannerimg }) => {
         alt="Background"
       />
 
-      <div className=" absolute inset-0 z-10 flex flex-col items-center justify-center h-full bg-[rgba(0,_0,_0,_0.53)]">
+      <div className=" absolute inset-0 z-10 flex flex-col items-center justify-center h-full">
         <h1 className="sm:text-xl md:text-4xl lg:text-5xl text-white text-center text-shadow">
           {heading}
         </h1>

@@ -36,6 +36,70 @@ const ContactUs = () => {
     }
   };
 
+  const contactDetails = [
+    {
+      headerBg: "#dc143c",
+      headerTextColor: "#FFF",
+      headerText: "Main Campus",
+      description: [
+        {
+          label: "Address:",
+          details:
+            "Address: Rajhat, Bandel, Hooghly, West Bengal - 712123 India",
+        },
+        {
+          label: "Phone:",
+          details: "+91 8336070583 , +91 8336070584",
+        },
+      ],
+    },
+    {
+      headerBg: "#FFCC00",
+      headerTextColor: "#333",
+      headerText: "Boys Hostel",
+      description: [
+        {
+          label: "Address:",
+          details: "Address: MIET Main Campus, Rajhat, Bandel, Hooghly, 712123",
+        },
+        {
+          label: "Phone:",
+          details: "+91 8276066444",
+        },
+      ],
+    },
+    {
+      headerBg: "#FFCC00",
+      headerTextColor: "#333",
+      headerText: "Girls Hostel",
+      description: [
+        {
+          label: "Address:",
+          details: "Address: Bandel Bazar, Hooghly, West Bengal 712123",
+        },
+        {
+          label: "Phone:",
+          details: "+91 8276066444",
+        },
+      ],
+    },
+    {
+      headerBg: "#dc143c",
+      headerTextColor: "#FFF",
+      headerText: "Contact Details",
+      description: [
+        {
+          label: "Admission Helpline:",
+          details: "Address: MIET Main Campus, Rajhat, Bandel, Hooghly, 712123",
+        },
+        {
+          label: "Phone:",
+          details: "+91 8276066444",
+        },
+      ],
+    },
+  ];
+
   return (
     <MainPageTemplate>
       <SubBanner
@@ -43,7 +107,54 @@ const ContactUs = () => {
         heading={"Contact Us"}
       />
       <div className="xl:p-16 sm:p-4 lg:p-8 flex flex-col gap-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
+          {contactDetails.map((items, index) => (
+            <div
+              className="flex flex-col bg-white shadow-[0_0_15px_0_rgba(0,_0,_0,_0.20)] rounded-lg md:min-h-96"
+              key={index}
+            >
+              <h1
+                className={`font-bold text-center text-2xl lg:text-3xl text-[${items.headerTextColor}] bg-[${items.headerBg}] rounded-t-lg py-8 lg:py-10`}
+              >
+                {items.headerText}
+              </h1>
+              <div className="my-4 md:my-6 lg:my-8 mx-8 md:mx-10 lg:mx-12 flex flex-col gap-6 rounded-b-lg">
+                {items.description.map((detail, index) => (
+                  <div key={index}>
+                    <h3 className="text-[#dc143c] text-justify text-xl lg:text-2xl">
+                      {detail.label}
+                    </h3>
+                    <p className="text-[#686868] text-lg lg:text-xl lg:text-justify">
+                      {detail.details}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-9 place-items-stretch">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7348.095690191451!2d88.354573!3d22.948465!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89250a79aa925%3A0xc6e131b8eb71dfdd!2sModern%20Institute%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1727865678216!5m2!1sen!2sin"
+            width="630"
+            height="380"
+            allowFullScreen=""
+            className="w-full"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=100089144376421&tabs=timeline&width=630&height=380&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="630"
+            height="380"
+            className="w-full"
+            allowfullscreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
           <span>
             <img
               src="/images/admisionenquiryimg.jpg"
@@ -51,22 +162,15 @@ const ContactUs = () => {
               className="md:w-[40rem] md:h-[45.5rem] object-cover hidden md:inline-block"
             />
           </span>
-          <div className="p-4 bg-[#DC143C] rounded-md flex-1">
-            <div className="flex flex-col justify-between gap-5">
-              <span className="flex justify-center items-center">
-                <img
-                  src="/images/klip.svg"
-                  alt="Klip Icon"
-                  className="h-[4rem]"
-                />
-              </span>
-              <span className="flex justify-center text-center font-semibold text-white sm:text-lg lg:text-2xl xl:text-3xl">
+          <div className="px-12 py-8 bg-[#DC143C] rounded-md flex-1">
+            <div className="flex flex-col justify-between gap-5 flex-1">
+              <span className="flex justify-center text-center font-semibold text-white text-4xl">
                 Quick Enquiry For Admission
               </span>
               <div className="flex text-white text-xl flex-col gap-4">
                 <form
                   onSubmit={submitMail}
-                  className="flex flex-col font-semibold p-2 gap-4"
+                  className="flex flex-col font-semibold p-2 gap-9 justify-between"
                 >
                   <input
                     type="hidden"
@@ -74,49 +178,44 @@ const ContactUs = () => {
                     value={import.meta.env.VITE_PUBLIC_WEB3ACCESSKEY}
                   />
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="name">Name</label>
                     <input
                       type="text"
                       name="name"
                       id="name"
+                      placeholder="Name"
                       required
-                      className="p-3 h-[4rem] bg-white rounded-sm text-[#DC143C] text-lg"
+                      className="p-3 h-[4rem] bg-white rounded-sm text-[#AAA] text-lg outline-none"
                     />
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="phone">Mobile Number</label>
                     <input
                       type="tel"
                       name="phone"
+                      placeholder="Mobile Number"
                       id="phone"
                       required
-                      className="p-3 h-[4rem] bg-white rounded-sm text-[#DC143C] text-lg"
+                      className="p-3 h-[4rem] bg-white rounded-sm text-[#AAA] text-lg outline-none"
                     />
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="enquiry">Interest Course</label>
-                    <select
-                      name="enquiry"
-                      id="enquiry"
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email (Optional)"
+                      id="phone"
                       required
-                      className="p-3 h-[4rem] bg-white rounded-sm text-[#DC143C] text-lg"
-                    >
-                      <option value="" disabled selected>
-                        Select Interested Course
-                      </option>
-                      <option value="B.tech">B.Tech</option>
-                      <option value="Diploma">Diploma</option>
-                    </select>
+                      className="p-3 h-[4rem] bg-white rounded-sm text-[#AAA] text-lg outline-none"
+                    />
                   </div>
 
                   <div className="flex flex-col gap-2">
-                    <label htmlFor="message">Message (optional)</label>
                     <textarea
                       name="message"
                       id="message"
-                      className="p-3 h-[4rem] bg-white rounded-sm text-[#DC143C] text-lg"
+                      placeholder="Messege (Optional)"
+                      className="p-3 h-[4rem] bg-white rounded-sm text-[#AAA] text-lg outline-none resize-none"
                     />
                   </div>
 
@@ -129,7 +228,7 @@ const ContactUs = () => {
                   <div className="flex justify-center items-center">
                     <button
                       type="submit"
-                      className="w-full h-[4rem] bg-white text-[#DC143C] text-lg font-bold rounded-sm"
+                      className="w-full h-[4rem] bg-white text-[#333] text-lg font-bold rounded-sm"
                     >
                       Submit
                     </button>

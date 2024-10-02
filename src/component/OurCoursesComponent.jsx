@@ -35,7 +35,9 @@ const OurCoursesComponent = () => {
                   Course Offered
                 </div>
                 <div className="grid grid-cols-1 min-[575px]:grid-cols-2 gap-4">
-                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-md text-black bg-[url('/images/yellow-bg.svg')] bg-cover bg-no-repeat">
+                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-lg text-black relative bg-[#FFCC00]">
+                    <div className="absolute top-1/2 -translate-y-1/2 left-0 w-2 sm:h-[11rem] lg:h-[11rem] xl:h-[14rem] bg-[#DC143C] rounded-r-md"></div>
+                    <div className="absolute top-1/2 -translate-y-1/2 right-0 w-2 sm:h-[11rem] lg:h-[11rem] xl:h-[14rem] bg-[#DC143C] rounded-l-md"></div>
                     <span className="xl:text-xl sm:text-xl lg:text-lg font-bold">
                       B.Tech
                     </span>
@@ -51,7 +53,9 @@ const OurCoursesComponent = () => {
                       science & Engineering diploma
                     </span>
                   </span>
-                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-md text-white bg-[url('/images/red-bg.svg')] bg-cover bg-no-repeat">
+                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-lg text-white bg-[#DC143C] relative">
+                    <div className="absolute top-1/2 -translate-y-1/2 left-0 w-2 sm:h-[11rem] lg:h-[11rem] xl:h-[14rem] bg-[#FFCC00] rounded-r-md"></div>
+                    <div className="absolute top-1/2 -translate-y-1/2 right-0 w-2 sm:h-[11rem] lg:h-[11rem] xl:h-[14rem] bg-[#FFCC00] rounded-l-md"></div>
                     <span className="xl:text-xl sm:text-xl lg:text-lg font-bold">
                       Diploma
                     </span>
@@ -74,7 +78,9 @@ const OurCoursesComponent = () => {
                   Training & Placement
                 </div>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
-                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-md text-white bg-[url('/images/red-bg.svg')] bg-cover bg-no-repeat">
+                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-lg text-white bg-[#DC143C] relative">
+                    <div className="absolute top-1/2 -translate-y-1/2 left-0 w-2 sm:h-[11rem] lg:h-[11rem] xl:h-[14rem] bg-[#FFCC00] rounded-r-md"></div>
+                    <div className="absolute top-1/2 -translate-y-1/2 right-0 w-2 sm:h-[11rem] lg:h-[11rem] xl:h-[14rem] bg-[#FFCC00] rounded-l-md"></div>
                     <span className="xl:text-xl sm:text-xl lg:text-lg font-bold">
                       Our Recruiters
                     </span>
@@ -90,7 +96,9 @@ const OurCoursesComponent = () => {
                       maximum number of campus opportunities.
                     </span>
                   </span>
-                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-md text-black bg-[url('/images/yellow-bg.svg')] bg-cover bg-no-repeat">
+                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-lg text-black relative bg-[#FFCC00]">
+                    <div className="absolute top-1/2 -translate-y-1/2 left-0 w-2 sm:h-[11rem] lg:h-[11rem] xl:h-[14rem] bg-[#DC143C] rounded-r-md"></div>
+                    <div className="absolute top-1/2 -translate-y-1/2 right-0 w-2 sm:h-[11rem] lg:h-[11rem] xl:h-[14rem] bg-[#DC143C] rounded-l-md"></div>
                     <span className="xl:text-xl sm:text-xl lg:text-lg font-bold">
                       Skill Development
                     </span>
@@ -119,8 +127,8 @@ const OurCoursesComponent = () => {
                   Engineering, Electrical Engineering Important, Diploma is
                   offered in the following streams
                 </p>
-                <div className="grid grid-cols-2 flex-1 place-items-stretch justify-between gap-[3.95vmax]">
-                  <div className="flex flex-col items-center">
+                <div className="grid grid-cols-2 flex-1 place-items-stretch justify-between">
+                  <div className="flex flex-col items-center justify-center p-2 border-b border-r border-[#FFCC00]">
                     <h3 className="font-semibold text-white text-center text-[1.66vmax]">
                       4-5 LPA
                     </h3>
@@ -133,7 +141,7 @@ const OurCoursesComponent = () => {
                       1800 Placement offers
                     </p>
                   </div>
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center justify-center p-2 border-b border-l border-[#FFCC00]">
                     <h3 className="font-semibold text-white text-center text-[1.66vmax]">
                       2000 +
                     </h3>
@@ -146,7 +154,7 @@ const OurCoursesComponent = () => {
                       Recruiters hired MIET students
                     </p>
                   </div>
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center justify-center p-2 border-t border-r border-[#FFCC00]">
                     <h3 className="font-semibold text-white text-center text-[1.66vmax]">
                       4-5 LPA
                     </h3>
@@ -159,7 +167,7 @@ const OurCoursesComponent = () => {
                       1800 Placement offers
                     </p>
                   </div>
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center justify-center p-2 border-t border-l border-[#FFCC00]">
                     <h3 className="font-semibold text-white text-center text-[1.66vmax]">
                       2000 +
                     </h3>

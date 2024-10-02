@@ -59,12 +59,12 @@ const OnlyMobile = () => {
         <Link
           to="tel:"
           target="_Blank"
-          className="flex flex-col gap-2 items-center  text-sm text-white font-semibold invisible"
+          className="flex flex-col gap-2 items-center text-sm text-white font-semibold invisible"
         >
           <span className="text-xl">
             <img src="/images/phonecalllogo.svg" alt="" className="w-5 h-5" />
           </span>
-          {/* <span>Enquiry</span> */}
+          <span>Enquiry</span>
         </Link>
       </div>
     </div>
