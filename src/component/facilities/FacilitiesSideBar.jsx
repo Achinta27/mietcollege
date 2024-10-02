@@ -8,11 +8,11 @@ const FacilitiesSideBar = () => {
       name: "Hotel Facility",
       link: "/mietcampus/facilities/hostel-facilities",
     },
-    { name: "Library Facility", link: "/mietcampus/facilities/library" },
     { name: "Transport Facility", link: "/mietcampus/facilities/transport" },
-    { name: "Internet Facility", link: "" },
-    { name: "Medical Facility", link: "" },
-    { name: "Cafeteria", link: "" },
+    { name: "Conference Hall", link: "/mietcampus/facilities/conference-room" },
+    { name: "Common Room", link: "" },
+    { name: "Playground", link: "/mietcampus/facilities/playground" },
+    { name: "Student Counseling", link: "" },
   ];
   return (
     <div className="flex flex-col gap-6">

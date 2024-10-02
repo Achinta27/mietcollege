@@ -1,15 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import MainPageTemplate from "../template/MainPageTemplate";
 import SubBanner from "./SubBanner";
 import FooterComponent from "./FooterComponent";
 
 const StudentEnquiryPage = () => {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
   function submitMail(e) {
     e.preventDefault();
+    setLoading(true);
 
     const formData = new FormData(e.target);
     const object = Object.fromEntries(formData);
-
     const json = JSON.stringify(object);
 
     fetch("https://api.web3forms.com/submit", {
@@ -21,21 +24,21 @@ const StudentEnquiryPage = () => {
       body: json,
     })
       .then(async (response) => {
-        let json = await response.json();
-        if (response.status == 200) {
-          console.log(json);
-
-          return json;
+        const jsonResponse = await response.json();
+        if (response.status === 200) {
+          window.location.href = "https://web3forms.com/success"; // Redirect to success page
         } else {
+          setError("Submission failed. Please try again.");
           console.log(response);
         }
       })
       .catch((error) => {
+        setError("Network error. Please try again.");
         console.log(error);
       })
-      .then(function () {
+      .finally(() => {
+        setLoading(false);
         e.target.reset();
-        setTimeout(() => {}, 3000);
       });
   }
 
@@ -50,19 +53,16 @@ const StudentEnquiryPage = () => {
           <span>
             <img
               src="/images/admisionenquiryimg.jpg"
-              alt=""
+              alt="Admission Enquiry"
               className="md:w-[40rem] md:h-[45.5rem] object-cover hidden md:inline-block"
             />
           </span>
           <div className="p-4 bg-[#DC143C] rounded-md flex-1">
-            <div className="flex flex-col justify-between gap-5 ">
+            <div className="flex flex-col justify-between gap-5">
               <span className="flex justify-center items-center">
-                <img src="/images/klip.svg" alt="" className="h-[4rem]" />
+                <img src="/images/klip.svg" alt="Klip" className="h-[4rem]" />
               </span>
-              <span
-                className="flex justify-center sm:text-lg lg:text-2xl xl:text-3xl text-center font-semibold text-white items-center
-            "
-              >
+              <span className="flex justify-center sm:text-lg lg:text-2xl xl:text-3xl text-center font-semibold text-white items-center">
                 Quick Enquiry For Admission
               </span>
               <div className="flex text-white text-xl flex-col md:gap-2 sm:gap-2 lg:gap-4 flex-1">
@@ -80,14 +80,17 @@ const StudentEnquiryPage = () => {
                     <input
                       type="text"
                       name="name"
+                      required
                       className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
                     />
                   </div>
                   <div className="flex flex-col gap-2">
                     <label>Mobile Number</label>
                     <input
-                      type="phone"
+                      type="tel"
                       name="phone"
+                      required
+                      pattern="[0-9]{10}"
                       className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
                     />
                   </div>
@@ -96,21 +99,22 @@ const StudentEnquiryPage = () => {
                     <span>Interest Course</span>
                     <select
                       name="enquiry"
+                      required
                       className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
                     >
                       <option value="" disabled selected>
                         Select Interested Course
                       </option>
-                      <option value="B.tech">B.Tech</option>
+                      <option value="B.Tech">B.Tech</option>
                       <option value="Diploma">Diploma</option>
                     </select>
                   </div>
 
-                  <div className=" flex flex-col gap-2">
+                  <div className="flex flex-col gap-2">
                     <span>Message (optional)</span>
                     <input
                       type="text"
-                      name="massage"
+                      name="message"
                       className="w-full h-[4rem] p-4 bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
                     />
                   </div>
@@ -120,8 +124,14 @@ const StudentEnquiryPage = () => {
                     value="https://web3forms.com/success"
                   />
                   <div className="w-full h-[4rem] mt-4 rounded-sm flex justify-center items-center bg-white text-[#DC143C] text-lg font-bold">
-                    <button type="submit">Submit</button>
+                    {loading ? (
+                      "Submitting..."
+                    ) : (
+                      <button type="submit">Submit</button>
+                    )}
                   </div>
+
+                  {error && <p className="text-red-500 text-center">{error}</p>}
                 </form>
               </div>
             </div>

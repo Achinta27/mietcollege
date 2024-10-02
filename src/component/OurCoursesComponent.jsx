@@ -109,7 +109,7 @@ const OurCoursesComponent = () => {
                 </div>
               </span>
             </div>
-            <div className="bg-[url('/images/g2.jpg')] bg-[lightgray]/50 bg-cover bg-no-repeat mix-blend-multiply rounded-xl flex">
+            <div className="bg-[url('/images/g2.jpg')] lg:h-auto md:h-[30rem] sm:h-[25rem] bg-[lightgray]/50 bg-cover bg-no-repeat mix-blend-multiply rounded-xl flex">
               <div className="bg-[#9F0020]/75 rounded-xl flex flex-col py-[3.26vmax] px-[2.5vmax] gap-[1.45vmax] flex-1">
                 <h1 className="text-white xlg:text-3xl lg:text-xl sm:text-lg capitalize font-bold text-center">
                   MIET Recruiter &amp; Partner

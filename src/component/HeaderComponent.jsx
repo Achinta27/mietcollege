@@ -219,7 +219,11 @@ const HeaderComponent = () => {
           name: "Facilities",
           nesteddropdownItems: [
             {
-              name: "Hostel, Transport",
+              name: "Hostel",
+              link: "/mietcampus/facilities/hostel-facilities",
+            },
+            {
+              name: "Transport",
               link: "/mietcampus/facilities/hostel-facilities",
             },
             {
@@ -227,12 +231,20 @@ const HeaderComponent = () => {
               link: "/mietcampus/facilities/conference-room",
             },
             { name: "Common Room", link: "" },
-            { name: "Playground, Student Counseling", link: "" },
+            { name: "Playground", link: "/mietcampus/facilities/playground" },
+            { name: "Student Counseling", link: "" },
           ],
         },
-        { name: "Infrastructure, Events", link: "/mietcampus/events" },
+        { name: "Infrastructure", link: "/mietcampus/events" },
+        { name: "Events", link: "/mietcampus/events" },
+
         {
-          name: "Virtual Tour, Google Map",
+          name: "Virtual Tour",
+          link: "https://maps.app.goo.gl/zEysCWMxF3ddyy3y9",
+          target: "_blank",
+        },
+        {
+          name: "Google Map",
           link: "https://maps.app.goo.gl/zEysCWMxF3ddyy3y9",
           target: "_blank",
         },
@@ -258,8 +270,7 @@ const HeaderComponent = () => {
         { name: "Our Recruiters", link: "/training-internship/our-recruiters" },
         {
           name: "Photo Gallery for T&P",
-          link: "/pdf/RPGIprospectors.pdf",
-          target: "_blank",
+          link: "/mietcampus/photogalleryfotT&P",
         },
       ],
     },

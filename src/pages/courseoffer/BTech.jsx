@@ -13,11 +13,7 @@ const BTech = () => {
           smalldescription:
             "Lorem ipsum dolor sit amet consectetur. Dictumst eget semper sapien tellus. Tempor sapien urna sed tempor sollicitudin. Turpis volutpat semper at id est faucibus lacus. Nunc elit pellentesque lectus neque id purus mauris amet. Quis mauris in nunc quis eget. Et orci a sed ultrices commodo. Viverra cras sed amet nec sit varius cursus at sapien. Turpis in in feugiat lacus in egestas platea at. Scelerisque lorem facilisi justo maecenas ultrices. Ipsum enim dapibus eu convallis malesuada pulvinar",
           courseimgsrc: "/images/btech.png",
-          coursedescription: [
-            "Lorem ipsum dolor sit amet consectetur. Porttitor scelerisque eu vitae porta id nunc blandit congue. Mauris augue quam nunc habitant nulla. Eleifend diam pulvinar elementum id. Vestibulum ornare pellentesque varius faucibus elementum in elit. Leo vitae a fermentum enim aliquam ultrices et. Pretium in eget dictum morbi cursus consectetur. Dignissim viverra senectus bibendum magna. Nam facilisis sed volutpat viverra in suspendisse. Nisl id ",
-            "elementum dui gravida ut morbi. Tellus tempus volutpat faucibus enim ante lobortis est proin.",
-            "Egestas lorem euismod purus massa. Leo iaculis mattis tincidunt tellus ultrices. Orci pharetra lacinia odio lacus nam diam dignissim",
-          ],
+          coursedescription: [""],
           courseoffers: [
             { slno: "01", courses: "Civil Engineering", seats: "60" },
             { slno: "02", courses: "Mechanical Engineering", seats: "60" },
@@ -120,11 +116,7 @@ const BTech = () => {
           smalldescription:
             "Lorem ipsum dolor sit amet consectetur. Dictumst eget semper sapien tellus. Tempor sapien urna sed tempor sollicitudin. Turpis volutpat semper at id est faucibus lacus. Nunc elit pellentesque lectus neque id purus mauris amet. Quis mauris in nunc quis eget. Et orci a sed ultrices commodo. Viverra cras sed amet nec sit varius cursus at sapien. Turpis in in feugiat lacus in egestas platea at. Scelerisque lorem facilisi justo maecenas ultrices. Ipsum enim dapibus eu convallis malesuada pulvinar",
           courseimgsrc: "/images/btech.png",
-          coursedescription: [
-            "Lorem ipsum dolor sit amet consectetur. Porttitor scelerisque eu vitae porta id nunc blandit congue. Mauris augue quam nunc habitant nulla. Eleifend diam pulvinar elementum id. Vestibulum ornare pellentesque varius faucibus elementum in elit. Leo vitae a fermentum enim aliquam ultrices et. Pretium in eget dictum morbi cursus consectetur. Dignissim viverra senectus bibendum magna. Nam facilisis sed volutpat viverra in suspendisse. Nisl id ",
-            "elementum dui gravida ut morbi. Tellus tempus volutpat faucibus enim ante lobortis est proin.",
-            "Egestas lorem euismod purus massa. Leo iaculis mattis tincidunt tellus ultrices. Orci pharetra lacinia odio lacus nam diam dignissim",
-          ],
+          coursedescription: [],
           courseoffers: [
             { slno: "01", courses: "Civil Engineering", seats: "60" },
             { slno: "02", courses: "Mechanical Engineering", seats: "60" },

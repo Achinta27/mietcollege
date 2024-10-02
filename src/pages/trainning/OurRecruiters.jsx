@@ -5,21 +5,21 @@ import FooterComponent from "../../component/FooterComponent";
 
 const OurRecruiters = () => {
   const recruiters = [
-    "/company/image2.png",
-    "/company/image3.png",
-    "/company/image4.jpg",
-    "/company/image5.png",
-    "/company/image6.png",
-    "/company/image7.png",
-    "/company/image8.png",
-    "/company/image9.png",
-    "/company/image10.png",
-    "/company/image11.jpg",
-    "/company/image12.jpg",
-    "/company/image13.jpg",
-    "/company/image14.jpg",
-    "/company/image15.jpg",
-    "/company/image16.png",
+    { imgsrc: "/company/bajaj.jpg" },
+    { imgsrc: "/company/belrise.jpg" },
+    { imgsrc: "/company/franciscan.jpg" },
+    { imgsrc: "/company/jayahind.jpg" },
+    { imgsrc: "/company/mando.jpg" },
+    { imgsrc: "/company/mkc.jpg" },
+    { imgsrc: "/company/muvro.jpg" },
+    { imgsrc: "/company/omega.jpg" },
+    { imgsrc: "/company/royalenfieid.jpg" },
+    { imgsrc: "/company/surgical.jpg" },
+    { imgsrc: "/company/sutherland.jpg" },
+    { imgsrc: "/company/talbros.jpg" },
+    { imgsrc: "/company/tns.jpg" },
+    { imgsrc: "/company/webhibe.jpg" },
+    { imgsrc: "/company/windcare.jpg" },
   ];
   return (
     <MainPageTemplate>
@@ -31,9 +31,9 @@ const OurRecruiters = () => {
         <div className="flex flex-wrap justify-between gap-[4.9vmax] items-center">
           {recruiters.map((img, index) => (
             <img
-              src={img}
+              src={img.imgsrc}
               key={index}
-              className="rounded max-w-[18.8vmax] w-full"
+              className="rounded max-w-[18.8vmax] w-full  p-2"
               width={272}
             />
           ))}

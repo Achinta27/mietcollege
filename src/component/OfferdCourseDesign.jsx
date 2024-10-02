@@ -39,7 +39,7 @@ const OfferdCourseDesign = ({ content }) => {
           </div>
         </div>
       </div>
-      <div className="p-4">
+      <div className="sm:px-4 lg:px-8 xl:px-16">
         <div className="flex sm:px-4  md:px-8 items-start border-[#FFC5D0] bg-[#DC143C] sm:text-xs md:text-base gap-2 lg:text-lg font-semibold text-white ">
           <div className="w-[15%] border-[#FFC5D0] sm:p-2 md:p-3 border-r">
             SL No.

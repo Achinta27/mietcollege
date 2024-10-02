@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import HeadingTemplate from "../template/HeadingTemplate";
 import { LuCalendarClock } from "react-icons/lu";
 import { PiArrowSquareOutLight } from "react-icons/pi";
 
 const ImportentNotice = () => {
+  const noticeContainerRef = useRef(null);
+
   const noticed = [
     {
       heading: "Final Merit List for B.Tech Lateral Entry 2023-24",
@@ -42,11 +44,37 @@ const ImportentNotice = () => {
       date: "6 December, 2023",
     },
   ];
+
+  useEffect(() => {
+    const scrollContainer = noticeContainerRef.current;
+    let scrollInterval;
+
+    if (scrollContainer) {
+      scrollInterval = setInterval(() => {
+        if (
+          scrollContainer.scrollTop + scrollContainer.clientHeight >=
+          scrollContainer.scrollHeight
+        ) {
+          // If the container reaches the bottom, scroll back to the top
+          scrollContainer.scrollTop = 0;
+        } else {
+          // Scroll down slowly
+          scrollContainer.scrollTop += 1;
+        }
+      }, 50); // Adjust the interval to control scroll speed (50ms = smooth scrolling)
+    }
+
+    return () => {
+      // Cleanup the interval on component unmount
+      clearInterval(scrollInterval);
+    };
+  }, []);
+
   return (
     <div className="flex flex-col gap-8 sm:p-4 md:p-8 xl:p-16 w-full justify-center items-center">
       <HeadingTemplate heading={"CAMPUS NEWS & UPDATES"} />
       <div className="flex sm:flex-col md:flex-row w-full sm:gap-5 lg:gap-0 xl:gap-5">
-        <div className=" sm:w-full sm:h-fit">
+        <div className="sm:w-full sm:h-fit">
           <span>
             <img
               src="/images/notice.jpg"
@@ -55,7 +83,10 @@ const ImportentNotice = () => {
             />
           </span>
         </div>
-        <div className="sm:h-[50vh] sm:max-w-full md:max-w-[44vmax] lg:h-[55vh] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6">
+        <div
+          ref={noticeContainerRef} // Reference to the scrollable container
+          className="sm:h-[50vh] sm:max-w-full md:max-w-[44vmax] lg:h-[55vh] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6"
+        >
           {noticed.map((notice, index) => (
             <div
               key={index}
@@ -71,7 +102,7 @@ const ImportentNotice = () => {
                   Date: {notice.date}
                 </span>
               </span>
-              <div className="md:py-[0.55vmax] py-0.5 px-2 md:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] text-white self-start md:self-end cursor-pointer">
+              <div className="md:py-[0.55vmax] py-0.5 px-2 md:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] text-white self-end md:self-end cursor-pointer">
                 Know More <PiArrowSquareOutLight className="ps-1 size-5" />
               </div>
             </div>

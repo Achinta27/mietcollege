@@ -32,6 +32,8 @@ import OurRecruiters from "./pages/trainning/OurRecruiters";
 import ContactUs from "./pages/ContactUs";
 import PhotoGallery from "./pages/gallery/PhotoGallery";
 import VideoGallery from "./pages/gallery/VideoGallery";
+import PhotoGalleryForTP from "./pages/facilities/PhotoGalleryForT&P";
+import Playground from "./pages/facilities/Playground";
 
 const App = () => {
   return (
@@ -78,10 +80,19 @@ const App = () => {
 
         {/* MIET Campus */}
         <Route path="/mietcampus/events" element={<CollegeEvents />} />
+        <Route
+          path="/mietcampus/photogalleryfotT&P"
+          element={<PhotoGalleryForTP />}
+        />
+
         {/* facilities */}
         <Route
           path="/mietcampus/facilities/hostel-facilities"
           element={<HostelFacilities />}
+        />
+        <Route
+          path="/mietcampus/facilities/playground"
+          element={<Playground />}
         />
         <Route
           path="/mietcampus/facilities/conference-room"
