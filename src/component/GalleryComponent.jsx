@@ -152,14 +152,14 @@ const GalleryComponent = () => {
             <Link
               to="/pdf/6 years placement data 2023-24.pdf"
               target="_blank"
-              className="text-[#DC143C] border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
+              className="text-[#DC143C] hover:bg-[#DC143C] hover:text-white border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
             >
               Download Placement Report
             </Link>
             <Link
               to="/pdf/6 years placement data 2023-24.pdf"
               target="_blank"
-              className="text-[#DC143C] border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
+              className="text-[#DC143C] hover:bg-[#DC143C] hover:text-white border-2 border-[#DC143C] rounded text-lg md:text-2xl text-center font-bold py-[1.1vmax] px-[1.5vmax]"
             >
               Download Prospectus 2024-25
             </Link>

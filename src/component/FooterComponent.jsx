@@ -219,32 +219,32 @@ const FooterComponent = () => {
     <footer className="bg-[url('/images/footer-bg.png')] mix-blend-hard-light bg-cover bg-no-repeat bg-[lightgray]/50">
       <div className="bg-[#4E0010] sm:p-4 md:p-8 xl:p-16 flex flex-col gap-[1.8vmax]">
         <div className="flex flex-col gap-[1.73vmax]">
-          <div className="flex flex-col md:flex-row gap-[2.8vmax] justify-between">
+          <div className="flex flex-col lg:flex-row gap-[2.8vmax] justify-between">
             <div className="flex flex-col gap-[1rem]">
               <img
                 src="/images/footerlogo.png"
                 alt="logo"
                 width={374}
-                className="md:w-[20vmax] md:h-fit sm:h-[6rem] w-fit"
+                className="md:w-[18vmax] md:h-fit sm:h-[6rem] w-fit"
               />
               <Link
                 to="/pdf/Academic Calender 2024.pdf"
                 target="_blank"
-                className="font-bold text-lg md:text-xl text-[#4E0010] bg-[#FC0] text-center rounded inline-flex items-center justify-center py-[1vmax] font-sans"
+                className="font-bold text-lg md:text-lg text-[#4E0010] bg-[#FC0] hover:bg-[#4E0010] hover:text-[#FC0] hover:border-[#FC0] border text-center rounded inline-flex items-center justify-center py-[0.8vmax] font-sans"
               >
                 Admission 2024-25
               </Link>
               <Link
                 to="/pdf/RPGIprospectors.pdf"
                 target="_blank"
-                className="font-bold text-lg md:text-xl border border-[#FFCC00] text-[#FFCC00] text-center rounded inline-flex items-center justify-center py-[1vmax] font-sans"
+                className="font-bold text-lg md:text-lg border border-[#FFCC00] text-[#FFCC00] hover:bg-[#FFCC00] hover:text-[#4E0010] text-center rounded inline-flex items-center justify-center py-[0.8vmax] font-sans"
               >
                 Prospectus 2024-25
               </Link>
               <Link
                 to="/pdf/RPGIprospectors.pdf"
                 target="_blank"
-                className="font-bold text-lg md:text-xl border border-white text-white text-center rounded inline-flex items-center justify-center py-[1vmax] font-sans"
+                className="font-bold text-lg md:text-lg border border-white hover:bg-white hover:text-[#4E0010] text-white text-center rounded inline-flex items-center justify-center py-[0.8vmax] font-sans"
               >
                 Payment Online
               </Link>
@@ -254,7 +254,7 @@ const FooterComponent = () => {
                 className="flex flex-col sm:gap-6 md:gap-[1.11vmax]"
                 key={index}
               >
-                <h3 className="text-white font-bold sm:text-xl md:text-[1.38vmax]">
+                <h3 className="text-white font-bold sm:text-xl md:text-lg">
                   {item.textTittle}
                 </h3>
                 <ul className="flex flex-col gap-[1.38vmax]">
@@ -262,7 +262,7 @@ const FooterComponent = () => {
                     <li key={index}>
                       <Link
                         to={link.path}
-                        className="text-white font-semibold sm:text-base md:text-[1.11vmax]"
+                        className="text-white font-semibold sm:text-base md:text-sm lg:text-sm"
                       >
                         &#9658; {link.text}
                       </Link>
@@ -273,10 +273,10 @@ const FooterComponent = () => {
             ))}
           </div>
           <div className="w-full h-0.5 bg-white/50"></div>
-          <div className="flex flex-col md:flex-row sm:gap-6 md:gap-[2.8vmax] justify-between">
+          <div className="flex flex-col lg:flex-row sm:gap-6 md:gap-[2.8vmax] justify-between">
             {footerLinks2nd.map((item, index) => (
               <div className="flex flex-col gap-[1.11vmax]" key={index}>
-                <h3 className="text-white font-bold sm:text-xl md:text-[1.38vmax]">
+                <h3 className="text-white font-bold sm:text-xl md:text-lg">
                   {item.textTittle}
                 </h3>
                 <ul className="flex flex-col gap-[1.38vmax]">
@@ -287,7 +287,7 @@ const FooterComponent = () => {
                         target={
                           link.path.startsWith("http") ? "_blank" : "_self"
                         }
-                        className="text-white font-semibold sm:text-base md:text-[1.11vmax]"
+                        className="text-white font-semibold sm:text-base md:text-base lg:text-[13px]/[20px] xl:text-sm"
                       >
                         &#9658; {link.text}
                       </Link>
@@ -315,21 +315,21 @@ const FooterComponent = () => {
                   <img
                     src="/images/youtube.svg"
                     alt="youtube"
-                    className="size-8 md:size-[2.25vmax]"
+                    className="size-8 md:size-[2rem]"
                   />
                 </Link>
                 <Link to="" className="flex items-center justify-center">
                   <img
                     src="/images/linkedin.svg"
                     alt="linkedin"
-                    className="size-8 md:size-[2.25vmax]"
+                    className="size-8 md:size-[2rem]"
                   />
                 </Link>
                 <Link to="" className="flex items-center justify-center">
                   <img
                     src="/images/instagram.svg"
                     alt="instagram"
-                    className="size-8 md:size-[2.25vmax]"
+                    className="size-8 md:size-[2rem]"
                   />
                 </Link>
                 <Link
@@ -341,7 +341,7 @@ const FooterComponent = () => {
                   <img
                     src="/images/facebook.svg"
                     alt="instagram"
-                    className="size-8 md:size-[2.25vmax]"
+                    className="size-8 md:size-[2rem]"
                   />
                 </Link>
               </div>

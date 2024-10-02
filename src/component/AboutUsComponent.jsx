@@ -61,31 +61,31 @@ const AboutUsComponent = () => {
           </div>
         )} */}
         <div className="lg:w-[50%] sm:w-full relative">
-          <div className="flex flex-wrap gap-[1.66vmax]">
+          <div className="grid grid-cols-2  xl:gap-6 sm:gap-4">
             <img
               src="/images/about1.png"
               alt="about"
-              className="min-[585px]:size-[21.25vmax] object-cover rounded"
+              className="size-[21.25vmax] object-cover rounded"
             />
             <img
               src="/images/Building5.jpg"
               alt="building"
-              className="min-[585px]:size-[21.25vmax] object-cover rounded"
+              className="size-[21.25vmax] object-cover rounded"
             />
             <img
               src="/Campus 2 New/WhatsApp Image 2024-08-02 at 11.00.05.jpeg"
               alt="building"
-              className="min-[585px]:size-[21.25vmax] object-cover rounded"
+              className="size-[21.25vmax] object-cover rounded"
             />
             <img
               src="/images/principal-about.png"
               alt="principal"
-              className="min-[585px]:size-[21.25vmax] object-cover rounded"
+              className="size-[21.25vmax] object-cover rounded"
             />
           </div>
         </div>
-        <div className="lg:w-[50%] sm:w-full flex flex-col justify-between gap-2 xl:text-base xxl:text-xl lg:text-base xlg:text-sm sm:text-sm">
-          <span className="text-lg xlg:text-2xl xl:text-3xl sm:text-2xl font-bold text-[#DC143C]">
+        <div className="lg:w-[50%] sm:w-full flex flex-col justify-between gap-2 xl:text-[15px]/[25px] xxl:text-xl lg:text-xs xlg:text-sm sm:text-sm">
+          <span className="text-lg xlg:text-2xl xl:text-3xl sm:text-2xl lg:text-xl font-bold text-[#DC143C]">
             About Modern Engineering &amp; Technology College
           </span>
           <h2 className="">
@@ -93,13 +93,11 @@ const AboutUsComponent = () => {
             &#40;MIET&#41;, West Bengal&apos;s premier institute for B.Tech &
             Diploma in the field of Engineering. Although we are proudly rooted
             in Bandel &#40;just an hour&apos;s drive from Kolkata&#41;, our
-            community and impact are global.
-          </h2>
-          <h2 className="">
-            Established in 2010, the institute is located amidst verdant
-            abundance in a natural setting, away from the hustle and bustle of a
-            city. From the very beginning, the core tenet of our educational
-            philosophy has been the amalgamation of nature and knowledge.
+            community and impact are global. Established in 2010, the institute
+            is located amidst verdant abundance in a natural setting, away from
+            the hustle and bustle of a city. From the very beginning, the core
+            tenet of our educational philosophy has been the amalgamation of
+            nature and knowledge.
           </h2>
           <h2 className="">
             With unmatched facility and state-of-the-art infrastructure, modern
@@ -114,17 +112,14 @@ const AboutUsComponent = () => {
             inclusive knowledge through regular hands-on training sessions on
             human skills, corporate environments, interview techniques, mock
             drills and relevant technical software sessions that are woven into
-            the regular class fabric.
+            the regular class fabric. We stridently believe that an institute is
+            not just there for a mere degree. It is a journey that leads to the
+            complete progression of the human mind, enabling it to strive
+            towards sustained excellence and address the global challenges of
+            the future. Over the years, our students have made their mark in the
+            world by going on to achieve incredible success in various fields.
           </h2>
-          <h2 className="">
-            We stridently believe that an institute is not just there for a mere
-            degree. It is a journey that leads to the complete progression of
-            the human mind, enabling it to strive towards sustained excellence
-            and address the global challenges of the future. Over the years, our
-            students have made their mark in the world by going on to achieve
-            incredible success in various fields.
-          </h2>
-          <div className="grid grid-cols-2 place-items-stretch mt-[1.15vmax] justify-between gap-6">
+          <div className="grid grid-cols-2 place-items-stretch mt-[1.15vmax] justify-between sm:gap-3 xlg:gap-4 xl:gap-6">
             <div className="flex items-center gap-4">
               <img
                 src="/images/square-check.svg"

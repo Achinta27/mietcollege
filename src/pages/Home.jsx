@@ -22,9 +22,9 @@ const Home = () => {
       <OutstandingPlacement />
       <CompanySlider />
       <MietDetails />
-      <TopHighlights />
-      <SeniorFaculty />
+
       <OurCoursesComponent />
+      <SeniorFaculty />
       <ImportentNotice />
       <GalleryComponent />
       <FooterComponent />

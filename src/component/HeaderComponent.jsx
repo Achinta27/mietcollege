@@ -448,9 +448,12 @@ const HeaderComponent = () => {
               </Link>
             </div>
 
-            <div className="w-[11rem] h-[5rem] p-3 sm:hidden text-[1.3rem] font-semibold animate-blink lg:flex items-center justify-center">
+            <Link
+              to={"/about-miet/online-enquiry"}
+              className="w-[11rem] h-[5rem] p-3 sm:hidden text-[1.3rem] font-semibold animate-blink lg:flex items-center justify-center"
+            >
               Apply Now
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -482,7 +485,7 @@ const HeaderComponent = () => {
                   {dropdownStates[index] && (
                     <div className="w-full h-full flex items-center justify-center z-50">
                       <div
-                        className={`bg-[#bb3232] absolute top-7 left-0 rounded-sm shadow-md mt-1 grid ${getGridColumnsClass(
+                        className={`bg-[#bb3232] absolute lg:top-6 xl:top-7 left-0 rounded-sm shadow-md mt-1 grid ${getGridColumnsClass(
                           navbar.dropdownItems
                         )}`}
                       >

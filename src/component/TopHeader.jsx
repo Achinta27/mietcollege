@@ -83,10 +83,13 @@ const TopHeader = () => {
               Scholarship Facility
             </Link>
           </span>
-          <span className="w-[19rem] p-1 font-semibold lg:text-xs xl:text-sm h-[2.3rem] flex flex-col rounded-2xl justify-center items-center text-white bg-[#bb3232]">
+          <Link
+            to={"/about-miet/online-enquiry"}
+            className="w-[19rem] p-1 font-semibold lg:text-xs xl:text-sm h-[2.3rem] flex flex-col rounded-2xl justify-center items-center text-white bg-[#bb3232] hover:bg-[#FFCC00] hover:text-[#4E0010]  "
+          >
             <span>Admisson Open in B.Tech & </span>
             <span>Diploma 2024 - 2025 </span>
-          </span>
+          </Link>
         </div>
       </div>
     </div>

@@ -23,8 +23,8 @@ const OfferdCourseDesign = ({ content }) => {
       <div className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-8">
         <div>{smalldescription}</div>
         <div className="text-4xl font-semibold text-[#DC143C]">{heading}</div>
-        <div className="flex gap-6 ">
-          <div className="w-[70%] flex flex-col gap-4">
+        <div className="flex sm:flex-col md:flex-row gap-6 ">
+          <div className="lg:w-[70%] md:w-[50%] sm:w-full flex flex-col gap-4">
             <div className="">
               <img src={courseimgsrc} alt="" className="w-full" />
             </div>
@@ -34,13 +34,13 @@ const OfferdCourseDesign = ({ content }) => {
               ))}
             </div>
           </div>
-          <div className="w-[30%]">
+          <div className="lg:w-[30%] md:w-[50%] sm:w-full">
             <EnquiryBoxComponent />
           </div>
         </div>
       </div>
-      <div className="">
-        <div className="flex  px-8 items-start border-[#FFC5D0] bg-[#DC143C] sm:text-xs md:text-base gap-2 lg:text-lg font-semibold text-white ">
+      <div className="p-4">
+        <div className="flex sm:px-4  md:px-8 items-start border-[#FFC5D0] bg-[#DC143C] sm:text-xs md:text-base gap-2 lg:text-lg font-semibold text-white ">
           <div className="w-[15%] border-[#FFC5D0] sm:p-2 md:p-3 border-r">
             SL No.
           </div>
@@ -52,7 +52,7 @@ const OfferdCourseDesign = ({ content }) => {
         <div className="flex flex-col">
           {courseoffers.map((tableitem, index) => (
             <div
-              className={`flex  px-8 font-semibold  items-start gap-2 sm:text-[12px]  md:text-sm lg:text-base text-black ${
+              className={`flex sm:px-4 md:px-8 font-semibold  items-start gap-2 sm:text-[12px]  md:text-sm lg:text-base text-black ${
                 index % 2 === 0 ? "bg-white" : "bg-[#DC143C14]"
               }`}
             >
@@ -68,17 +68,17 @@ const OfferdCourseDesign = ({ content }) => {
         </div>
       </div>
       <div className="xl:p-16 lg:p-8 sm:p-4 flex flex-col gap-4 justify-center items-center">
-        <div className="text-4xl font-semibold text-[#DC143C]">
+        <div className="xlg:text-4xl lg:text-3xl sm:text-2xl font-semibold text-[#DC143C]">
           {allcourseheading}
         </div>
         <div className="">{allcoursedescription}</div>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3 lg:gap-2 xlg:gap-4 md:gap-4 sm:gap-4 xl:gap-8">
           {allcourses.map((course, index) => (
             <div key={index} className="flex flex-col boxsh rounded-lg">
               <div>
-                <img src={course.imgsrc} alt="" />
+                <img src={course.imgsrc} alt="" className="rounded-t-lg" />
               </div>
-              <div className="h-[3.5rem] w-full flex justify-center text-center items-center bg-[#DC143C] text-white font-semibold text-lg">
+              <div className="h-[3.5rem] w-full flex justify-center text-center items-center bg-[#DC143C] text-white font-semibold sm:text-base xl:text-lg lg:text-base">
                 {course.name}
               </div>
               <div className="p-4 h-[8rem] flex flex-col gap-2">

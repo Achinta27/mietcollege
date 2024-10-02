@@ -35,7 +35,7 @@ const OurCoursesComponent = () => {
                   Course Offered
                 </div>
                 <div className="grid grid-cols-1 min-[575px]:grid-cols-2 gap-4">
-                  <span className="w-full sm:h-[15rem] lg:h-[12rem] xl:h-[15rem] p-4 flex flex-col gap-4 rounded-md text-black bg-[url('/images/yellow-bg.svg')] bg-cover bg-no-repeat">
+                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-md text-black bg-[url('/images/yellow-bg.svg')] bg-cover bg-no-repeat">
                     <span className="xl:text-xl sm:text-xl lg:text-lg font-bold">
                       B.Tech
                     </span>
@@ -51,7 +51,7 @@ const OurCoursesComponent = () => {
                       science & Engineering diploma
                     </span>
                   </span>
-                  <span className="w-full sm:h-[15rem] lg:h-[12rem] xl:h-[15rem] p-4 flex flex-col gap-4 rounded-md text-white bg-[url('/images/red-bg.svg')] bg-cover bg-no-repeat">
+                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-md text-white bg-[url('/images/red-bg.svg')] bg-cover bg-no-repeat">
                     <span className="xl:text-xl sm:text-xl lg:text-lg font-bold">
                       Diploma
                     </span>
@@ -74,7 +74,7 @@ const OurCoursesComponent = () => {
                   Training & Placement
                 </div>
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
-                  <span className="w-full sm:h-[15rem] lg:h-[12rem] xl:h-[15rem] p-4 flex flex-col gap-4 rounded-md text-white bg-[url('/images/red-bg.svg')] bg-cover bg-no-repeat">
+                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-md text-white bg-[url('/images/red-bg.svg')] bg-cover bg-no-repeat">
                     <span className="xl:text-xl sm:text-xl lg:text-lg font-bold">
                       Our Recruiters
                     </span>
@@ -90,7 +90,7 @@ const OurCoursesComponent = () => {
                       maximum number of campus opportunities.
                     </span>
                   </span>
-                  <span className="w-full sm:h-[15rem] lg:h-[12rem] xl:h-[15rem] p-4 flex flex-col gap-4 rounded-md text-black bg-[url('/images/yellow-bg.svg')] bg-cover bg-no-repeat">
+                  <span className="w-full sm:h-[15rem] lg:h-[14rem] xl:h-[17rem] p-6 flex flex-col gap-4 rounded-md text-black bg-[url('/images/yellow-bg.svg')] bg-cover bg-no-repeat">
                     <span className="xl:text-xl sm:text-xl lg:text-lg font-bold">
                       Skill Development
                     </span>

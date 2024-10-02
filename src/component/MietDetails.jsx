@@ -28,6 +28,7 @@ const MietDetails = () => {
       role: "Providing a rigorous academic curriculum that is aligned with industry trends and global best practices.",
     },
   ];
+
   return (
     <div className="flex flex-col gap-8 sm:p-4 md:p-8 xl:p-16 w-full justify-center items-center">
       <span className="flex flex-col gap-2 w-full justify-center items-center">
@@ -38,12 +39,16 @@ const MietDetails = () => {
           {mietdetails.map((mietdetail, index) => (
             <div
               key={index}
-              className="p-2 pt-6 flex flex-col items-center gap-[2.5vmax] border border-gray-300 rounded-lg bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)] shadow-[0_0_10px_1px_rgba(0,_0,_0,_0.15)] md:max-w-[28.8vmax] sm:px-2 xl:px-4"
+              className="p-2 pt-10 pb-6 flex flex-col items-center gap-[2.5vmax] border border-gray-300 rounded-lg bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)] shadow-[0_0_10px_1px_rgba(0,_0,_0,_0.15)]  sm:px-2 xl:px-4"
             >
-              <img src={mietdetail.imgsrc} alt="" className="max-w-[24vmax] mt-4 md:mt-0" />
+              <img
+                src={mietdetail.imgsrc}
+                alt=""
+                className="xl:h-[5rem] sm:h-[4rem] lg:h-[4rem] mt-4 md:mt-0"
+              />
               <div className="flex flex-col gap-6 ">
                 <div className="flex flex-col gap-2">
-                  <span className="md:text-xl sm:text-xl lg:text-2xl text-black font-bold text-center">
+                  <span className="md:text-xl sm:text-xl lg:text-xl xl:text-2xl text-black font-bold text-center">
                     {mietdetail.topheading}
                   </span>
                   <span className="flex items-center self-center ">
@@ -53,13 +58,13 @@ const MietDetails = () => {
                   </span>
                 </div>
                 <div className="flex flex-col gap-3 mx-4">
-                  <span className="xl:text-base md:text-base text-sm">
+                  <span className="xl:text-base md:text-sm text-sm">
                     {mietdetail.text}
                   </span>
-                  <span className="xl:text-xl md:text-xl text-base font-semibold text-[#bb3232]">
+                  <span className="xl:text-lg md:text-lg text-base font-semibold text-[#bb3232]">
                     {mietdetail.name}
                   </span>
-                  <span className="xl:text-lg md:text-lg text-sm text-gray-500">
+                  <span className="xl:text-base md:text-sm text-sm text-gray-500">
                     {mietdetail.role}
                   </span>
                 </div>

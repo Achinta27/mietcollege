@@ -208,7 +208,7 @@ const DeptSideHeader = ({}) => {
 
   return (
     <div className="relative">
-      <div className="flex lg:hidden justify-between items-center sm:w-[30%] md:w-[20%] p-4 bg-[#DC143C] text-white">
+      <div className="sm:flex lg:hidden justify-between items-center sm:w-[30%] md:w-full p-4 bg-[#DC143C] text-white">
         <h2 className="text-lg font-semibold">Menu</h2>
         <button onClick={toggleSidebar}>
           <FaBars className="text-2xl" />

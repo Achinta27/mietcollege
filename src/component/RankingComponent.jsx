@@ -4,10 +4,15 @@ import Slider from "react-slick";
 
 const RankingComponent = () => {
   const rankings = [
-    { imgsrc: "images/aicte.png" },
-    { imgsrc: "images/makaut_logo.png" },
-    { imgsrc: "images/wbst.png" },
-    { imgsrc: "images/naac.png" },
+    {
+      imgsrc: "images/aicte.png",
+      text: "All India Council For Technical Education",
+    },
+    {
+      imgsrc: "images/wbscvt.png",
+      text: "West Bengal State Council for Vocational Training",
+    },
+    { imgsrc: "images/wbut.png", text: "West Bengal University of Technology" },
   ];
 
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -23,15 +28,15 @@ const RankingComponent = () => {
         setinfiniteslide(true);
       } else if (window.innerWidth <= 1024) {
         setSlidesToShow(3);
-        setinfiniteslide(true);
+        setinfiniteslide(false);
       } else if (window.innerWidth <= 1280) {
-        setSlidesToShow(4);
+        setSlidesToShow(3);
         setinfiniteslide(false);
       } else if (window.innerWidth <= 1780) {
-        setSlidesToShow(4);
+        setSlidesToShow(3);
         setinfiniteslide(false);
       } else {
-        setSlidesToShow(4);
+        setSlidesToShow(3);
         setinfiniteslide(false);
       }
     };
@@ -58,25 +63,37 @@ const RankingComponent = () => {
   };
   return (
     <div className="flex flex-col gap-8 sm:p-4 md:p-8 xl:p-16 w-full justify-center items-center">
-      <HeadingTemplate heading={"Ranking & Awards"} />
-      <div className=" w-full">
+      <div className="w-full flex  justify-center items-center">
+        <div className="w-fit flex flex-col gap-3 justify-center items-center ">
+          <div className="flex flex-col gap-2 justify-center items-center">
+            <span className="text-xl font-semibold ">
+              Check Approval Permission Copy
+            </span>
+            <span className="text-3xl font-semibold text-red-700">
+              Our Finest Affiliation & Approval
+            </span>
+          </div>
+          <span className="flex items-center">
+            <span className="h-[2px] w-[6rem] bg-red-700"></span>
+            <span className="h-[4px] w-[4rem] bg-red-700"></span>
+            <span className="h-[2px] w-[6rem] bg-red-700"></span>
+          </span>
+        </div>
+      </div>
+      <div className=" lg:w-[90%] sm:w-full">
         <Slider {...settings}>
           {rankings.map((ranking, index) => (
             <div
               key={index}
-              className="justify-center items-center !flex relative"
+              className="!flex w-full flex-col gap-2 p-2 text-center items-center justify-center"
             >
-              <div className="lg:w-[80%] sm:w-[95%] md:w-[90%] xl:w-[70%] flex justify-center items-center">
-                <img
-                  src="/images/banner-bg.png"
-                  alt=""
-                  className="xl:w-[20rem] xlg:w-[16rem] lg:w-[14rem] sm:w-[12rem]"
-                />
-                <img
-                  src={ranking.imgsrc}
-                  alt=""
-                  className="xl:w-[8rem] xlg:w-[6rem] sm:w-[4.5rem] absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3"
-                />
+              <div className="w-full flex justify-center items-center flex-col">
+                <span className="flex justify-center items-center">
+                  <img src={ranking.imgsrc} alt="" className="w-[80%]" />
+                </span>
+                <span className="w-full text-lg  font-semibold text-center">
+                  {ranking.text}
+                </span>
               </div>
             </div>
           ))}

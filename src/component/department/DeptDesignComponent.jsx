@@ -9,11 +9,11 @@ const DeptDesignComponent = ({ content }) => {
   return (
     <MainPageTemplate>
       <SubBanner bannerimg={bannerimg} heading={heading} />
-      <div className="w-full flex gap-8 xl:p-16 lg:p-8 sm:p-4">
-        <div className="w-[30%] flex flex-col gap-4 ">
+      <div className="w-full flex lg:flex-row sm:flex-col gap-8 xl:p-16 lg:p-8 sm:p-4">
+        <div className="lg:w-[30%] md:w-[20%] sm:w-full flex flex-col gap-4 ">
           <DeptSideHeader sideheaderdept={sideheaderdept} />
         </div>
-        <div className="w-[70%] flex flex-col gap-4">
+        <div className="lg:w-[70%]  sm:w-full flex flex-col gap-4">
           <div className="">
             <img src={deptimg} alt="" className="w-full" />
           </div>
