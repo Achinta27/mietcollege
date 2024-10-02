@@ -15,7 +15,7 @@ const PrincipalMessage = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-4 lg:gap-6 xl:gap-16">
           <div className="">
             <img
-              src="/images/principalimg.png"
+              src="/images/principal.jpg"
               alt=""
               className="w-full rounded-md"
             />
