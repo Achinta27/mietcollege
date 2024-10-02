@@ -3,38 +3,61 @@ import MainPageTemplate from "../template/MainPageTemplate";
 import SubBanner from "../component/SubBanner";
 import { VscCircleFilled } from "react-icons/vsc";
 import FooterComponent from "../component/FooterComponent";
+import { Link } from "react-router-dom";
 
 const Scholarships = () => {
   const scholarships = [
     {
-      title: "Scholarships for B. Tech",
+      title: "Scholarships for B. Tech Student",
       aboutscholarship: "About Scholarship",
       aboutdetails: [
-        "Lorem ipsum dolor sit amet consectetur. Nulla sit consectetur faucibus arcu et tincidunt ultricies. Id tellus id tincidunt amet imperdiet convallis tellus proin. Nisl vitae sagittis dui arcu massa turpis. Justo auctor scelerisque aliquam ornare tempus. Amet a augue sit ut vestibulum aenean nunc. Dignissim sit amet justo aenean phasellus. Faucibus tellus nullam consectetur lectus dui. Cursus nunc rhoncus viverra lectus sed lectus. Eget dui tellus tincidunt dui est pellentesque massa tortor nisl. Vel integer neque quisque at quam.",
-        "Quam mattis velit porttitor turpis. Sapien euismod euismod arcu scelerisque habitasse elementum congue. Fusce faucibus est amet egestas vitae. Adipiscing lobortis libero morbi congue. Elit consectetur fusce in ridiculus sem dui cursus lectus diam orci quam.",
+        "At Modern Institute of Engineering & Technology (MIET), several scholarships are available to support students in their academic pursuits. These include government scholarships like the Nabanna Scholarship and Swami Vivekananda Merit-cum-Means Scholarship (SVMCM), which provide financial aid based on merit and economic need for students pursuing higher education. Additionally, the National Scholarship Portal offers access to a range of central government scholarships for various cate",
       ],
-      featureheading: "Unique Features of The Our Scholarship Scheme",
+      featureheading: "Name of the Scholarships available",
       featuredetail: [
-        "Lorem ipsum dolor sit amet consectetur. Feature 1",
-        "Lorem ipsum dolor sit amet consectetur. Feature 2",
-        "Lorem ipsum dolor sit amet consectetur. Feature 3",
-        "Lorem ipsum dolor sit amet consectetur. Feature 4",
+        {
+          name: "Swami Vivekananda Merit cum Means Scholarship",
+          link: "https://www.svmcm.wbhed.gov.in/",
+        },
+        {
+          name: "Scholarship to SC, ST and OBC Students",
+          link: "https://oasis.gov.in/",
+        },
+        {
+          name: "Aikyashree - Minority Scholarship",
+          link: "https://wbmdfcscholarship.in/",
+        },
+        {
+          name: "National Scholarship Portal",
+          link: "https://scholarships.gov.in/",
+        },
       ],
       scholarshipimg: "/images/s1.png",
     },
     {
-      title: "Scholarships for Diploma",
+      title: "Scholarships for Diploma Student",
       aboutscholarship: "About Scholarship",
       aboutdetails: [
-        "Lorem ipsum dolor sit amet consectetur. Nulla sit consectetur faucibus arcu et tincidunt ultricies. Id tellus id tincidunt amet imperdiet convallis tellus proin. Nisl vitae sagittis dui arcu massa turpis. Justo auctor scelerisque aliquam ornare tempus. Amet a augue sit ut vestibulum aenean nunc. Dignissim sit amet justo aenean phasellus. Faucibus tellus nullam consectetur lectus dui. Cursus nunc rhoncus viverra lectus sed lectus. Eget dui tellus tincidunt dui est pellentesque massa tortor nisl. Vel integer neque quisque at quam.",
-        "Quam mattis velit porttitor turpis. Sapien euismod euismod arcu scelerisque habitasse elementum congue. Fusce faucibus est amet egestas vitae. Adipiscing lobortis libero morbi congue. Elit consectetur fusce in ridiculus sem dui cursus lectus diam orci quam.",
+        "Diploma students at Modern Institute of Engineering & Technology (MIET) can benefit from various scholarships to support their education. The Swami Vivekananda Merit-cum-Means Scholarship (SVMCM) provides financial assistance to meritorious students with economic need, helping them pursue technical education. The West Bengal Government Merit-cum-Means Scholarship Scheme similarly supports students from economically disadvantaged backgrounds based on academic performance. Through the National Scholarship Portal (NSP), students can access a range of scholarships offered by the Government of India for different categories. Additionally, the West Bengal SC/ST Scholarship is available to students from Scheduled Castes and Scheduled Tribes, offering financial support for their educational needs. These scholarships ensure that deserving diploma students can continue their studies without financial barriers.",
       ],
-      featureheading: "Unique Features of The Our Scholarship Scheme",
+      featureheading: "Name of the Scholarships available",
       featuredetail: [
-        "Lorem ipsum dolor sit amet consectetur. Feature 1",
-        "Lorem ipsum dolor sit amet consectetur. Feature 2",
-        "Lorem ipsum dolor sit amet consectetur. Feature 3",
-        "Lorem ipsum dolor sit amet consectetur. Feature 4",
+        {
+          name: "West Bengal Government Merit-cum-Means Scholarship Scheme",
+          link: "",
+        },
+        {
+          name: "Swami Vivekananda Scholarship (SVMCM)",
+          link: "https://www.svmcm.wbhed.gov.in/",
+        },
+        {
+          name: "West Bengal SC/ST Scholarship",
+          link: "https://oasis.gov.in/",
+        },
+        {
+          name: "National Scholarship Portal (NSP)",
+          link: "https://scholarships.gov.in/",
+        },
       ],
       scholarshipimg: "/images/s1.png",
     },
@@ -76,15 +99,17 @@ const Scholarships = () => {
                   </div>
                   <div className="flex flex-col lg:gap-2 xl:gap-4">
                     {item.featuredetail.map((feature, index) => (
-                      <div
-                        className="flex gap-2 lg:text-sm sm:text-xs xlg:text-lg font-medium"
+                      <Link
+                        to={feature.link}
+                        target="_blank"
+                        className="flex gap-2 lg:text-sm sm:text-xs underline underline-offset-2 text-blue-600 xlg:text-lg font-medium"
                         key={index}
                       >
                         <span className="mt-1">
                           <VscCircleFilled />
                         </span>{" "}
-                        {feature}
-                      </div>
+                        {feature.name}
+                      </Link>
                     ))}
                   </div>
                 </div>

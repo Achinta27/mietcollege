@@ -63,29 +63,30 @@ const AboutUsComponent = () => {
         <div className="lg:w-[50%] sm:w-full relative">
           <div className="grid grid-cols-2  xl:gap-6 sm:gap-4">
             <img
-              src="/images/about1.png"
-              alt="about"
+              src="/images/gate.webp"
+              alt="building"
               className="size-[21.25vmax] object-cover rounded"
             />
+
             <img
               src="/images/Building5.jpg"
               alt="building"
               className="size-[21.25vmax] object-cover rounded"
             />
             <img
-              src="/Campus 2 New/WhatsApp Image 2024-08-02 at 11.00.05.jpeg"
-              alt="building"
+              src="/images/about1.jpg"
+              alt="about"
               className="size-[21.25vmax] object-cover rounded"
             />
             <img
-              src="/images/principal-about.png"
+              src="/images/principal-about.jpg"
               alt="principal"
               className="size-[21.25vmax] object-cover rounded"
             />
           </div>
         </div>
         <div className="lg:w-[50%] sm:w-full flex flex-col justify-between gap-2 xl:text-[15px]/[25px] xxl:text-xl lg:text-xs xlg:text-sm sm:text-sm">
-          <span className="text-lg xlg:text-2xl xl:text-3xl sm:text-2xl lg:text-xl font-bold text-[#DC143C]">
+          <span className="text-lg xlg:text-2xl xl:text-[28px] sm:text-2xl lg:text-xl font-bold text-[#DC143C]">
             About Modern Engineering &amp; Technology College
           </span>
           <h2 className="">

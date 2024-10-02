@@ -77,7 +77,7 @@ const ImportentNotice = () => {
         <div className="sm:w-full sm:h-fit">
           <span>
             <img
-              src="/images/notice.jpg"
+              src="/images/admisionenquiryimg.jpg"
               alt=""
               className="rounded-md md:max-w-[30rem] lg:max-w-[29rem] min-[1120px]:max-w-[33rem] xlg:max-w-[38rem] xl:max-w-[44vmax] w-full"
             />
@@ -92,7 +92,7 @@ const ImportentNotice = () => {
               key={index}
               className="flex flex-col md:flex-row rounded-md p-2 md:p-[1.38vmax] gap-[1.59vmax] border border-[#e7e7e7] shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]"
             >
-              <span className="flex flex-col gap-2 max-w-[35ch]">
+              <span className="flex flex-col gap-2 w-[70%]">
                 <span className="flex font-semibold ">
                   <span></span>
                   <span className="xl:text-base sm:text-sm">
@@ -104,8 +104,10 @@ const ImportentNotice = () => {
                   Date: {notice.date}
                 </span>
               </span>
-              <div className="xl:py-[0.55vmax] py-0.5 px-2 xl:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] sm:text-sm xl:text-base text-white self-end md:self-end cursor-pointer">
-                Know More <PiArrowSquareOutLight className="ps-1  size-5" />
+              <div className="flex justify-end items-end w-[30%]">
+                <div className="xl:py-[0.55vmax] lg:py-3 sm:py-2 md:py-0.5 px-2 xl:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] sm:text-sm xl:text-base text-white self-end md:self-end cursor-pointer">
+                  Know More <PiArrowSquareOutLight className="ps-1  size-5" />
+                </div>
               </div>
             </div>
           ))}

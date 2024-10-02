@@ -57,7 +57,7 @@ const ContactUs = () => {
           label: "Phone:",
           details: [
             {
-              text: "+91 8336070583",
+              text: "+91 8336070583,",
               src: "tel:918336070583",
             },
             {
@@ -136,7 +136,7 @@ const ContactUs = () => {
           label: "Mail ID :",
           details: [
             {
-              text: "hr@mietcollege.org",
+              text: "hr@mietcollege.org,",
               src: "mailTo:hr@mietcollege.org",
             },
             {
@@ -188,7 +188,7 @@ const ContactUs = () => {
                           key={num}
                           target="_blank"
                           referrerPolicy="no-referrer"
-                          className="text-[#686868] text-lg lg:text-xl lg:text-justify pe-4 after:content-[',']"
+                          className="text-[#686868] text-lg lg:text-xl lg:text-justify pe-4"
                         >
                           {link.text}
                         </Link>

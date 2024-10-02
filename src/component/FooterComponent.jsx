@@ -73,8 +73,8 @@ const FooterComponent = () => {
           path: "/mietcampus/facilities/conference-room",
         },
         {
-          text: "Library",
-          path: "/mietcampus/facilities/library",
+          text: "Playground",
+          path: "/mietcampus/facilities/playground",
         },
         {
           text: "Transport",
@@ -94,27 +94,29 @@ const FooterComponent = () => {
       textTittle: "Placements",
       links: [
         {
-          text: "Training & Placement",
+          text: "Overview",
           path: "/training-internship/overview",
+        },
+        {
+          text: "Placement Statistics",
+          path: "/pdf/PLACEMENTSTATICS.pdf",
+          target: "_blank",
+        },
+        {
+          text: "Placement Record",
+          path: "/pdf/6 years placement data 2023-24.pdf",
+          target: "_blank",
         },
         {
           text: "Our Recruiters",
           path: "/training-internship/our-recruiters",
         },
         {
-          text: "Library",
-          path: "/mietcampus/facilities/library",
+          text: "Photo Gallery for T&P",
+          path: "/mietcampus/photogalleryfotT&P",
         },
         {
-          text: "Library Rules & Regulation",
-          path: "/mietcampus/facilities/library-rules",
-        },
-        {
-          text: "Library Vision & Mission",
-          path: "/mietcampus/facilities/library-rules",
-        },
-        {
-          text: "Enquiry",
+          text: "Admission Enquiry",
           path: "/about-miet/online-enquiry",
         },
       ],
@@ -211,6 +213,10 @@ const FooterComponent = () => {
           text: "Student Helpline: +91 8276066444",
           path: "tel:918276066444",
         },
+        {
+          text: "Download Our App",
+          path: "https://play.google.com/",
+        },
       ],
     },
   ];
@@ -234,19 +240,20 @@ const FooterComponent = () => {
               >
                 Admission 2024-25
               </Link>
-              <Link
-                to="/pdf/RPGIprospectors.pdf"
-                target="_blank"
-                className="font-bold text-lg md:text-lg border border-[#FFCC00] text-[#FFCC00] hover:bg-[#FFCC00] hover:text-[#4E0010] text-center rounded inline-flex items-center justify-center py-[0.8vmax] font-sans"
-              >
-                Prospectus 2024-25
-              </Link>
+
               <Link
                 to="/pdf/RPGIprospectors.pdf"
                 target="_blank"
                 className="font-bold text-lg md:text-lg border border-white hover:bg-white hover:text-[#4E0010] text-white text-center rounded inline-flex items-center justify-center py-[0.8vmax] font-sans"
               >
                 Payment Online
+              </Link>
+              <Link
+                to="/pdf/RPGIprospectors.pdf"
+                target="_blank"
+                className="font-bold text-lg md:text-lg border border-[#FFCC00] text-[#FFCC00] hover:bg-[#FFCC00] hover:text-[#4E0010] text-center rounded inline-flex items-center justify-center py-[0.8vmax] font-sans"
+              >
+                Prospectus 2024-25
               </Link>
             </div>
             {footerLinks1st.map((item, index) => (
@@ -260,12 +267,25 @@ const FooterComponent = () => {
                 <ul className="flex flex-col gap-[1.38vmax]">
                   {item.links.map((link, index) => (
                     <li key={index}>
-                      <Link
-                        to={link.path}
-                        className="text-white font-semibold sm:text-base md:text-sm lg:text-sm"
-                      >
-                        &#9658; {link.text}
-                      </Link>
+                      {link.path.endsWith(".pdf") ? (
+                        // If it's a PDF link, open in a new tab
+                        <a
+                          href={link.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white font-semibold sm:text-base md:text-sm lg:text-sm"
+                        >
+                          &#9658; {link.text}
+                        </a>
+                      ) : (
+                        // Otherwise, use Link for internal navigation
+                        <Link
+                          to={link.path}
+                          className="text-white font-semibold sm:text-base md:text-sm lg:text-sm"
+                        >
+                          &#9658; {link.text}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -282,15 +302,25 @@ const FooterComponent = () => {
                 <ul className="flex flex-col gap-[1.38vmax]">
                   {item.links.map((link, index) => (
                     <li key={index}>
-                      <Link
-                        to={link.path}
-                        target={
-                          link.path.startsWith("http") ? "_blank" : "_self"
-                        }
-                        className="text-white font-semibold sm:text-base md:text-base lg:text-[13px]/[20px] xl:text-sm"
-                      >
-                        &#9658; {link.text}
-                      </Link>
+                      {link.path.endsWith(".pdf") ? (
+                        // If it's a PDF link, open in a new tab
+                        <a
+                          href={link.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-white font-semibold sm:text-base md:text-sm lg:text-xs xl:text-sm"
+                        >
+                          &#9658; {link.text}
+                        </a>
+                      ) : (
+                        // Otherwise, use Link for internal navigation
+                        <Link
+                          to={link.path}
+                          className="text-white font-semibold sm:text-base md:text-sm lg:text-xs xl:text-sm"
+                        >
+                          &#9658; {link.text}
+                        </Link>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -318,14 +348,22 @@ const FooterComponent = () => {
                     className="size-8 md:size-[2rem]"
                   />
                 </Link>
-                <Link to="" className="flex items-center justify-center">
+                <Link
+                  to="https://in.linkedin.com/company/mietbandel"
+                  target="_blank"
+                  className="flex items-center justify-center"
+                >
                   <img
                     src="/images/linkedin.svg"
                     alt="linkedin"
                     className="size-8 md:size-[2rem]"
                   />
                 </Link>
-                <Link to="" className="flex items-center justify-center">
+                <Link
+                  to="https://www.instagram.com/miet.collegeofficial_bandel/"
+                  target="_blank"
+                  className="flex items-center justify-center"
+                >
                   <img
                     src="/images/instagram.svg"
                     alt="instagram"

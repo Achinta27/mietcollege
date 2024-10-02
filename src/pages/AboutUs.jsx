@@ -49,30 +49,26 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[1.66vmax]">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-[1.66vmax]">
               <img
-                src="/images/about1.png"
-                alt="about"
-                width={306}
-                className="min-[585px]:size-[21.25vmax] object-cover rounded"
+                src="/images/gate.webp"
+                alt="building"
+                className="size-[21.25vmax] object-cover rounded"
               />
               <img
                 src="/images/Building5.jpg"
                 alt="building"
-                width={306}
-                className="min-[585px]:size-[21.25vmax] object-cover rounded"
+                className="size-[21.25vmax] object-cover rounded"
               />
               <img
-                src="/Campus 2 New/WhatsApp Image 2024-08-02 at 11.00.05.jpeg"
-                alt="building"
-                width={306}
-                className="min-[585px]:size-[21.25vmax] object-cover rounded"
+                src="/images/about1.jpg"
+                alt="about"
+                className="size-[21.25vmax] object-cover rounded"
               />
               <img
-                src="/images/principal-about.png"
+                src="/images/principal-about.jpg"
                 alt="principal"
-                width={306}
-                className="min-[585px]:size-[21.25vmax] object-cover rounded"
+                className="size-[21.25vmax] object-cover rounded"
               />
             </div>
           </div>

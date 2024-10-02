@@ -430,7 +430,7 @@ const HeaderComponent = () => {
             <div className="flex gap-2 z-20 items-center">
               <span className="lg:block sm:hidden">
                 <img
-                  src="images/call-icon.png"
+                  src="/images/call-icon.png"
                   alt=""
                   className="xl:w-[3rem] lg:w-[2rem]"
                 />

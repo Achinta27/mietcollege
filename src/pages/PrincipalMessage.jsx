@@ -48,7 +48,7 @@ const PrincipalMessage = () => {
               <span className="font-semibold">
                 Prof.&#40;Dr.&#41; Arijit Choudhury
               </span>
-              <span>Principa, MIET College, Rajhat, Hooghly WB.</span>
+              <span>Principal, MIET College, Rajhat, Hooghly WB.</span>
             </div>
           </div>
         </div>

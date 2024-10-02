@@ -63,7 +63,7 @@ const FeesStructure = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center sm:gap-2 md:gap-6 lg:gap-16 sm:text-base md:text-2xl lg:text-3xl font-bold text-white">
+        <div className="flex justify-between items-center sm:gap-2 md:gap-6 lg:gap-16 sm:text-base md:text-2xl lg:text-2xl font-bold text-white">
           <div className="h-[5rem] sm:w-[50%] md:w-[45%] bg-[#DC143C] flex sm:p-4 md:p-8 lg:px-16 text-center justify-center items-center rounded-lg ">
             Placement Previous Year Download PDF
           </div>

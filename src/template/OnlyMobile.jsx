@@ -37,7 +37,7 @@ const OnlyMobile = () => {
       >
         <Link
           target="_Blank"
-          to=""
+          to="https://api.whatsapp.com/send?phone=918276066444"
           className="flex flex-col items-center gap-2 text-sm text-white font-semibold"
         >
           <span className="text-xl">

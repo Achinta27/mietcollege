@@ -11,7 +11,7 @@ const BTech = () => {
           bannerimg: "/images/admissionsubbanner.jpg",
           heading: "Bachelor of Technology",
           smalldescription:
-            "Lorem ipsum dolor sit amet consectetur. Dictumst eget semper sapien tellus. Tempor sapien urna sed tempor sollicitudin. Turpis volutpat semper at id est faucibus lacus. Nunc elit pellentesque lectus neque id purus mauris amet. Quis mauris in nunc quis eget. Et orci a sed ultrices commodo. Viverra cras sed amet nec sit varius cursus at sapien. Turpis in in feugiat lacus in egestas platea at. Scelerisque lorem facilisi justo maecenas ultrices. Ipsum enim dapibus eu convallis malesuada pulvinar",
+            "The B.Tech program at Modern Institute of Engineering & Technology (MIET) is designed to equip students with a strong foundation in engineering principles, practical skills, and critical thinking. With state-of-the-art laboratories, a dedicated faculty, and a focus on real-world applications, the program fosters innovation, professionalism, and teamwork. Students are nurtured to become leaders in their fields through hands-on projects, co-curricular activities, and personalized career support.",
           courseimgsrc: "/images/btech.png",
           coursedescription: [""],
           courseoffers: [
@@ -42,7 +42,7 @@ const BTech = () => {
           ],
           allcourseheading: "WE HAVE A UNIQUE ENGINEERING CURRICULUM",
           allcoursedescription:
-            "Lorem ipsum dolor sit amet consectetur. Dictumst eget semper sapien tellus. Tempor sapien urna sed tempor sollicitudin. Turpis volutpat semper at id est faucibus lacus. Nunc elit pellentesque lectus neque id purus mauris amet. Quis mauris in nunc quis eget. Et orci a sed ultrices",
+            "The B.Tech program at Modern Institute of Engineering & Technology (MIET) provides a solid foundation in engineering, emphasizing hands-on learning, innovation, and teamwork. With modern labs, expert faculty, and industry-focused training, MIET nurtures students to excel in their careers and become future leaders.",
           allcourses: [
             {
               imgsrc: "/courses/Mechanical Engineering.jpg",
@@ -114,7 +114,7 @@ const BTech = () => {
           bannerimg: "/images/admissionsubbanner.jpg",
           heading: "Diploma",
           smalldescription:
-            "Lorem ipsum dolor sit amet consectetur. Dictumst eget semper sapien tellus. Tempor sapien urna sed tempor sollicitudin. Turpis volutpat semper at id est faucibus lacus. Nunc elit pellentesque lectus neque id purus mauris amet. Quis mauris in nunc quis eget. Et orci a sed ultrices commodo. Viverra cras sed amet nec sit varius cursus at sapien. Turpis in in feugiat lacus in egestas platea at. Scelerisque lorem facilisi justo maecenas ultrices. Ipsum enim dapibus eu convallis malesuada pulvinar",
+            "The Diploma program at Modern Institute of Engineering & Technology (MIET) offers a comprehensive education, focusing on technical expertise and hands-on training in various engineering fields. With modern laboratories, experienced faculty, and industry-relevant curricula, the program prepares students for real-world challenges. MIET fosters professional growth through practical projects, co-curricular activities, and personality development initiatives. Approved by AICTE and affiliated with WBS",
           courseimgsrc: "/images/btech.png",
           coursedescription: [],
           courseoffers: [
@@ -134,7 +134,7 @@ const BTech = () => {
           ],
           allcourseheading: "WE HAVE A UNIQUE ENGINEERING CURRICULUM",
           allcoursedescription:
-            "Lorem ipsum dolor sit amet consectetur. Dictumst eget semper sapien tellus. Tempor sapien urna sed tempor sollicitudin. Turpis volutpat semper at id est faucibus lacus. Nunc elit pellentesque lectus neque id purus mauris amet. Quis mauris in nunc quis eget. Et orci a sed ultrices",
+            "The Diploma program at Modern Institute of Engineering & Technology (MIET) is designed to provide students with a strong foundation in engineering principles, hands-on experience, and practical skills. With modern labs, experienced faculty, and a curriculum aligned with industry needs, students gain the knowledge and abilities required for the workforce. MIET emphasizes personality development, teamwork, and professionalism. Approved by AICTE and affiliated with WBSCT & VE & SD, the program prep",
           allcourses: [
             {
               imgsrc: "/courses/Mechanical Engineering diploma.jpg",
