@@ -235,7 +235,7 @@ const HeaderComponent = () => {
             { name: "Student Counseling", link: "" },
           ],
         },
-        { name: "Infrastructure", link: "/mietcampus/events" },
+        { name: "Infrastructure", link: "" },
         { name: "Events", link: "/mietcampus/events" },
 
         {
