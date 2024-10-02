@@ -156,10 +156,10 @@ const ContactUs = () => {
         heading={"Contact Us"}
       />
       <div className="xl:p-16 sm:p-4 lg:p-8 flex flex-col gap-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-9">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 sm:gap-4 lg:gap-9">
           {contactDetails.map((items, index) => (
             <div
-              className="flex flex-col bg-white shadow-[0_0_15px_0_rgba(0,_0,_0,_0.20)] rounded-lg md:min-h-96"
+              className="flex flex-col bg-white shadow-[0_0_15px_0_rgba(0,_0,_0,_0.20)] rounded-lg h-full"
               key={index}
             >
               <h1
@@ -171,26 +171,29 @@ const ContactUs = () => {
                   items.headerTextColor === "#333"
                     ? "text-[#333]"
                     : "text-[#fff]"
-                } rounded-t-lg py-8 lg:py-10`}
+                } rounded-t-lg py-4 lg:py-6`}
               >
                 {items.headerText}
               </h1>
-              <div className="my-4 md:my-6 lg:my-8 mx-8 md:mx-10 lg:mx-12 flex flex-col gap-6 rounded-b-lg">
+              <div className="my-4 md:my-4 lg:my-8 mx-8 lg:pb-6 md:mx-6 lg:mx-12 flex flex-col gap-6 rounded-b-lg">
                 {items.description.map((detail, index) => (
                   <div key={index}>
                     <h3 className="text-[#dc143c] text-justify text-xl lg:text-2xl">
                       {detail.label}
                     </h3>
-                    {detail.details.map((link, num) => (
-                      <Link
-                        to={link.src}
-                        target="_blank"
-                        referrerPolicy="no-referrer"
-                        className="text-[#686868] text-lg lg:text-xl lg:text-justify pe-4 after:content-[',']"
-                      >
-                        {link.text}
-                      </Link>
-                    ))}
+                    <div className="flex flex-col">
+                      {detail.details.map((link, num) => (
+                        <Link
+                          to={link.src}
+                          key={num}
+                          target="_blank"
+                          referrerPolicy="no-referrer"
+                          className="text-[#686868] text-lg lg:text-xl lg:text-justify pe-4 after:content-[',']"
+                        >
+                          {link.text}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -225,9 +228,9 @@ const ContactUs = () => {
           <img
             src="/images/admisionenquiryimg.jpg"
             alt="Admission Inquiry"
-            className="md:h-[45.5rem] object-cover hidden md:block"
+            className="md:h-[45.5rem] object-cover rounded-md hidden md:block"
           />
-          <div className="px-8 md:px-10 lg:px-12 py-4 md:py-6 lg:py-8 bg-[#DC143C] rounded-md flex-1 flex">
+          <div className="px-8 md:px-6 lg:px-12 py-4 md:py-6 lg:py-8 bg-[#DC143C] rounded-md flex-1 flex">
             <div className="flex flex-col justify-between gap-5 flex-1">
               <span className="flex justify-center text-center font-semibold text-white text-4xl">
                 Quick Enquiry For Admission
