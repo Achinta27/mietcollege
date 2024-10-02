@@ -14,7 +14,11 @@ const ChairmanMessage = () => {
       <div className="xl:p-16 lg:p-8 sm:p-4">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-4 lg:gap-6 xl:gap-16">
           <div className="">
-            <img src="/images/chairman.jpeg" alt="" className="w-full" />
+            <img
+              src="/images/chairman.jpeg"
+              alt=""
+              className="w-full rounded-md"
+            />
           </div>
           <div className="flex flex-col sm:gap-2 lg:gap-2 xlg:gap-4">
             <div className=" lg:text-3xl xlg:text-4xl sm:text-2xl font-semibold border-l-[5px] border-black pl-4 text-[#DC143C]">
@@ -40,7 +44,8 @@ const ChairmanMessage = () => {
               professionals for their successful careers.
             </div>
             <div className="flex flex-col md:text-xs xl:text-lg xlg:text-base lg:text-sm xl:gap-1 xlg:mt-3  xl:mt-6 ">
-              <span className="font-semibold">Rana Deb</span>
+              <span className="font-semibold">Mr.&#40;Rana Deb</span>
+              <span>Chairman, MIET College</span>
             </div>
           </div>
         </div>
