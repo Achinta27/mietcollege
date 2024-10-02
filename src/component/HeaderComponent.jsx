@@ -332,7 +332,7 @@ const HeaderComponent = () => {
                         </button>
 
                         {dropdownStates[index] && (
-                          <div className="bg-[#751e1e] rounded-lg shadow-md mt-1 p-2 w-full transition-opacity border-gray-200 text-white opacity-100">
+                          <div className="bg-[#751e1e] rounded-lg shadow-md mt-1 p-2 w-[25rem]  transition-opacity border-gray-200 text-white opacity-100">
                             {navbar.dropdownItems.map((item, i) => (
                               <div key={i}>
                                 {item.nesteddropdownItems ? (
@@ -353,7 +353,7 @@ const HeaderComponent = () => {
                                       </span>
                                     </button>
                                     {dropdownStates[`${index}-${i}`] && (
-                                      <div className="ml-4">
+                                      <div className="ml-4 ">
                                         {item.nesteddropdownItems.map(
                                           (nestedItem, j) => (
                                             <a
@@ -526,13 +526,13 @@ const HeaderComponent = () => {
                               </Link>
                             )}
                             {item.nesteddropdownItems && (
-                              <div className="absolute left-full -top-2 w-[16rem] z-[60] hidden group-hover:block bg-white shadow-md rounded-sm p-2">
+                              <div className="absolute left-full -top-2 w-[18rem] h-auto overflow-scroll no-scrollbar z-[60] hidden group-hover:block bg-white shadow-md rounded-sm p-2">
                                 {item.nesteddropdownItems.map((nestedItem, j) =>
                                   nestedItem.target ? (
                                     <a
                                       key={j}
                                       href={nestedItem.link}
-                                      className="flex py-4 items-center px-2 text-black hover:bg-[#751e1e] hover:text-white"
+                                      className="flex py-3 items-center px-2 text-black hover:bg-[#751e1e] hover:text-white"
                                       target={nestedItem.target}
                                     >
                                       <span>
@@ -544,7 +544,7 @@ const HeaderComponent = () => {
                                     <Link
                                       key={j}
                                       to={nestedItem.link}
-                                      className="flex py-4 items-center px-2 text-black hover:bg-[#751e1e] hover:text-white"
+                                      className="flex py-3 items-center px-2 text-black hover:bg-[#751e1e] hover:text-white"
                                     >
                                       <span>
                                         <MdArrowRight />

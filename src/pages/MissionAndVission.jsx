@@ -38,11 +38,11 @@ const MissionAndVission = () => {
         heading={"Mission & Vission"}
       />
       <div className="xl:p-16 sm:p-4 lg:p-8 flex flex-col gap-16">
-        <div className="grid sm:grid-cols-1 md:grid-cols-3 sm:gap-4 md:gap-2 lg:gap-8">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 sm:gap-4 md:gap-2 xlg:gap-6 lg:gap-3 xl:gap-8">
           {vissionmissions.map((mietdetail, index) => (
             <div
               key={index}
-              className="p-2 pt-6 flex flex-col items-center gap-[2.5vmax] border border-gray-300 rounded-lg bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)] shadow-[0_0_10px_1px_rgba(0,_0,_0,_0.15)] md:max-w-[28.8vmax] sm:px-2 xl:px-4"
+              className="p-2 pt-6 flex flex-col items-center gap-[2.5vmax] border border-gray-300 rounded-lg bg-[linear-gradient(180deg,_#FFF_0%,_#FFF7F8_100%)] shadow-[0_0_10px_1px_rgba(0,_0,_0,_0.15)] sm:px-2 xl:px-4"
             >
               <img src={mietdetail.imgsrc} alt="" className="max-w-[24vmax]" />
               <div className="flex flex-col gap-6 ">
@@ -57,7 +57,7 @@ const MissionAndVission = () => {
                   </span>
                 </div>
                 <div className="flex flex-col gap-3 mx-4">
-                  <span className="xl:text-base md:text-base text-sm">
+                  <span className="xl:text-base md:text-base lg:text-sm text-sm">
                     {mietdetail.text}
                   </span>
                   <span className="xl:text-xl md:text-xl text-base font-semibold text-[#bb3232]">

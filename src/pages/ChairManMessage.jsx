@@ -44,8 +44,8 @@ const ChairmanMessage = () => {
               professionals for their successful careers.
             </div>
             <div className="flex flex-col md:text-xs xl:text-lg xlg:text-base lg:text-sm xl:gap-1 xlg:mt-3  xl:mt-6 ">
-              <span className="font-semibold">Mr.&#40;Rana Deb</span>
-              <span>Chairman, MIET College</span>
+              <span className="font-semibold">Mr.Rana Deb</span>
+              <span>Chairman, MIET College, Rajhat, Bandel, Hooghly</span>
             </div>
           </div>
         </div>
