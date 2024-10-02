@@ -52,11 +52,15 @@ const ComitteeDesignComponent = ({ content }) => {
           </div>
         </div>
         <div className="w-full flex justify-between sm:flex-col md:flex-row gap-4">
-          <div className="md:w-[30%] sm:w-full">
+          <div className="xl:w-[45%] lg:w-[40%] sm:w-full">
             <EnquiryBoxComponent />
           </div>
-          <div className="md:w-[40%] sm:w-full">
-            <img src="/images/comitte.png" alt="Committee" className="w-full" />
+          <div className="xl:w-[55%] lg:w-[60%] h-auto sm:w-full">
+            <img
+              src="/images/comitee.jpg"
+              alt="Committee"
+              className="w-full rounded-md"
+            />
           </div>
         </div>
       </div>

@@ -25,7 +25,7 @@ const DeptSideHeader = ({}) => {
         { name: "Lesson Plan", link: "" },
         {
           name: "Faculty Details",
-          link: "/department/civil/faculty-details",
+          link: "",
         },
         { name: "Laboratories", link: "/pdf/CE Lab Brochure.pdf" },
         { name: "Events", link: "" },
@@ -48,7 +48,7 @@ const DeptSideHeader = ({}) => {
         { name: "Lesson Plan", link: "" },
         {
           name: "Faculty Details",
-          link: "/department/bsc/faculty-details",
+          link: "",
         },
         { name: "Laboratories", link: "/pdf/BSH DETAILS.docx.pdf" },
         { name: "Events", link: "" },
@@ -71,7 +71,7 @@ const DeptSideHeader = ({}) => {
         { name: "Lesson Plan", link: "" },
         {
           name: "Faculty Details",
-          link: "/department/me/faculty-details",
+          link: "",
         },
         { name: "Laboratories", link: "/pdf/ME Lab Brochure.pdf" },
         { name: "Events", link: "" },
@@ -94,7 +94,7 @@ const DeptSideHeader = ({}) => {
         { name: "Lesson Plan", link: "" },
         {
           name: "Faculty Details",
-          link: "/department/csc/faculty-details",
+          link: "",
         },
         { name: "Laboratories", link: "/pdf/CSE Lab Brochure.pdf" },
         { name: "Events", link: "" },
@@ -117,7 +117,7 @@ const DeptSideHeader = ({}) => {
         { name: "Lesson Plan", link: "" },
         {
           name: "Faculty Details",
-          link: "/department/cscai/faculty-details",
+          link: "",
         },
         { name: "Laboratories", link: "/pdf/CSE Lab Brochure.pdf" },
         { name: "Events", link: "" },
@@ -140,7 +140,7 @@ const DeptSideHeader = ({}) => {
         { name: "Lesson Plan", link: "" },
         {
           name: "Faculty Details",
-          link: "/department/csccs/faculty-details",
+          link: "",
         },
         { name: "Laboratories", link: "/pdf/CSE Lab Brochure.pdf" },
         { name: "Events", link: "" },
@@ -166,7 +166,7 @@ const DeptSideHeader = ({}) => {
         },
         {
           name: "Faculty Details",
-          link: "/department/ece/faculty-details",
+          link: "",
         },
         { name: "Laboratories", link: "/pdf/CURRICULAM_ECE.pdf" },
         { name: "Events", link: "" },
@@ -189,7 +189,7 @@ const DeptSideHeader = ({}) => {
         { name: "Lesson Plan", link: "" },
         {
           name: "Faculty Details",
-          link: "/department/ee/faculty-details",
+          link: "",
         },
         { name: "Laboratories", link: "" },
         { name: "Events", link: "" },

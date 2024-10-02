@@ -401,7 +401,7 @@ const HeaderComponent = () => {
               <img
                 src="/images/mietlogo.png"
                 alt=""
-                className="w-fit sm:h-[3rem] md:h-[3rem] xl:h-[4rem]"
+                className="w-full sm:h-[3rem] md:h-[3rem] xl:h-[4rem]"
               />
             </Link>
             <div className="flex md:flex-row sm:flex-col lg:gap-2">
@@ -409,14 +409,14 @@ const HeaderComponent = () => {
                 <img
                   src="/images/aicte.png"
                   alt=""
-                  className="w-fit sm:h-[2rem] md:h-[3rem] xl:h-[4rem]"
+                  className="w-fit sm:size-[2rem] md:size-[3rem] xl:size-[4rem]"
                 />
               </span>
               <span>
                 <img
                   src="/images/makaut_logo.png"
                   alt=""
-                  className="w-fit sm:h-[2rem] md:h-[3rem] xl:h-[4rem]"
+                  className="w-fit sm:size-[2rem] md:size-[3rem] xl:size-[4rem]"
                 />
               </span>
             </div>
