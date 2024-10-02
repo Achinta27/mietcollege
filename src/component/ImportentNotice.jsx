@@ -79,13 +79,13 @@ const ImportentNotice = () => {
             <img
               src="/images/notice.jpg"
               alt=""
-              className="rounded-md md:max-w-[30rem] lg:max-w-[28rem] xlg:max-w-[40rem] xl:max-w-[44vmax] w-full"
+              className="rounded-md md:max-w-[30rem] lg:max-w-[29rem] xlg:max-w-[40rem] xl:max-w-[44vmax] w-full"
             />
           </span>
         </div>
         <div
           ref={noticeContainerRef} // Reference to the scrollable container
-          className="sm:h-[50vh] sm:max-w-full md:max-w-[44vmax] lg:h-[55vh] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6"
+          className="sm:h-[50vh] md:h-[30vh] sm:max-w-full md:w-[40rem] lg:w-[44rem] xl:max-w-[44vmax] lg:h-[55vh] w-full xl:h-[65vh] overflow-y-scroll flex flex-col md:pe-[2vmax] gap-6"
         >
           {noticed.map((notice, index) => (
             <div
@@ -104,9 +104,8 @@ const ImportentNotice = () => {
                   Date: {notice.date}
                 </span>
               </span>
-              <div className="md:py-[0.55vmax] py-0.5 px-2 md:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] text-white self-end md:self-end cursor-pointer">
-                Know More{" "}
-                <PiArrowSquareOutLight className="ps-1 sm:texr-sm xl:text-base size-5" />
+              <div className="xl:py-[0.55vmax] py-0.5 px-2 xl:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] sm:text-sm xl:text-base text-white self-end md:self-end cursor-pointer">
+                Know More <PiArrowSquareOutLight className="ps-1  size-5" />
               </div>
             </div>
           ))}
