@@ -79,7 +79,7 @@ const ImportentNotice = () => {
             <img
               src="/images/notice.jpg"
               alt=""
-              className="rounded-md md:max-w-[30rem] xlg:max-w-[40rem] xl:max-w-[44vmax] w-full"
+              className="rounded-md md:max-w-[30rem] lg:max-w-[28rem] xlg:max-w-[40rem] xl:max-w-[44vmax] w-full"
             />
           </span>
         </div>
@@ -95,7 +95,9 @@ const ImportentNotice = () => {
               <span className="flex flex-col gap-2 max-w-[35ch]">
                 <span className="flex font-semibold ">
                   <span></span>
-                  <span className="">{notice.heading}</span>
+                  <span className="xl:text-base sm:text-sm">
+                    {notice.heading}
+                  </span>
                 </span>
                 <span className="text-sm flex items-center text-[#666]">
                   <LuCalendarClock className="size-4 pe-1 text-[#DC143C]" />{" "}
@@ -103,7 +105,8 @@ const ImportentNotice = () => {
                 </span>
               </span>
               <div className="md:py-[0.55vmax] py-0.5 px-2 md:px-[1.25vmax] rounded-md hover:bg-[#e4db2d] hover:text-black flex justify-center items-center bg-[#DC143C] text-white self-end md:self-end cursor-pointer">
-                Know More <PiArrowSquareOutLight className="ps-1 size-5" />
+                Know More{" "}
+                <PiArrowSquareOutLight className="ps-1 sm:texr-sm xl:text-base size-5" />
               </div>
             </div>
           ))}
