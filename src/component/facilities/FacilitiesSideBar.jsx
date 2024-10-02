@@ -12,7 +12,7 @@ const FacilitiesSideBar = () => {
     { name: "Conference Hall", link: "/mietcampus/facilities/conference-room" },
     { name: "Common Room", link: "" },
     { name: "Playground", link: "/mietcampus/facilities/playground" },
-    { name: "Student Counseling", link: "" },
+    { name: "Student counselling", link: "" },
   ];
   return (
     <div className="flex flex-col gap-6">

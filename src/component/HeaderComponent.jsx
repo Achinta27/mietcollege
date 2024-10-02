@@ -232,7 +232,7 @@ const HeaderComponent = () => {
             },
             { name: "Common Room", link: "" },
             { name: "Playground", link: "/mietcampus/facilities/playground" },
-            { name: "Student Counseling", link: "" },
+            { name: "Student counselling", link: "" },
           ],
         },
         { name: "Infrastructure", link: "" },

@@ -14,7 +14,11 @@ const PrincipalMessage = () => {
       <div className="xl:p-16 lg:p-8 sm:p-4">
         <div className="grid sm:grid-cols-1 md:grid-cols-2 sm:gap-4 lg:gap-6 xl:gap-16">
           <div className="">
-            <img src="/images/principalimg.png" alt="" className="w-full" />
+            <img
+              src="/images/principalimg.png"
+              alt=""
+              className="w-full rounded-md"
+            />
           </div>
           <div className="flex flex-col sm:gap-2 lg:gap-2 xlg:gap-4">
             <div className=" lg:text-3xl xlg:text-4xl sm:text-2xl font-semibold border-l-[5px] border-black pl-4 text-[#DC143C]">
@@ -44,9 +48,7 @@ const PrincipalMessage = () => {
               <span className="font-semibold">
                 Prof.&#40;Dr.&#41; Arijit Choudhury
               </span>
-              <span>
-                Ex. Principal JGEC, NIT Silchar, Lather Technology College , W.B
-              </span>
+              <span>Principa, MIET College, Rajhat, Hooghly WB.</span>
             </div>
           </div>
         </div>

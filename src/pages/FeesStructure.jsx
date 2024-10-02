@@ -11,8 +11,8 @@ const FeesStructure = () => {
       sem2: "2nd",
       sem3: "3rd",
       sem4: "4th",
-      total: "5 Lakh",
-      hostel: "23,557",
+      total: "",
+      hostel: "",
     },
     {
       department: "Diploma",
@@ -20,8 +20,8 @@ const FeesStructure = () => {
       sem2: "2nd",
       sem3: "3rd",
       sem4: "4th",
-      total: "5 Lakh",
-      hostel: "23,557",
+      total: "",
+      hostel: "",
     },
   ];
   return (

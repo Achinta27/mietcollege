@@ -6,6 +6,7 @@ import FooterComponent from "./FooterComponent";
 const StudentEnquiryPage = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [selectedCourse, setSelectedCourse] = useState("");
 
   function submitMail(e) {
     e.preventDefault();
@@ -41,6 +42,10 @@ const StudentEnquiryPage = () => {
         e.target.reset();
       });
   }
+
+  const handleCourseChange = (e) => {
+    setSelectedCourse(e.target.value); // Update selected course
+  };
 
   return (
     <MainPageTemplate>
@@ -100,6 +105,7 @@ const StudentEnquiryPage = () => {
                     <select
                       name="enquiry"
                       required
+                      onChange={handleCourseChange}
                       className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
                     >
                       <option value="" disabled selected>
@@ -109,6 +115,73 @@ const StudentEnquiryPage = () => {
                       <option value="Diploma">Diploma</option>
                     </select>
                   </div>
+
+                  {selectedCourse === "B.Tech" && (
+                    <div className="flex flex-col gap-2">
+                      <span>Interested Department</span>
+                      <select
+                        name="department"
+                        required
+                        className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
+                      >
+                        <option value="">Select Department</option>
+                        <option value="Mechanical Engineering">
+                          Mechanical Engineering
+                        </option>
+                        <option value="Computer Science Engineering">
+                          Computer Science Engineering
+                        </option>
+                        <option value="Civil Engineering">
+                          Civil Engineering
+                        </option>
+                        <option value="Electronics and Communication Engineering">
+                          Electronics and Communication Engineering
+                        </option>
+                        <option value="Electrical Engineering">
+                          Electrical Engineering
+                        </option>
+                        <option value="Computer Science and Engineering (AI & ML)">
+                          Computer Science and Engineering (AI & ML)
+                        </option>
+                        <option
+                          value="
+Computer Science and Engineering (Cyber Security)"
+                        >
+                          Computer Science and Engineering (Cyber Security)
+                        </option>
+                      </select>
+                    </div>
+                  )}
+
+                  {selectedCourse === "Diploma" && (
+                    <div className="flex flex-col gap-2">
+                      <span>Interested Department</span>
+                      <select
+                        name="department"
+                        required
+                        className="sm:w-full sm:p-3 md:p-2 h-[4rem] bg-white rounded-sm sm:text-lg md:text-xl text-[#DC143C]"
+                      >
+                        <option value="" disabled selected>
+                          Select Department
+                        </option>
+                        <option value="Mechanical Engineering">
+                          Mechanical Engineering
+                        </option>
+                        <option value="Electrical Engineering">
+                          Electrical Engineering
+                        </option>
+                        <option value="Civil Engineering">
+                          Civil Engineering
+                        </option>
+                        <option value="Electronics and Communication Engineering">
+                          Electronics and Communication Engineering
+                        </option>
+                        <option value="Computer Science Technology">
+                          Computer Science Technology
+                        </option>
+                      </select>
+                    </div>
+                  )}
 
                   <div className="flex flex-col gap-2">
                     <span>Message (optional)</span>
