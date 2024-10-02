@@ -46,8 +46,8 @@ const EnquiryBoxComponent = () => {
   };
 
   return (
-    <div className="p-4 bg-[#DC143C] rounded-md flex-1">
-      <div className="flex flex-col justify-between gap-5 ">
+    <div className="p-4 bg-[#DC143C] rounded-md flex-1 flex">
+      <div className="flex flex-col justify-between gap-5 w-full">
         <span className="flex justify-center items-center">
           <img src="/images/klip.svg" alt="" className="h-[4rem]" />
         </span>

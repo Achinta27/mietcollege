@@ -112,7 +112,7 @@ const GalleryComponent = () => {
     <div className="flex flex-col">
       <HeadingTemplate heading={"PHOTO GALLERY"} />
       <div className="flex sm:flex-col lg:flex-row w-full sm:p-4 md:p-8 xl:p-16 md:gap-8">
-        <div className="lg:w-[60%] sm:w-full bg-white p-2 shadow-lg flex flex-col gap-4">
+        <div className="lg:w-[60%] sm:w-full bg-white p-2 shadow-lg flex flex-col justify-between gap-4">
           <div
             className="w-full relative"
             onMouseEnter={handleMouseEnter}
